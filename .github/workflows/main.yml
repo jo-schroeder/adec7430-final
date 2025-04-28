@@ -52,12 +52,11 @@ jobs:
           options(repos = 'https://cloud.r-project.org');
           .libPaths('/home/runner/work/_temp/Library');
           install.packages(c(
-            'rmarkdown', 'knitr', 'dplyr', 'readr', 'tidyr', 
-            'stringr', 'DT', 'jsonlite', 'purrr', 'lubridate', 
-            'data.table', 'R.utils'
+            'rmarkdown', 'knitr', 'tidyverse', 'lubridate', 'dtwclust', 
+            'ggthemes', 'ggrepel'
           ))
         "
-
+        
     - name: Check Pandoc Version
       run: pandoc --version
 
