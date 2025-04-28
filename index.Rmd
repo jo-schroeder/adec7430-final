@@ -1,0 +1,255 @@
+---
+title: "Final Project Test"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(widyr)
+library(tidyverse)
+library(lubridate)
+library(dtwclust)
+library(ggthemes)
+library(ggrepel)
+
+# load in data
+data_dir <- "./data/"
+actors <- read_csv(paste0(data_dir, "actors_features.csv")) %>% distinct()
+trends <- read_csv(paste0(data_dir, "trends.csv"))
+
+# check if any data has been uploaded
+uploaded_data_dir <- paste0(data_dir, "upload_data_here/")
+new_files <- list.files(uploaded_data_dir)
+
+if (length(new_files) > 0) {
+  # Read all files into a list of data frames
+  data_list <- lapply(new_files, function(f) {
+    read_csv(file.path(uploaded_data_dir, f), skip = 1)
+  })
+
+  if (length(data_list) == 1) {
+    uploaded_data <- data_list[[1]]
+  } else {
+
+    uploaded_data <- Reduce(function(x, y) left_join(x, y, by = "Month"), data_list)
+  }
+  
+  colnames(uploaded_data) <- gsub(": \\(United States\\)", "", colnames(uploaded_data))
+  uploaded_data <- head(uploaded_data, 255)
+
+}
+
+```
+
+```{r eval = exists("uploaded_data"), warning = FALSE, message = FALSE, echo = FALSE}
+
+trends <- left_join(trends, uploaded_data)
+second_colname <- colnames(trends)[2]
+last_colname <- tail(colnames(trends), 1)
+uploaded_colnames <- colnames(uploaded_data)[-1]
+
+trends <- trends %>%
+  mutate(across(everything(), ~ ifelse(. == "<1", 0, .))) %>%
+  mutate(across(c(second_colname:last_colname), ~ as.numeric(.))) %>%
+  pivot_longer(cols = c(second_colname:last_colname)) %>%
+  mutate(Month = ym(Month),
+         uploaded = ifelse(name %in% uploaded_colnames, TRUE, FALSE))
+
+# exploring trendlines
+trends %>%
+  ggplot(aes(x = Month, y = value, group = name)) +
+  geom_line(
+    data = filter(trends, uploaded == FALSE),
+    color = "gray",
+    size = 0.5,
+    alpha = 0.1
+  ) +
+  geom_line(
+    data = filter(trends, uploaded == TRUE),
+    color = "purple",
+    size = 1.5,
+    alpha = 1
+  ) +
+geom_text_repel(
+    data = filter(trends, uploaded == TRUE) %>%
+      group_by(name) %>%
+      slice_max(order_by = value, n = 1), 
+    aes(label = name),
+    color = "black",
+    size = 3,
+    box.padding = 0.5,
+    max.overlaps = 10,
+    direction = "both",
+    nudge_y = 0.1,
+    nudge_x = 0.2 
+  ) +
+  
+  labs(
+    title = "Google Trends for Actors in our Dataset"
+  ) +
+  theme_minimal()
+
+```
+
+```{r, eval = FALSE, echo = FALSE}
+# summary stats and missingness
+summary(actors)
+# Some of the actor info of interest has NA values (15 birthdays, 5 Popularity scores), so we will have to decide what we want to do about those
+summary(trends)
+# <1 trend needs to be recoded as numeric, I think we should choose 0 
+
+# Exploring birth years of nominated actors
+actors %>% 
+  ggplot(aes(x = Birthday)) +
+  geom_histogram() +
+  labs(title = "Birthday of Oscar Nominated Actors",
+       subtitle = "Nominated 2004-Present")
+
+# by winner
+actors %>% 
+  ggplot(aes(x = Birthday, fill = Winner)) +
+  geom_histogram() +
+  labs(title = "Birthday of Oscar Nominated Actors",
+       subtitle = "Nominated 2004-Present")
+
+# by gender
+actors %>% 
+  ggplot(aes(x = Birthday, fill = Gender)) +
+  geom_histogram() +
+  labs(title = "Birthday of Oscar Nominated Actors",
+       subtitle = "Nominated 2004-Present")
+# This is sort of interesting- there's 10 male and 10 female actors nominated every year. This suggests that men born after 1975 are less represented in nominations overall, esp. compared to women in the same age group. Dominance of older actors in male categories?
+
+# exploring age at nomination
+actors <- actors %>% 
+  mutate(Year = as.Date(paste0(Year, "-01-01")),
+    age_at_nomination = as.numeric(difftime(Year, Birthday, units = "days")) / 365.25) 
+actors %>%
+  ggplot(aes(x = age_at_nomination)) +
+  geom_histogram() +
+  labs(title = "Age at Nomination for Oscar Nominated Actors",
+       subtitle = "Nominated 2004-Present")
+# Obviously there's an error here - I'll have to go back and check the API call results for the 130 year old but I'm guessing there's another famous person with the same name
+
+# by winner
+actors %>% 
+  ggplot(aes(x = age_at_nomination, fill = Winner)) +
+  geom_histogram() +
+  labs(title = "Age at Nomination for Oscar Nominated Actors",
+       subtitle = "Nominated 2004-Present")
+
+# by gender
+actors %>% 
+  ggplot(aes(x = age_at_nomination, fill = Gender)) +
+  geom_histogram() +
+  labs(title = "Age at Nomination for Oscar Nominated Actors",
+       subtitle = "Nominated 2004-Present")
+
+# recoding trends and making it long for viz
+trends <- trends %>%
+  mutate(across(everything(), ~ ifelse(. == "<1", 0, .))) %>%
+  mutate(across(c("Mark Ruffalo":"Don Cheadle"), ~ as.numeric(.))) %>%
+  pivot_longer(cols = c("Mark Ruffalo":"Don Cheadle")) %>%
+  mutate(Month = ym(Month))
+
+# exploring trendlines
+trends %>% 
+  ggplot(aes(x = Month, y = value, group = name)) +
+  geom_line(alpha = .1) +
+  labs(title = "Google Trendlines for all Oscar Nominated Actors",
+       subtitle = "Nominated 2004-Present")
+
+# joining 
+joined <- trends %>% left_join(actors, by = c("name" = "Name"), 
+                               relationship = "many-to-many")
+# Not all actors joined, particularly those with punctuation in their name (like Lupita Nyong'o/Lupita Nyongo), but I can fix them
+ 
+# by winner
+joined %>%
+  ggplot(aes(x = Month, y = value, group = name, color = Winner)) +
+  geom_line(alpha = .1) +
+  labs(title = "Google Trendlines for all Oscar Nominated Actors",
+       subtitle = "Nominated 2004-Present")
+
+# by gender
+joined %>%
+  ggplot(aes(x = Month, y = value, group = name, color = Gender)) +
+  geom_line(alpha = .1) +
+  labs(title = "Google Trendlines for all Oscar Nominated Actors",
+       subtitle = "Nominated 2004-Present")
+
+joined %>% group_by(Month) %>% summarise(value = mean(value)) %>%
+  ggplot(aes(x = Month, y = value)) +
+  geom_line() +
+  labs(title = "Average Google Trend all Oscar Nominated Actors",
+       subtitle = "Nominated 2004-Present")
+# This is pretty interesting - suggests that generally Oscar nominated actors are have searched more but it has leveled off (could reflect trends in Google Search overall). The cyclical pattern is also interesting and I'm guessing it coincides with the ceremony and nomination announcements!
+
+# Exploratory clustering for fun
+
+# Next steps: see about picking an optimal number of clusters, get some stats about the cluster quality, and see summary stats for Actor features by cluster
+
+# testing widyr clustering
+cluster_group <-  trends %>%
+  widely_kmeans(item = name, 
+                feature = Month, 
+                value = value,
+                k = 3)
+
+actor_with_cluster <- left_join(trends, cluster_group)
+
+actor_with_cluster %>%
+  ggplot(aes(x = Month, y = value, group = name, colour = cluster)) +
+  geom_line(show.legend = F, alpha = .25) +
+  scale_y_continuous(labels = scales::comma) +
+  facet_wrap(vars(cluster)) +
+  scale_color_solarized()
+
+# testing dtwclust clustering - I think this is my preference for more options for type of clustering and distance metrics
+wide <- trends %>%
+  pivot_wider(names_from = Month, values_from = value) %>%
+  column_to_rownames("name")
+
+matrix <- as.matrix(wide)
+
+# I tested out a few options, but I need to print out some organized summaries
+clusters <- tsclust(matrix, 
+                       k = 6L,  
+                       distance = "SBD",
+                       type = "tadpole",
+                       seed = 3247,
+                       trace = TRUE, 
+                       control = tadpole_control(dc = 100,
+                                                 window.size = 18L))  
+cluster_assignments <- clusters@cluster
+cluster_group <- data.frame(
+  name = rownames(matrix), 
+  cluster = cluster_assignments
+)
+
+actor_with_cluster <- left_join(trends, cluster_group, by = "name")
+
+actor_with_cluster %>%
+  ggplot(aes(x = Month, y = value, group = name, colour = factor(cluster))) +
+  geom_line(show.legend = FALSE, alpha = 0.25) +
+  scale_y_continuous(labels = scales::comma) +
+  facet_wrap(vars(cluster)) +  # Separate plots for each cluster
+  scale_color_solarized() +
+  theme_minimal() +
+  labs(title = "Time Series Clustering", colour = "Cluster")
+
+table(actor_with_cluster$cluster)
+
+# Dendrograms for hierarchical clustering
+plot(clusters, main = "Dendrogram of Hierarchical Clustering", xlab = "Time Series", ylab = "Distance")
+plot(clusters, 
+     main = "Dendrogram of Hierarchical Clustering", 
+     xlab = "Time Series", 
+     ylab = "Distance",
+     labels = FALSE,
+     cex = 0.25) 
+
+
+
+
+
+```
