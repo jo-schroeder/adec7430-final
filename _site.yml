@@ -1,0 +1,10 @@
+name: "adec7430-final"
+output_dir: "docs"
+navbar:
+  title: "Almanac Reports"
+  left:
+  - text: "Index"
+    href: index.html
+output:
+  html_document:
+    theme: cosmo
