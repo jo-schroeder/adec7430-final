@@ -72,10 +72,9 @@ jobs:
 
     - name: Commit and Push Changes
       run: |
-        git config user.name "github-actions[bot]"
-        git config user.email "github-actions[bot]@users.noreply.github.com"
+        git config user.name "your-username"
+        git config user.email "your-email@example.com"
         git add -A
         git commit -m "Automated update: $(date '+%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
-        git push origin main
-      env:
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        git push https://x-access-token:${{ secrets.GH_TOKEN }}@github.com/jo-schroeder/adec7430-final.git
+
