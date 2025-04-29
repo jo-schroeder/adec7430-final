@@ -52,8 +52,8 @@ jobs:
           options(repos = 'https://cloud.r-project.org');
           .libPaths('/home/runner/work/_temp/Library');
           install.packages(c(
-            'rmarkdown', 'knitr', 'tidyverse', 'lubridate', 'dtwclust', 
-            'ggthemes', 'ggrepel'
+            'rmarkdown', 'knitr', 'dplyr', 'lubridate', 'dtwclust', 
+            'ggthemes', 'ggrepel', 'tidyr', 'readr'
           ))
         "
         

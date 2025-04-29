@@ -4,8 +4,10 @@ output: html_document
 ---
 
 ```{r setup, include=FALSE}
-library(widyr)
-library(tidyverse)
+#library(widyr)
+library(dplyr)
+library(readr)
+library(tidyr)
 library(lubridate)
 library(dtwclust)
 library(ggthemes)
