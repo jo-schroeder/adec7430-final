@@ -13,8 +13,8 @@ library(dtwclust)
 library(ggthemes)
 library(ggrepel)
 library(plotly)
-library(htmlwidgets)
-library(htmltools)
+#library(htmlwidgets)
+#library(htmltools)
 
 # load in data
 data_dir <- "./data/"
@@ -116,8 +116,9 @@ trends %>%
 p %>%
   layout(
     title = "Google Trends for Selected Actors",
-    xaxis = list(title = "Month"),
-    yaxis = list(title = "Google Trends Value"),
+    xaxis = list(title = "Month", range = c("2004-01-01",
+                                            "2025-03-01")),
+    yaxis = list(title = "Relative Popularity", range = c(0, 100)),
     legend = list(title = list(text = "Actors"))
   )
 ```

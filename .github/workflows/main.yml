@@ -53,8 +53,7 @@ jobs:
           .libPaths('/home/runner/work/_temp/Library');
           install.packages(c(
             'rmarkdown', 'knitr', 'dplyr', 'lubridate', 'dtwclust', 
-            'ggthemes', 'ggrepel', 'tidyr', 'readr'
-          ))
+            'ggthemes', 'ggrepel', 'tidyr', 'readr', 'plotly'))
         "
         
     - name: Check Pandoc Version
