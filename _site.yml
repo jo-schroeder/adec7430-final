@@ -1,7 +1,7 @@
 name: "adec7430-final"
 output_dir: "docs"
 navbar:
-  title: "Almanac Reports"
+  title: "Final Project"
   left:
   - text: "Index"
     href: index.html
