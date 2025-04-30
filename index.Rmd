@@ -12,6 +12,9 @@ library(lubridate)
 library(dtwclust)
 library(ggthemes)
 library(ggrepel)
+library(plotly)
+library(htmlwidgets)
+library(htmltools)
 
 # load in data
 data_dir <- "./data/"
@@ -90,6 +93,33 @@ geom_text_repel(
   ) +
   theme_minimal()
 
+```
+
+```{r warning = FALSE, message = FALSE, echo = FALSE}
+# Start with empty plot and manually add traces with visible = "legendonly"
+p <- plot_ly(type = "scatter", mode = "lines")
+
+trends %>%
+  group_by(name) %>%
+  group_split() %>%
+  purrr::walk(function(df) {
+    p <<- add_trace(p,
+                    data = df,
+                    x = ~Month,
+                    y = ~value,
+                    name = unique(df$name),
+                    text = ~paste(name, value),
+                    hoverinfo = "text",
+                    visible = "legendonly")
+  })
+
+p %>%
+  layout(
+    title = "Google Trends for Selected Actors",
+    xaxis = list(title = "Month"),
+    yaxis = list(title = "Google Trends Value"),
+    legend = list(title = list(text = "Actors"))
+  )
 ```
 
 ```{r, eval = FALSE, echo = FALSE}
