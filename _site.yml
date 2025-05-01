@@ -3,8 +3,11 @@ output_dir: "docs"
 navbar:
   title: "Final Project"
   left:
-  - text: "Index"
+  - text: "Oscar Predictions"
     href: index.html
+  - text: "Upload Data Here"
+    href: upload.html
+
 output:
   html_document:
     theme: cosmo
