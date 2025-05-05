@@ -1,13 +1,19 @@
 name: "adec7430-final"
 output_dir: "docs"
-navbar:
-  title: "Final Project"
-  left:
-  - text: "Oscar Predictions"
-    href: index.html
-  - text: "Upload Data Here"
-    href: upload.html
-
-output:
+output: 
   html_document:
+    toc: true 
     theme: cosmo
+    highlight: tango  
+    css: style.css
+navbar:
+  title: "And the Forecast Goes To..."
+  left:
+  - text: "Project Description"
+    href: index.html
+  - text: "Explore the Models"
+    href: explore.html
+  - text: "Upload Your Own Data"
+    href: upload.html
+    
+    

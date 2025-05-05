@@ -1,7 +1,67 @@
 ---
-title: ""
-output: html_document
+title: "Project Description"
+output: 
+  html_document:
+      toc: true
+      toc_float: true
 ---
+
+In March of 2025 the Academy updated their voting guidelines for the Annual Academy Awards. Now, voters must have watched each film nominated in a category in order to be eligible to vote for the winner. [^1] If you're wondering how that wasn't a rule already, you're not alone! [^2] 
+
+Ever year the legitimacy of the Oscars are questioned, yet they remain one of the most important awards in the film industry. [^3] In this project, we aim to answer questions about Hollywood's most prestigious awards.
+
+- Does the phenomenon of an "Oscar Campaign" really exist? 
+- How well does Oscar buzz alone predict who is nominated for Academy Awards?
+
+Timothee Chalamet Oscar Campaign. [^4]
+![Was Timothée Chalamet on a 2025 Oscar Campaign?](./img/000043-edit.jpg)
+
+
+
+```{r eval = FALSE, include = FALSE}
+trends[,c("Month", "Amber Heard", "Johnny Depp")] %>%
+  pivot_longer(cols = c("Amber Heard", "Johnny Depp")) %>%
+  mutate(Month = ym(Month), 
+         value = ifelse(value == "<1", 0, value)) %>%
+  #filter(year(Month) >= 2020) %>%
+  ggplot(aes(x = Month, y = as.numeric(value), group = name)) +
+  geom_line(
+    color = "black",
+    size = 1,
+  ) +
+  xlab("") +
+  ylab("Google Trend Search Interest") +
+  labs(title = "Scandal Drives Search Interest",
+       subtitle = "Monthly search interest for the terms 'Amber Heard' and 'Johnny Depp' \nsince 2004") +
+  scale_x_date(date_breaks = "5 years", date_labels = "%Y") +
+  facet_wrap(vars(name)) 
+```
+
+bigML predicting winners, using data from earlier in the award season. [^5] 
+
+More broadly, we gather a dataset of popular actors and films, as well as Academy Award nominees for future research into the career pathways of film stars. 
+
+## Data Acquisition
+
+We started by downloading a a dataset of Academy Award winners from Kaggle. Then we subset to Acting awards (Best Lead Actor, Best Lead Actress, Best Supporting Actor, Best Supporting Actress) and data for which Google Trends are available (since 2004). Really, this wouldn't include 2004 award winners since we have no prior trend for them. The Award eligibility is the calendar year prior to the awards, which are usually announced at a ceremony in March. The nominees are announced in January. 
+
+Next, we used the API from The Movie Database (TMD) to extract the top three billed cast members for the 20 most commercially successful movies for each year from 2004-present. Commercially successful was determined by revenue generated. Notably, we included non-U.S. movies, which maybe we should've filtered them out but regardless. 
+
+From these two sources, we netted a list of 668 actors. We then downloaded the monthly Google Trend Search Interest for each actor since 2004. The process of doing this via API was throttled, so we downloaded this data manually.
+
+So we had acquired data for actors, some of whom were nominated and some of whom won, some were only commercially successful and some were both. We then cleaned the dataset and extracted some features about the actors, also from TMD, including information like gender, birth year, and nationality. We also augmented the data to include information on if they were previously nominated or previously won. 
+
+We began with some exploratory data analysis to investigate our data and see and overt patterns or trends. We wanted to characterize a typology of actor careers, for example, we wanted to see if, based on their google trend, we could tell one-hit wonders from steadily commercially successful actors, etc. After much trial, we landed on a time series based clustering approach, but we would be interested in exploring this further.
+
+Next, we used the trend data to predict Oscar nominations. We landed on a random forest model, and tested two models. One with features that were only based on trends, and one with additional features such as age and previous nominations and wins. We wanted to test to see if information about hype alone, how popular or in the zietgiest an actor is, would be enough to predict their nomination. This would suggest that a rule change like the one the Oscars implemented is quite necessary, since name recognition alone might persuade enough Academy members to vote for someone, especially if they don't have to be familiar with all the nominees' work. We also wanted to include the descriptive cluster solution we created earlier as a predictor in our model.
+
+It became clear that it would be necessary to devise an appropriate sampling strategy for the random forest. By nature of this problem, predicting for nominees, and to a greater extent winners, is like searching for a needle in a haystack. Each year there are only 20 nominees, 5 in each category, so for our dataset was quite limited. To create more observations and more specific predictions, we subset the data to be the trend per year per actor, and the outcome of nomination specific to that year. We undersampled non-winners to create a balanced testing/training strategy and immediately saw model improvement.
+
+In the future we would want to investigate putting certain constraints on the model like the fact that there can only be 5 nominations per category and there has to be a gender balance.
+
+The data acquisition process was quite long, as there were many sources to combine and reconcile. We also gathered much more data than we ended up using, but anticipate further analysis will be fun and interesting now that the data has been gathered. 
+
+## Research Questions
 
 ```{r setup, include=FALSE}
 #library(widyr)
@@ -95,7 +155,7 @@ geom_text_repel(
 
 ```
 
-```{r warning = FALSE, message = FALSE, echo = FALSE}
+```{r eval = exists("uploaded_data"), warning = FALSE, message = FALSE, echo = FALSE}
 # Start with empty plot and manually add traces with visible = "legendonly"
 p <- plot_ly(type = "scatter", mode = "lines")
 
@@ -282,7 +342,14 @@ plot(clusters,
      cex = 0.25) 
 
 
-
+missing <- joined %>% distinct(name, type) %>% filter(is.na(type)) %>% pull(name)
 
 
 ```
+
+
+[^1]: "Awards rules and campaign promotional regulations approved for 98th Oscars." Academy Press Office. Accessed: May 4, 2025. [Online.] Available: https://press.oscars.org/news/awards-rules-and-campaign-promotional-regulations-approved-98th-oscarsr
+[^2]: Taylor, Derrick Bryson. "A New Requirement for Oscar Voters: They Must Actually Watch the Films." The New York Times. Accessed: May 4, 2025. [Online.] Available: https://www.nytimes.com/2025/04/24/movies/oscars-voting-rules.html
+[^3]: Barber, Nicholas. "Oscars 2025: Why people claim Kieran Culkin, Zoe Saldaña and Ariana Grande's nominations are 'category fraud.'" BBC. Accessed: May 4, 2025. [Online.] Available: https://www.bbc.com/culture/article/20250214-oscars-2025-why-people-claim-kieran-culkin-zoe-saldaa-and-ariana-grandes-nominations-are-category-fraud ; Earl, William. "Oscars Snubs and Surprises: Mikey Madison Scores, ‘I’m Still Here’ Shocks and Diane Warren Has 16th Straight Loss." Variety. Accessed: May 4, 2025. [Online.] Available: https://variety.com/2025/awards/news/2025-oscars-snubs-surprises-1236319091/
+[^4]: Hyden, Steven. "Timothée Chalamet Should Win an Oscar for His Oscar Campaign." The New York Times. Accessed: May 4, 2025. [Online.] Available: https://www.nytimes.com/2025/02/26/magazine/timothee-chalamet-oscar-campaign.html
+[^5]: atakancetinsoy. "Predicting the 2025 Oscar Winners with Machine Learning." bigML. Accessed: May 4, 2025. [Online.] Available: https://blog.bigml.com/2025/02/28/predicting-the-2025-oscar-winners-with-machine-learning/ ; Movies (Oscars 2001-2025). bigML. Accessed: May 4, 2025. [Online.] Available: https://bigml.com/user/academy_awards/gallery/dataset/67bc509a54e70fb808f13df3

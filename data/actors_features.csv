@@ -1,669 +1,669 @@
-Name,ID,Gender,Birthday,Place of Birth,Known For,Popularity,type,oscar_type,multiple_nominations,nominated_years,winner
-Don Cheadle,1896,Male,1964-11-29,"Kansas City, Missouri, USA ",Acting,1.8064,both,leading,no,[2004],
-Johnny Depp,85,Male,1963-06-09,"Owensboro, Kentucky, USA ",Acting,15.9675,both,leading,yes,"[2004, 2007]",
-Leonardo DiCaprio,6193,Male,1974-11-11,"Los Angeles, California, USA",Acting,12.009,both,leading,yes,"[2004, 2006, 2013, 2015, 2019]",yes
-Clint Eastwood,190,Male,1930-05-31,"San Francisco, California, USA",Acting,2.7558,both,leading,no,[2004],
-Jamie Foxx,134,Male,1967-12-13,"Terrell, Texas, USA",Acting,3.7637,both,both,yes,[2004],yes
-Alan Alda,21278,Male,1936-01-28,"New York City, New York, USA",Acting,0.877,oscar,supporting,no,[2004],
-Thomas Haden Church,19159,Male,1960-06-17,"Yolo County, California, USA",Acting,1.3239,oscar,supporting,no,[2004],
-Morgan Freeman,192,Male,1937-06-01,"Memphis, Tennessee, USA",Acting,7.5719,both,both,yes,"[2004, 2009]",yes
-Clive Owen,2296,Male,1964-10-03,"Keresley, Coventry, Warwickshire, England, UK",Acting,2.57,oscar,supporting,no,[2004],
-Annette Bening,516,Female,1958-05-29,"Topeka, Kansas, USA",Acting,1.6232,oscar,leading,yes,"[2004, 2010, 2023]",
-Catalina Sandino Moreno,5887,Female,1981-04-19,"Bogotá, Colombia",Acting,1.3797,oscar,leading,no,[2004],
-Imelda Staunton,11356,Female,1956-01-09,"Archway, London, England, UK",Acting,1.6659,both,leading,no,[2004],
-Hilary Swank,448,Female,1974-07-30,"Lincoln, Nebraska, USA",Acting,1.8886,oscar,leading,no,[2004],yes
-Kate Winslet,204,Female,1975-10-05,"Reading, Berkshire, England, UK",Acting,7.3317,both,both,yes,"[2004, 2006, 2008, 2015]",yes
-Cate Blanchett,112,Female,1969-05-14,"Melbourne, Victoria, Australia",Acting,3.6201,both,both,yes,"[2004, 2006, 2007, 2013, 2015, 2022]",yes
-Laura Linney,350,Female,1964-02-05,"New York City, New York, USA",Acting,1.6051,oscar,both,yes,"[2004, 2007]",
-Virginia Madsen,12519,Female,1961-09-11,"Chicago, Illinois, USA",Acting,1.9866,oscar,supporting,no,[2004],
-Sophie Okonedo,2598,Female,1968-08-11,"London, England, UK",Acting,2.1537,oscar,supporting,no,[2004],
-Natalie Portman,524,Female,1981-06-09,"Jerusalem, Israel",Acting,6.4622,both,both,yes,"[2004, 2010, 2016]",yes
-Philip Seymour Hoffman,1233,Male,1967-07-23,"Fairport, New York, USA",Acting,1.9885,both,both,yes,"[2005, 2007, 2008, 2012]",yes
-Terrence Howard,18288,Male,1969-03-11,"Chicago, Illinois, USA",Acting,1.6898,both,leading,no,[2005],
-Heath Ledger,1810,Male,1979-04-04,"Perth, Western Australia, Australia",Acting,2.8357,both,both,yes,"[2005, 2008]",yes
-Joaquin Phoenix,73421,Male,1974-10-28,"San Juan, Puerto Rico",Acting,3.04,both,leading,yes,"[2005, 2012, 2019]",yes
-David Strathairn,11064,Male,1949-01-26,"San Francisco, California, USA",Acting,1.1055,both,leading,no,[2005],
-George Clooney,1461,Male,1961-05-06,"Lexington, Kentucky, USA",Acting,2.9311,both,both,yes,"[2005, 2007, 2009, 2011]",yes
-Matt Dillon,2876,Male,1964-02-18,"New Rochelle, New York, USA",Acting,2.1691,oscar,supporting,no,[2005],
-Paul Giamatti,13242,Male,1967-06-06,"New Haven, Connecticut, USA",Acting,2.9977,oscar,both,yes,"[2005, 2023]",
-Jake Gyllenhaal,131,Male,1980-12-19,"Los Angeles, California, USA",Acting,7.2706,both,supporting,no,[2005],
-William T. Hurtz,118472,Male,1919-04-07,"Chicago, Illinois, USA",Directing,0.1249,oscar,,,,
-Judi Dench,5309,Female,1934-12-09,"York, North Yorkshire, England",Acting,1.3201,both,both,yes,"[2005, 2006, 2013, 2021]",
-Felicity Huffman,7427,Female,1962-12-09,"Bedford, New York, USA",Acting,0.8355,oscar,leading,no,[2005],
-Keira Knightley,116,Female,1985-03-26,"Teddington, London, England, UK",Acting,5.6004,both,both,yes,"[2005, 2014]",
-Charlize Theron,6885,Female,1975-08-07,"Benoni, Gauteng, South Africa",Acting,5.7998,both,leading,yes,"[2005, 2019]",
-Reese Witherspoon,368,Female,1976-03-22,"New Orleans, Louisiana, USA",Acting,9.5293,oscar,leading,yes,"[2005, 2014]",yes
-Amy Adams,9273,Female,1974-08-20,"Vicenza, Veneto, Italy",Acting,4.1767,both,both,yes,"[2005, 2008, 2010, 2012, 2013, 2018]",
-Catherine Keener,2229,Female,1959-03-26,"Miami, Florida, USA",Acting,1.6534,oscar,supporting,no,[2005],
-Frances McDormand,3910,Female,1957-06-23,"Gibson City, Illinois, USA",Acting,1.3247,oscar,both,yes,"[2005, 2017, 2020]",yes
-Rachel Weisz,3293,Female,1970-03-07,"Westminster, London, England, UK",Acting,4.1385,both,supporting,yes,"[2005, 2018]",yes
-Michelle Williams,1812,Female,1980-09-09,"Kalispell, Montana, USA",Acting,2.4552,both,both,yes,"[2005, 2010, 2011, 2016, 2022]",
-Ryan Gosling,30614,Male,1980-11-12,"London, Ontario, Canada",Acting,7.084,both,both,yes,"[2006, 2016, 2023]",
-Peter O'Toole,1995515,Not set,,,Lighting,0.0407,oscar,leading,no,[2006],
-Will Smith,2888,Male,1968-09-25,"Philadelphia, Pennsylvania, USA",Acting,7.4083,both,leading,yes,"[2006, 2021]",yes
-Forest Whitaker,2178,Male,1961-07-15,"Longview, Texas, USA",Acting,2.3078,oscar,leading,no,[2006],yes
-Alan Arkin,1903,Male,1934-03-26,"New York City, New York, USA",Acting,1.2573,oscar,supporting,yes,"[2006, 2012]",yes
-Jackie Earle Haley,17183,Male,1961-07-14,"Northridge, California, USA",Acting,1.1636,oscar,supporting,no,[2006],
-Djimon Hounsou,938,Male,1964-04-24,"Cotonou, Dahomey [now Benin]",Acting,1.4817,oscar,supporting,no,[2006],
-Eddie Murphy,776,Male,1961-04-03,"Brooklyn, New York City, New York, USA",Acting,3.8854,oscar,supporting,no,[2006],
-Mark Wahlberg,13240,Male,1971-06-05,"Boston, Massachusetts, USA",Acting,3.8111,both,supporting,no,[2006],
-Penélope Cruz,955,Female,1974-04-28,"Madrid, Spain",Acting,4.4885,both,both,yes,"[2006, 2008, 2009, 2021]",yes
-Helen Mirren,15735,Female,1945-07-26,"Hammersmith, London, England, UK",Acting,3.521,oscar,leading,yes,"[2006, 2009]",yes
-Meryl Streep,5064,Female,1949-06-22,"Summit, New Jersey, USA",Acting,2.5122,both,both,yes,"[2006, 2008, 2009, 2011, 2013, 2014, 2016, 2017]",yes
-Adriana Barraza,270,Female,1956-03-05,"Toluca, Estado de Mexico, Mexico",Acting,0.5788,oscar,supporting,no,[2006],
-Abigail Breslin,17140,Female,1996-04-14,"New York City, New York, USA",Acting,4.0742,oscar,supporting,no,[2006],
-Jennifer Hudson,15565,Female,1981-09-12,"Chicago, Illinois, USA",Acting,0.7187,oscar,supporting,no,[2006],yes
-Rinko Kikuchi,18054,Female,1981-01-06,"Hadano, Kanagawa, Japan",Acting,1.5897,both,supporting,no,[2006],
-Daniel Day-Lewis,11856,Male,1957-04-29,"Greenwich, London, England, UK",Acting,1.6151,oscar,leading,yes,"[2007, 2012, 2017]",yes
-Tommy Lee Jones,2176,Male,1946-09-15,"San Saba, Texas, USA",Acting,2.7255,both,both,yes,"[2007, 2012]",
-Viggo Mortensen,110,Male,1958-10-20,"Watertown, New York, USA",Acting,2.793,oscar,leading,yes,"[2007, 2016, 2018]",
-Casey Affleck,1893,Male,1975-08-12,"Falmouth, Massachusetts, USA",Acting,2.3839,oscar,both,yes,"[2007, 2016]",yes
-Javier Bardem,3810,Male,1969-03-01,"Las Palmas de Gran Canaria, Gran Canaria, Canary Islands, Spain",Acting,2.6146,both,both,yes,"[2007, 2010, 2021]",yes
-Hal Holbrook,4563253,Not set,,,Acting,0.0379,oscar,supporting,no,[2007],
-Tom Wilkinson,207,Male,1948-02-05,"Leeds, England, UK",Acting,1.2644,oscar,supporting,no,[2007],
-Julie Christie,2405208,Female,,,Acting,0.4001,oscar,leading,no,[2007],
-Marion Cotillard,8293,Female,1975-09-30,"Paris, France",Acting,2.3703,oscar,leading,yes,"[2007, 2014]",yes
-Elliot Page,27578,Non-binary/Other,1987-02-21,"Halifax, Nova Scotia, Canada",Acting,3.3274,oscar,leading,no,[2007],
-Ruby Dee,15532,Female,1922-10-27,"Cleveland, Ohio, USA",Acting,0.5986,oscar,supporting,no,[2007],
-Saoirse Ronan,36592,Female,1994-04-12,"The Bronx, New York City, New York, USA",Acting,2.4227,oscar,both,yes,"[2007, 2015, 2017, 2019]",
-Amy Ryan,39388,Female,1968-05-03,"Queens, New York City, New York, USA",Acting,1.8519,oscar,supporting,no,[2007],
-Tilda Swinton,3063,Female,1960-11-05,"London, England, UK",Acting,3.7397,oscar,supporting,no,[2007],yes
-Richard Jenkins,28633,Male,1947-05-04,"DeKalb, Illinois, USA",Acting,1.48,oscar,both,yes,"[2008, 2017]",
-Frank Langella,8924,Male,1938-01-01,"Bayonne, New Jersey, USA",Acting,0.829,oscar,leading,no,[2008],
-Sean Penn,2228,Male,1960-08-17,"Santa Monica, California, USA",Acting,3.0963,oscar,leading,no,[2008],yes
-Brad Pitt,287,Male,1963-12-18,"Shawnee, Oklahoma, USA",Acting,5.8135,both,both,yes,"[2008, 2011, 2019]",yes
-Mickey Rourke,2295,Male,1952-09-16,"Schenectady, New York, USA",Acting,4.585,oscar,leading,no,[2008],
-Josh Brolin,16851,Male,1968-02-12,"Santa Monica, Los Angeles, California, USA",Acting,2.8974,both,supporting,no,[2008],
-Robert Downey Jr.,3223,Male,1965-04-04,"New York City, New York, USA",Acting,10.8396,both,supporting,yes,"[2008, 2023]",yes
-Michael Shannon,3555530,Male,,"Paddington, London, England, UK",Acting,0.1005,oscar,supporting,yes,"[2008, 2016]",
-Anne Hathaway,1813,Female,1982-11-12,"Brooklyn, New York City, New York, USA",Acting,8.4794,both,both,yes,"[2008, 2012]",yes
-Angelina Jolie,11701,Female,1975-06-04,"Los Angeles, California, USA ",Acting,12.1333,both,leading,no,[2008],
-Melissa Leo,6832,Female,1960-09-14,"New York City, New York, USA",Acting,0.9503,oscar,both,yes,"[2008, 2010]",yes
-Viola Davis,19492,Female,1965-08-11,"St. Matthews, South Carolina, USA",Acting,3.9926,oscar,both,yes,"[2008, 2011, 2016, 2020]",yes
-Taraji P. Henson,40036,Female,1970-09-11,"Washington, D.C., USA",Acting,4.1905,both,supporting,no,[2008],
-Marisa Tomei,3141,Female,1964-12-04,"Brooklyn, New York City, New York, USA",Acting,2.9988,oscar,supporting,no,[2008],
-Jeff Bridges,1229,Male,1949-12-04,"Los Angeles, California, USA",Acting,2.2267,both,both,yes,"[2009, 2010, 2016]",yes
-Colin Firth,5472,Male,1960-09-10,"Grayshott, Hampshire, England, UK",Acting,3.9676,both,leading,yes,"[2009, 2010]",yes
-Jeremy Renner,17604,Male,1971-01-07,"Modesto, California, USA",Acting,7.2614,both,both,yes,"[2009, 2010]",
-Matt Damon,1892,Male,1970-10-08,"Boston, Massachusetts, USA",Acting,6.8919,both,both,yes,"[2009, 2015]",
-Woody Harrelson,57755,Male,1961-07-23,"Midland, Texas, USA",Acting,2.8588,both,supporting,yes,"[2009, 2017]",
-Christopher Plummer,290,Male,1929-12-13,"Toronto, Ontario, Canada",Acting,1.91,oscar,supporting,yes,"[2009, 2011, 2017]",yes
-Stanley Tucci,2283,Male,1960-11-11,"Peekskill, New York, USA",Acting,2.754,both,supporting,no,[2009],
-Christoph Waltz,27319,Male,1956-10-04,"Vienna, Austria",Acting,3.313,both,supporting,yes,"[2009, 2012]",yes
-Sandra Bullock,18277,Female,1964-07-26,"Arlington County, Virginia, USA",Acting,17.6878,both,leading,yes,"[2009, 2013]",yes
-Carey Mulligan,36662,Female,1985-05-28,"Westminster, London, England, UK",Acting,1.787,oscar,leading,yes,"[2009, 2020, 2023]",
-Gabourey Sidibe,109560,Female,1983-05-06,"New York City, New York, USA",Acting,0.9906,oscar,leading,no,[2009],
-Vera Farmiga,21657,Female,1973-08-06,"Clifton, New Jersey, USA",Acting,3.6605,both,supporting,no,[2009],
-Maggie Gyllenhaal,1579,Female,1977-11-16,"Lower East Side, New York City, New York, USA",Acting,2.128,oscar,supporting,no,[2009],
-Anna Kendrick,84223,Female,1985-08-09,"Portland, Maine, USA",Acting,5.2402,oscar,supporting,no,[2009],
-Mo'Nique,60561,Female,1967-12-11,"Woodlawn, Maryland, USA",Acting,0.8743,oscar,supporting,no,[2009],yes
-Jesse Eisenberg,44735,Male,1983-10-05,"New York City, New York, USA",Acting,2.8564,both,leading,no,[2010],
-James Franco,17051,Male,1978-04-19,"Palo Alto, California, USA",Acting,4.4709,both,leading,no,[2010],
-Christian Bale,3894,Male,1974-01-30,"Haverfordwest, Pembrokeshire, Wales, UK",Acting,2.5616,both,both,yes,"[2010, 2013, 2015, 2018]",yes
-John Hawkes,2923795,Not set,,,Writing,0.0336,oscar,supporting,no,[2010],
-Mark Ruffalo,103,Male,1967-11-22,"Kenosha, Wisconsin, USA",Acting,3.3427,both,supporting,yes,"[2010, 2014, 2015, 2023]",
-Geoffrey Rush,118,Male,1951-07-06,"Toowoomba, Queensland, Australia",Acting,1.8065,both,supporting,no,[2010],
-Nicole Kidman,2227,Female,1967-06-20,"Honolulu, Hawaii, USA",Acting,6.6525,both,both,yes,"[2010, 2016, 2021]",
-Jennifer Lawrence,72129,Female,1990-08-15,"Indian Hills, Kentucky, USA",Acting,6.7526,both,both,yes,"[2010, 2012, 2013, 2015]",yes
-Helena Bonham Carter,1283,Female,1966-05-26,"Golders Green, London, England, UK",Acting,2.9344,both,supporting,no,[2010],
-Hailee Steinfeld,130640,Female,1996-12-11,"Tarzana, Los Angeles, California, USA",Acting,10.9313,both,supporting,no,[2010],
-Jacki Weaver,67837,Female,1947-05-25,"Sydney, New South Wales, Australia",Acting,1.2714,oscar,supporting,yes,"[2010, 2012]",
-Demián Bichir,76961,Male,1963-08-01,"Mexico City, Distrito Federal, Mexico",Acting,0.722,oscar,leading,no,[2011],
-Jean Dujardin,56024,Male,1972-06-19,"Rueil-Malmaison, France",Acting,1.1973,oscar,leading,no,[2011],yes
-Gary Oldman,64,Male,1958-03-21,"London, England, UK",Acting,19.1859,both,leading,yes,"[2011, 2017, 2020]",yes
-Kenneth Branagh,11181,Male,1960-12-10,"Belfast, Northern Ireland, UK",Acting,2.7043,oscar,supporting,no,[2011],
-Jonah Hill,21007,Male,1983-12-20,"Los Angeles, California, USA",Acting,2.1655,both,supporting,yes,"[2011, 2013]",
-Nick Nolte,1733,Male,1941-02-08,"Omaha, Nebraska, USA",Acting,1.9499,oscar,supporting,no,[2011],
-Max von Sydow,2201,Male,1929-04-10,"Lund, Skåne län, Sweden",Acting,1.5136,both,supporting,no,[2011],
-Glenn Close,515,Female,1947-03-19,"Greenwich, Connecticut, USA",Acting,2.1619,oscar,both,yes,"[2011, 2018, 2020]",
-Rooney Mara,108916,Female,1985-04-17,"Bedford, New York, USA",Acting,2.7046,oscar,both,yes,"[2011, 2015]",
-Bérénice Bejo,82923,Female,1976-07-07,"Buenos Aires, Argentina",Acting,0.9447,oscar,supporting,no,[2011],
-Jessica Chastain,83002,Female,1977-03-24,"Southern California, California, USA",Acting,2.7215,both,both,yes,"[2011, 2012, 2021]",yes
-Melissa McCarthy,55536,Female,1970-08-26,"Plainfield, Illinois, USA",Acting,1.2614,both,both,yes,"[2011, 2018]",
-Janet McTeer,47627,Female,1961-08-05,"Newcastle upon Tyne, Tyne and Wear, England, UK",Acting,1.5803,oscar,supporting,no,[2011],
-Octavia Spencer,6944,Female,1970-05-25,"Montgomery, Alabama, USA",Acting,2.1306,oscar,supporting,yes,"[2011, 2016, 2017]",yes
-Bradley Cooper,51329,Male,1975-01-05,"Philadelphia, Pennsylvania, USA",Acting,4.3401,both,both,yes,"[2012, 2013, 2014, 2018, 2023]",
-Hugh Jackman,6968,Male,1968-10-12,"Sydney, New South Wales, Australia",Acting,4.783,both,leading,no,[2012],
-Denzel Washington,5292,Male,1954-12-28,"Mount Vernon, New York, USA",Acting,3.966,both,leading,yes,"[2012, 2016, 2017, 2021]",
-Robert De Niro,380,Male,1943-08-17,"Greenwich Village, New York City, New York, USA",Acting,8.0383,both,supporting,yes,"[2012, 2023]",
-Emmanuelle Riva,267962,Female,1927-02-24,"Cheniménil, Vosges, France",Acting,0.4663,oscar,leading,no,[2012],
-Quvenzhané Wallis,1055235,Female,2003-08-28,"Houma, Louisiana, USA",Acting,0.5547,oscar,leading,no,[2012],
-Naomi Watts,3489,Female,1968-09-28,"Shoreham, Kent, England, UK",Acting,2.3235,both,leading,no,[2012],
-Sally Field,35,Female,1946-11-06,"Pasadena, California, USA",Acting,1.7371,oscar,supporting,no,[2012],
-Helen Hunt,9994,Female,1963-06-15,"Los Angeles, California, USA",Acting,1.9884,oscar,supporting,no,[2012],
-Bruce Dern,6905,Male,1936-06-04,"Chicago, Illinois, USA",Acting,2.0483,oscar,leading,no,[2013],
-Chiwetel Ejiofor,5294,Male,1977-07-10,"Forest Gate, London, England, UK",Acting,2.0299,both,leading,no,[2013],
-Matthew McConaughey,10297,Male,1969-11-04,"Uvalde, Texas, USA",Acting,4.4771,both,leading,no,[2013],yes
-Barkhad Abdirahman,1266859,Male,1994-06-05,"Galkayo, Somalia",Acting,0.1365,oscar,,,,
-Michael Fassbender,17288,Male,1977-04-02,"Heidelberg, Baden-Wurttemburg, Germany",Acting,4.9312,both,both,yes,"[2013, 2015]",
-Jared Leto,7499,Male,1971-12-26,"Bossier City, Louisiana, USA",Acting,4.1181,both,supporting,no,[2013],yes
-Sally Hawkins,39658,Female,1976-04-27,"London, England, UK",Acting,1.287,oscar,both,yes,"[2013, 2017]",
-Lupita Nyong'o,1267329,Female,1983-03-01,"Mexico City, Mexico",Acting,3.6481,both,supporting,no,[2013],yes
-Julia Roberts,1204,Female,1967-10-28,"Smyrna, Georgia, USA",Acting,7.7718,oscar,supporting,no,[2013],
-June Squibb,35515,Female,1929-11-06,"Vandalia, Illinois, USA",Acting,0.67,oscar,supporting,no,[2013],
-Steve Carell,4495,Male,1962-08-16,"Concord, Massachusetts, USA",Acting,3.4239,oscar,leading,no,[2014],
-Benedict Cumberbatch,71580,Male,1976-07-19,"Hammersmith, London, England, UK",Acting,4.4471,both,leading,yes,"[2014, 2021]",
-Michael Keaton,2232,Male,1951-09-05,"Coraopolis, Pennsylvania, USA",Acting,1.9609,both,leading,no,[2014],
-Eddie Redmayne,37632,Male,1982-01-06,"London, England, UK",Acting,3.9223,both,leading,yes,"[2014, 2015]",yes
-Robert Duvall,3087,Male,1931-01-05,"San Diego, California, USA",Acting,2.6072,oscar,supporting,no,[2014],
-Ethan Hawke,569,Male,1970-11-06,"Austin, Texas, USA",Acting,2.3594,oscar,supporting,no,[2014],
-Edward Norton,819,Male,1969-08-18,"Boston, Massachusetts, USA",Acting,3.0548,oscar,supporting,yes,"[2014, 2024]",
-J.K. Simmons,18999,Male,1955-01-09,"Detroit, Michigan, USA",Acting,4.1993,oscar,supporting,yes,"[2014, 2021]",yes
-Felicity Jones,72855,Female,1983-10-17,"Birmingham, West Midlands, England, UK",Acting,4.0016,both,both,yes,"[2014, 2024]",
-Julianne Moore,1231,Female,1960-12-03,"Fayetteville, North Carolina, USA",Acting,2.8005,oscar,leading,no,[2014],yes
-Rosamund Pike,10882,Female,1979-01-27,"Hammersmith, London, England, UK",Acting,6.7421,both,leading,no,[2014],
-Patricia Arquette,4687,Female,1968-04-08,"Chicago, Illinois, USA",Acting,2.0333,oscar,supporting,no,[2014],yes
-Laura Dern,4784,Female,1967-02-10,"Los Angeles, California, USA",Acting,2.0338,both,supporting,yes,"[2014, 2019]",yes
-Emma Stone,54693,Female,1988-11-06,"Scottsdale, Arizona, USA",Acting,4.4364,both,both,yes,"[2014, 2016, 2018, 2023]",yes
-Bryan Cranston,17419,Male,1956-03-07,"Hollywood, Los Angeles, California, USA",Acting,4.519,oscar,leading,no,[2015],
-Tom Hardy,2524,Male,1977-09-15,"Hammersmith, London, England, UK",Acting,11.6924,both,supporting,no,[2015],
-Mark Rylance,40900,Male,1960-01-18,"Ashford, Kent, England, UK",Acting,1.3179,both,supporting,no,[2015],yes
-Sylvester Stallone,16483,Male,1946-07-06,"New York City, New York, USA",Acting,8.0413,oscar,supporting,no,[2015],
-Brie Larson,60073,Female,1989-10-01,"Sacramento, California, USA",Acting,3.3609,both,leading,no,[2015],yes
-Charlotte Rampling,44079,Female,1946-02-05,"England, UK",Acting,1.2229,oscar,leading,no,[2015],
-Jennifer Jason Leigh,10431,Female,1962-02-05,"Hollywood, Los Angeles, California, USA",Acting,2.3318,oscar,supporting,no,[2015],
-Rachel McAdams,53714,Female,1978-11-17,"London, Ontario, Canada",Acting,3.0269,both,supporting,no,[2015],
-Alicia Vikander,227454,Female,1988-10-03,"Gothenburg, Västra Götalands län, Sweden",Acting,5.2202,both,supporting,no,[2015],yes
-Andrew Garfield,37625,Male,1983-08-20,"Los Angeles, California, USA",Acting,8.6686,both,leading,yes,"[2016, 2021]",
-Mahershala Ali,932967,Male,1974-02-16,"Oakland, California, USA",Acting,2.485,oscar,supporting,yes,"[2016, 2018]",yes
-Lucas Hedges,1105079,Male,1996-12-12,"Brooklyn, New York, USA",Acting,1.1083,oscar,supporting,no,[2016],
-Dev Patel,76788,Male,1990-04-23,"Harrow, Greater London, England, UK",Acting,2.1466,both,supporting,no,[2016],
-Isabelle Huppert,17882,Female,1953-03-16,"Parc Montsouris, Paris, France",Acting,1.7267,oscar,leading,no,[2016],
-Ruth Negga,17018,Female,1981-05-04,"Addis Ababa, Ethiopia",Acting,0.9063,oscar,leading,no,[2016],
-Naomie Harris,2038,Female,1976-09-06,"Islington, London, England, UK",Acting,1.5409,oscar,supporting,no,[2016],
-Timothée Chalamet,1190668,Male,1995-12-27,"Manhattan, New York City, New York, USA",Acting,13.8487,both,leading,yes,"[2017, 2024]",
-Daniel Kaluuya,206919,Male,1989-02-24,"London, England, UK",Acting,1.5824,oscar,both,yes,"[2017, 2020]",yes
-Willem Dafoe,5293,Male,1955-07-22,"Appleton, Wisconsin, USA",Acting,3.9864,both,both,yes,"[2017, 2018]",
-Sam Rockwell,6807,Male,1968-11-05,"Daly City, California, USA",Acting,2.3531,oscar,supporting,yes,"[2017, 2018]",yes
-Margot Robbie,234352,Female,1990-07-02,"Dalby, Queensland, Australia",Acting,7.278,both,both,yes,"[2017, 2019]",
-Mary J. Blige,84933,Female,1971-01-11,"Yonkers, New York, USA",Acting,0.904,oscar,supporting,no,[2017],
-Allison Janney,19,Female,1959-11-19,"Boston, Massachusetts, USA",Acting,1.853,oscar,supporting,no,[2017],yes
-Lesley Manville,72305,Female,1956-03-12,"Brighton, England, UK",Acting,1.0947,oscar,supporting,no,[2017],
-Laurie Metcalf,12133,Female,1955-06-16,"Carbondale, Illinois, USA",Acting,1.7564,oscar,supporting,no,[2017],
-Rami Malek,17838,Male,1981-05-12,"Torrance, California, USA",Acting,6.9257,both,leading,no,[2018],yes
-Adam Driver,1023139,Male,1983-11-19,"San Diego, California, USA",Acting,1.912,both,both,yes,"[2018, 2019]",
-Sam Elliott,16431,Male,1944-08-09,"Sacramento, California, USA",Acting,4.4187,both,supporting,no,[2018],
-Richard E. Grant,20766,Male,1957-05-05,"Mbabane, Swaziland [now Eswatini]",Acting,1.487,oscar,supporting,no,[2018],
-Yalitza Aparicio,1775557,Female,1993-12-11,"Heroica Ciudad de Tlaxiaco, Oaxaca, México",Acting,0.5889,oscar,leading,no,[2018],
-Olivia Colman,39187,Female,1974-01-30,"Norwich, Norfolk, England, UK",Acting,2.8046,oscar,both,yes,"[2018, 2020, 2021]",yes
-Lady Gaga,237405,Female,1986-03-28,"New York City, New York, USA",Acting,3.5646,both,leading,no,[2018],
-Marina de Tavira,78883,Female,1974-11-21,"Mexico City, Mexico",Acting,0.2734,oscar,supporting,no,[2018],
-Regina King,9788,Female,1971-01-15,"Los Angeles, California, USA",Acting,1.9507,oscar,supporting,no,[2018],yes
-Antonio Banderas,3131,Male,1960-08-10,"Málaga, Andalusia, Spain",Acting,4.0236,oscar,leading,no,[2019],
-Jonathan Pryce,378,Male,1947-06-01,"Carmel, Flintshire, Wales, UK",Acting,1.8894,both,leading,no,[2019],
-Tom Hanks,31,Male,1956-07-09,"Concord, California, USA",Acting,7.1083,both,supporting,no,[2019],
-Anthony Hopkins,4173,Male,1937-12-31,"Margam, Port Talbot, Glamorgan, Wales, UK",Acting,4.6207,oscar,both,yes,"[2019, 2020]",yes
-Al Pacino,1158,Male,1940-04-25,"New York City, New York, USA",Acting,6.2308,oscar,supporting,no,[2019],
-Joe Pesci,4517,Male,1943-02-09,"Newark, New Jersey, USA ",Acting,1.8087,oscar,supporting,no,[2019],
-Cynthia Erivo,1765068,Female,1987-01-08,"Stockwell, London, England, UK",Acting,2.0499,both,leading,yes,"[2019, 2024]",
-Scarlett Johansson,1245,Female,1984-11-22,"New York City, New York, USA",Acting,18.0898,both,both,yes,[2019],
-Renée Zellweger,9137,Female,1969-04-25,"Katy, Texas, USA",Acting,2.5399,both,leading,no,[2019],yes
-Kathy Bates,8534,Female,1948-06-28,"Memphis, Tennessee, USA",Acting,1.8639,oscar,supporting,no,[2019],
-Florence Pugh,1373737,Female,1996-01-03,"Oxford, Oxfordshire, England UK",Acting,9.3249,both,supporting,no,[2019],
-Riz Ahmed,53240,Male,1982-12-01,"Wembley, London, England, UK",Acting,1.0004,both,leading,no,[2020],
-Chadwick Boseman,172069,Male,1976-11-29,"Anderson, South Carolina, USA",Acting,1.6466,both,leading,no,[2020],
-Steven Yeun,215055,Male,1983-12-21,"Seoul, South Korea",Acting,2.6819,oscar,leading,no,[2020],
-Sacha Baron Cohen,6730,Male,1971-10-13,"Hammersmith, London, England, UK",Acting,1.4556,both,supporting,no,[2020],
-Leslie Odom Jr.,1254614,Male,1981-08-06,"Queens, New York City, New York, USA",Acting,0.8652,oscar,,,,
-Paul Raci,1216195,Male,1948-04-07,"Chicago, Illinois, USA",Acting,0.3599,oscar,supporting,no,[2020],
-LaKeith Stanfield,1200864,Male,1991-08-12,"San Bernardino, California, USA",Acting,2.229,oscar,,,,
-Andra Day,3554076,Not set,,,Acting,0.0631,oscar,leading,no,[2020],
-Vanessa Kirby,556356,Female,1988-04-18,"Wimbledon, London, England, UK",Acting,5.2016,oscar,leading,no,[2020],
-Maria Bakalova,4877640,Female,,,Directing,0.0,oscar,supporting,no,[2020],
-Amanda Seyfried,71070,Female,1985-12-03,"Allentown, Pennsylvania, USA ",Acting,9.3452,both,supporting,no,[2020],
-Youn Yuh-jung,1080935,Female,1947-06-19,"Gaeseong, Gyeonggi, Korea",Acting,1.2314,oscar,,,,
-Ciarán Hinds,8785,Male,1953-02-09,"Belfast, Northern Ireland, UK",Acting,3.1434,oscar,supporting,no,[2021],
-Troy Kotsur,1571661,Male,1968-07-24,"Mesa, Arizona, USA",Acting,0.364,oscar,supporting,no,[2021],yes
-Jesse Plemons,88124,Male,1988-04-02,"Dallas, Texas, USA",Acting,5.7209,oscar,supporting,no,[2021],
-Kodi Smit-McPhee,113505,Male,1996-06-13,"Sydney, New South Wales, Australia",Acting,0.8659,oscar,supporting,no,[2021],
-Kristen Stewart,37917,Female,1990-04-09,"Los Angeles, California, USA",Acting,4.6349,both,leading,no,[2021],
-Jessie Buckley,1498158,Female,1989-12-28,"Killarney, Ireland",Acting,2.0832,oscar,supporting,no,[2021],
-Ariana DeBose,1437491,Female,1991-01-25,"North Carolina, USA",Acting,1.1322,oscar,supporting,no,[2021],yes
-Kirsten Dunst,205,Female,1982-04-30,"Point Pleasant, New Jersey, USA",Acting,3.279,both,supporting,no,[2021],
-Aunjanue Ellis-Taylor,53923,Female,1969-02-21,"San Francisco, California, USA",Acting,1.2596,oscar,,,,
-Austin Butler,86654,Male,1991-08-17,"Anaheim, California, USA",Acting,8.2717,both,leading,no,[2022],
-Colin Farrell,1492649,Male,1938-12-06,"London, England, UK",Acting,0.889,oscar,leading,no,[2022],
-Brendan Fraser,18269,Male,1968-12-03,"Indianapolis, Indiana, USA",Acting,1.7295,both,leading,no,[2022],yes
-Paul Mescal,2326151,Male,1996-02-02,"Maynooth, County Kildare, Republic of Ireland",Acting,2.4936,both,leading,no,[2022],
-Bill Nighy,2440,Male,1949-12-12,"Caterham, Surrey, England, UK",Acting,2.8821,oscar,leading,no,[2022],
-Brendan Gleeson,2039,Male,1955-03-29,"Dublin, Ireland",Acting,2.2798,oscar,supporting,no,[2022],
-Brian Tyree Henry,226366,Male,1982-03-31,"Fayetteville, North Carolina, USA",Acting,1.6498,both,supporting,no,[2022],
-Judd Hirsch,6167,Male,1935-03-15,"New York City, New York, USA",Acting,1.629,oscar,supporting,no,[2022],
-Barry Keoghan,1290466,Male,1992-10-18,"Dublin, Ireland",Acting,2.6934,oscar,supporting,no,[2022],
-Ke Huy Quan,690,Male,1971-08-20,"Saigon, Vietnam [now Ho Chi Minh City]",Acting,1.2452,oscar,supporting,no,[2022],yes
-Ana de Armas,224513,Female,1988-04-30,"Santa Cruz del Norte, Cuba",Acting,17.6673,oscar,leading,no,[2022],
-Andrea Riseborough,127558,Female,1981-11-20,"Whitley Bay, Northumberland, UK",Acting,1.3803,oscar,leading,no,[2022],
-Michelle Yeoh,1620,Female,1962-08-06,"Ipoh, Perak, Malaysia",Acting,3.1886,oscar,leading,no,[2022],yes
-Angela Bassett,9780,Female,1958-08-16,"New York City, New York, USA",Acting,2.5353,oscar,supporting,no,[2022],
-Hong Chau,1360317,Female,1979-06-25,Thailand,Acting,0.8222,oscar,supporting,no,[2022],
-Kerry Condon,62105,Female,1983-01-09,"Tipperary, Ireland",Acting,1.6563,oscar,supporting,no,[2022],
-Jamie Lee Curtis,8944,Female,1958-11-22,"Los Angeles, California, USA",Acting,2.3974,oscar,supporting,no,[2022],yes
-Stephanie Hsu,1381186,Female,1990-11-25,"Torrance, California, USA",Acting,0.9235,oscar,supporting,no,[2022],
-Colman Domingo,91671,Male,1969-11-28,"Philadelphia, Pennsylvania, USA",Acting,1.4803,oscar,leading,yes,"[2023, 2024]",
-Cillian Murphy,2037,Male,1976-05-25,"Douglas, Cork, Ireland",Acting,8.1887,both,leading,no,[2023],yes
-Jeffrey Wright,2954,Male,1965-12-07,"Washington, D.C., USA",Acting,1.8167,both,leading,no,[2023],
-Sterling K. Brown,1225953,Male,1976-04-05,"St. Louis, Missouri, USA",Acting,2.1172,oscar,supporting,no,[2023],
-Lily Gladstone,1183917,Female,1986-08-02,"Kalispell, Montana, USA",Acting,1.0535,oscar,leading,no,[2023],
-Sandra Hüller,7152,Female,1978-04-30,"Suhl, Germany",Acting,0.8353,oscar,leading,no,[2023],
-Emily Blunt,5081,Female,1983-02-23,"Wandsworth, London, England, UK",Acting,5.2042,both,supporting,no,[2023],
-Danielle Brooks,1075037,Female,1989-09-17,"Augusta, Georgia, USA",Acting,3.5688,oscar,supporting,no,[2023],
-America Ferrera,59174,Female,1984-04-18,"Los Angeles, California, USA",Acting,1.5003,both,supporting,no,[2023],
-Jodie Foster,1038,Female,1962-11-19,"Los Angeles, California, USA",Acting,4.5639,both,supporting,no,[2023],
-Da'Vine Joy Randolph,1180099,Female,1986-05-21,"Philadelphia, Pennsylvania, USA",Acting,0.7068,oscar,supporting,no,[2023],yes
-Adrien Brody,3490,Male,1973-04-14,"Woodhaven, Queens, New York City, New York, USA",Acting,3.4795,both,leading,no,[2024],yes
-Ralph Fiennes,5469,Male,1962-12-22,"Ipswich, Suffolk, England, UK",Acting,4.7639,oscar,leading,no,[2024],
-Sebastian Stan,60898,Male,1982-08-13,"Constanta, Romania",Acting,4.8326,both,leading,no,[2024],
-Yura Borisov,1266686,Male,1992-12-08,"Reutov, Moscow oblast, Russia",Acting,1.4647,oscar,supporting,no,[2024],
-Kieran Culkin,18793,Male,1982-09-30,"New York City, New York, USA",Acting,1.4702,oscar,supporting,no,[2024],yes
-Guy Pearce,1377159,Male,1893-12-14,"Cheltenham, Gloucestershire, England, UK",Costume & Make-Up,0.098,oscar,supporting,no,[2024],
-Jeremy Strong,1347327,Not set,,,Acting,0.0434,oscar,supporting,no,[2024],
-Karla Sofía Gascón,1505938,Female,1972-03-31,"Madrid, Spain",Acting,0.8961,oscar,leading,no,[2024],
-Mikey Madison,1640439,Female,1999-03-25,"Los Angeles, California, USA",Acting,7.168,oscar,leading,no,[2024],yes
-Demi Moore,3416,Female,1962-11-11,"Roswell, New Mexico, USA",Acting,3.9238,oscar,leading,no,[2024],
-Fernanda Torres,87335,Female,1965-09-14,"Rio de Janeiro, Rio de Janeiro, Brazil",Acting,0.6296,oscar,leading,no,[2024],
-Monica Barbaro,1525043,Female,1990-06-17,"San Francisco, California, USA",Acting,1.5155,both,supporting,no,[2024],
-Ariana Grande,226001,Female,1993-06-26,"Boca Raton, Florida, USA",Acting,2.4727,both,supporting,no,[2024],
-Isabella Rossellini,6588,Female,1952-06-18,"Rome, Lazio, Italy",Acting,1.6365,oscar,supporting,no,[2024],
-Zoe Saldaña,8691,Female,1978-06-19,"Passaic, New Jersey, USA",Acting,8.3862,both,supporting,no,[2024],yes
-Garrett Hedlund,9828,Male,1984-09-03,"Roseau, Minnesota, USA ",Acting,1.1779,commercial,,,,
-Alan Ritchson,64295,Male,1982-11-28,"Grand Forks, North Dakota, USA",Acting,6.8917,commercial,,,,
-Naomi Scott,240724,Female,1993-05-06,"Hounslow, Greater London, England, UK",Acting,5.1246,commercial,,,,
-Russell Crowe,934,Male,1964-04-07,"Wellington, New Zealand",Acting,5.2753,commercial,,,,
-Zach Galifianakis,58225,Male,1969-10-01,"Wilkesboro, North Carolina, USA",Acting,3.1104,commercial,,,,
-Shah Rukh Khan,35742,Male,1965-11-02,"New Delhi, Delhi, India",Acting,3.5019,commercial,,,,
-Dakota Johnson,118545,Female,1989-10-04,"Austin, Texas, USA",Acting,6.4109,commercial,,,,
-Thandiwe Newton,9030,Female,1972-11-06,"London, England, UK",Acting,2.3988,commercial,,,,
-Emmy Rossum,4730,Female,1986-09-12,"New York City, New York, USA",Acting,4.471,commercial,,,,
-Ed Harris,228,Male,1950-11-28,"Englewood, New Jersey, USA",Acting,2.6168,commercial,,,,
-Luke Evans,114019,Male,1979-04-15,"Pontypool, Wales, UK",Acting,2.9418,commercial,,,,
-Christopher Walken,4690,Male,1943-03-31,"Queens, New York City, New York, USA",Acting,3.7139,commercial,,,,
-Masha Mashkova,568728,Female,1985-04-19,"Novosibirsk, Russia",Acting,0.416,commercial,,,,
-Jason Statham,976,Male,1967-07-26,"Shirebrook, Derbyshire, England, UK",Acting,27.5604,commercial,,,,
-Christo Jivkov,8769,Male,1975-02-18,"Sofia, Bulgaria",Acting,0.5861,commercial,,,,
-Dennis Quaid,6065,Male,1954-04-09,"Houston, Texas, USA",Acting,3.1266,commercial,,,,
-Jeremy Howard,3637136,Not set,,,Acting,0.0071,commercial,,,,
-Carrie Fisher,4,Female,1956-10-21,"Beverly Hills, Los Angeles, California, USA",Acting,1.5892,commercial,,,,
-Mila Kunis,18973,Female,1983-08-14,"Chernovtsy, Ukrainian SSR, USSR [now Chernivtsi, Ukraine]",Acting,11.2029,commercial,,,,
-Taylor Lautner,84214,Male,1992-02-11,"Grand Rapids, Michigan, USA ",Acting,2.5102,commercial,,,,
-Kristen Wiig,41091,Female,1973-08-22,"Canandaigua, New York, USA",Acting,1.7652,commercial,,,,
-Harry Collett,1789952,Male,2004-01-17,"Havering, London, UK",Acting,0.6093,commercial,,,,
-Yang Enyou,2956442,Female,2013-10-16,"Chengdu, Sichuan Province, China",Acting,0.4045,commercial,,,,
-Samuel L. Jackson,2231,Male,1948-12-21,"Washington, D.C., USA",Acting,6.9129,commercial,,,,
-Kim Cattrall,2109,Female,1956-08-21,"Mossley Hill, Liverpool, England, UK",Acting,2.0018,commercial,,,,
-Arnold Schwarzenegger,1100,Male,1947-07-30,"Thal, Styria, Austria",Acting,3.6163,commercial,,,,
-Owen Wilson,887,Male,1968-11-18,"Dallas, Texas, USA",Acting,2.7649,commercial,,,,
-Jack Black,70851,Male,1969-08-28,"Santa Monica, California, USA",Acting,13.03,commercial,,,,
-Irrfan Khan,76793,Male,1967-01-07,"Jaipur, Rajasthan, India",Acting,1.5851,commercial,,,,
-Christopher Carley,74308,Male,1978-05-31,"Suffern, New York, USA",Acting,0.3852,commercial,,,,
-Keegan-Michael Key,298410,Male,1971-03-22,"Southfield, Michigan, USA",Acting,1.8407,commercial,,,,
-Patrick Stewart,2387,Male,1940-07-13,"Mirfield, West Yorkshire, England, UK",Acting,2.4468,commercial,,,,
-Zhang Yifan,2440968,Female,2000-02-10,,Acting,0.3678,commercial,,,,
-Wu Jing,3319642,Not set,,,Acting,0.0,commercial,,,,
-David Cross,127442,Male,1933-02-10,"New Jersey, USA",Acting,0.1103,commercial,,,,
-Jason Clarke,76512,Male,1969-07-17,"Winton, Queensland, Australia",Acting,1.6105,commercial,,,,
-Lily James,1016168,Female,1989-04-05,"Esher, Surrey, England, UK",Acting,3.673,commercial,,,,
-Gao Yalin,576500,Male,1972-06-29,"Zibo,Shandong,China",Acting,0.2342,commercial,,,,
-Henry Cavill,73968,Male,1983-05-05,"St. Helier, Jersey, Channel Islands",Acting,15.6124,commercial,,,,
-Liam Neeson,3896,Male,1952-06-07,"Ballymena, County Antrim, Northern Ireland, UK",Acting,6.939,commercial,,,,
-Lil Rel Howery,1488961,Male,1979-12-17,"Chicago, Illinois, USA",Acting,1.0058,commercial,,,,
-John David Washington,1117313,Male,1984-07-28,"Los Angeles, California, USA",Acting,1.5004,commercial,,,,
-Liev Schreiber,23626,Male,1967-10-04,"San Francisco, California, USA",Acting,2.6609,commercial,,,,
-Zendaya,505710,Female,1996-09-01,"Oakland, California, USA",Acting,9.499,commercial,,,,
-Neil Patrick Harris,41686,Male,1973-06-15,"Albuquerque, New Mexico, USA",Acting,2.5486,commercial,,,,
-Alan Tudyk,21088,Male,1971-03-16,"El Paso, Texas, USA",Acting,1.9808,commercial,,,,
-Halle Bailey,1735828,Female,2000-03-27,"Atlanta, Georgia, USA",Acting,1.1238,commercial,,,,
-Aldis Hodge,83860,Male,1986-09-20,"Onslow County, North Carolina, USA",Acting,1.4479,commercial,,,,
-Jackson Yee,2223265,Male,2000-11-28,"Huaihua, Hunan, China",Acting,2.7265,commercial,,,,
-Ryan Reynolds,10859,Male,1976-10-23,"Vancouver, British Columbia, Canada",Acting,7.0533,commercial,,,,
-Daisy Edgar-Jones,2230991,Female,1998-05-24,"Islington, London, England, UK",Acting,1.8908,commercial,,,,
-Kevin Hart,55638,Male,1979-07-06,"Philadelphia, Pennsylvania, USA",Acting,6.6975,commercial,,,,
-Amber Heard,55085,Female,1986-04-22,"Austin, Texas, USA",Acting,4.993,commercial,,,,
-Suraj Sharma,933160,Male,1993-03-21,"New Delhi, India",Acting,0.754,commercial,,,,
-Kate Bosworth,7517,Female,1983-01-02,"Los Angeles, California, USA",Acting,1.3691,commercial,,,,
-Winona Ryder,1920,Female,1971-10-29,"Winona, Minnesota, USA",Acting,3.7253,commercial,,,,
-Michael Moore,2297434,Male,,,Acting,0.0404,commercial,,,,
-Tao Okamoto,1156024,Female,1985-05-22,"Chiba, Japan",Acting,0.7495,commercial,,,,
-Daniel Craig,8784,Male,1968-03-02,"Chester, Cheshire, England, UK",Acting,3.8584,commercial,,,,
-Cameron Diaz,6941,Female,1972-08-30,"San Diego, California, USA",Acting,2.5182,commercial,,,,
-Liu Haocun,2682877,Female,2000-05-20,"Changchun,Jilin Province,China",Acting,1.6375,commercial,,,,
-Justin Long,15033,Male,1978-06-02,"Fairfield, Connecticut, USA",Acting,1.6185,commercial,,,,
-Millicent Simmonds,1815539,Female,2003-03-06,"Utah, USA",Acting,0.3271,commercial,,,,
-Colin Woodell,1660946,Male,1991-12-21,"San Francisco, California, USA",Acting,1.4109,commercial,,,,
-Elizabeth Olsen,550843,Female,1989-02-16,"Sherman Oaks, California, USA",Acting,8.0759,commercial,,,,
-Jordana Brewster,22123,Female,1980-04-26,"Panama City, Panama",Acting,1.6285,commercial,,,,
-Harrison Ford,3,Male,1942-07-13,"Chicago, Illinois, USA",Acting,4.4896,commercial,,,,
-Jim Carrey,206,Male,1962-01-17,"Newmarket, Ontario, Canada",Acting,4.7709,commercial,,,,
-Chris Tucker,66,Male,1971-08-31,"Atlanta, Georgia, USA",Acting,2.4425,commercial,,,,
-Daniel Radcliffe,10980,Male,1989-07-23,"Hammersmith, London, England, UK",Acting,7.5227,commercial,,,,
-Toby Kebbell,20286,Male,1982-07-09,"Pontefract, England, UK",Acting,1.5899,commercial,,,,
-Rosa Salazar,973667,Female,1985-07-16,"Washington, D.C., USA",Acting,1.7694,commercial,,,,
-Deng Chao,99689,Male,1979-02-08,"Nanchang, Jiangxi, China",Acting,0.6774,commercial,,,,
-Gemma Chan,97576,Female,1982-11-29,"London, England, UK",Acting,1.6027,commercial,,,,
-Dominique Henry,1939095,Not set,,,Directing,0.0922,commercial,,,,
-Olivia DeJonge,1385063,Female,1998-04-30,"	Melbourne, Australia",Acting,0.4151,commercial,,,,
-Sophia Lillis,1481238,Female,2002-02-13,"Crown Heights, Brooklyn, New York City, New York, USA",Acting,2.0424,commercial,,,,
-Yin Zheng,1519030,Male,1986-12-30,"Baotou, Neimenggu, China",Acting,0.6019,commercial,,,,
-Dustin Hoffman,4483,Male,1937-08-08,"Los Angeles, California, USA",Acting,2.0679,commercial,,,,
-Patrick Dempsey,18352,Male,1966-01-13,"Lewiston, Maine, USA",Acting,1.8374,commercial,,,,
-Jackie Chan,18897,Male,1954-04-07,"Victoria Peak, Hong Kong",Acting,14.7791,commercial,,,,
-Tenoch Huerta Mejía,87265,Male,1981-01-29,"Ecatepec, State of Mexico, Mexico",Acting,1.041,commercial,,,,
-Frank Grillo,81685,Male,1965-06-08,"New York City, New York, USA",Acting,3.1924,commercial,,,,
-Skandar Keynes,5527,Male,1991-09-05,"Camden, London, England, UK",Acting,1.621,commercial,,,,
-Tye Sheridan,1034681,Male,1996-11-11,"Elkhart, Texas, USA",Acting,1.456,commercial,,,,
-Nicholas Tse Ting-Fung,70106,Male,1980-08-29,"Hong Kong, China",Acting,1.1644,commercial,,,,
-Dylan O'Brien,527393,Male,1991-08-26,"New York City, New York, USA",Acting,4.3815,commercial,,,,
-Chris Pratt,73457,Male,1979-06-21,"Virginia, Minnesota, USA",Acting,3.6814,commercial,,,,
-Yahya Abdul-Mateen II,1639847,Male,1986-07-15,"New Orleans, Louisiana, USA",Acting,0.8118,commercial,,,,
-Dafne Keen,1464650,Female,2005-01-04,"Fuenlabrada, Madrid, Spain",Acting,1.5912,commercial,,,,
-Ben Mendelsohn,77335,Male,1969-04-03,"Melbourne, Victoria, Australia",Acting,2.3071,commercial,,,,
-James Hetfield,57637,Male,1963-08-03,"Downey, California, USA",Acting,0.4375,commercial,,,,
-Taapsee Pannu,550167,Female,1987-08-01,"Delhi, India",Acting,0.7667,commercial,,,,
-Kathryn Newton,221192,Female,1997-02-08,"Orlando, Florida, USA",Acting,2.5729,commercial,,,,
-Bill Hader,19278,Male,1978-06-07,"Tulsa, Oklahoma, USA",Acting,2.1193,commercial,,,,
-Kevin Spacey,1979,Male,1959-07-26,"South Orange, New Jersey, USA",Acting,1.6956,commercial,,,,
-Adam Sandler,19292,Male,1966-09-09,"Brooklyn, New York, USA",Acting,5.5862,commercial,,,,
-Dave Bautista,543530,Male,1969-01-18,"Washington, D.C., USA",Acting,3.5323,commercial,,,,
-Leonard Nimoy,1749,Male,1931-03-26,"Boston, Massachusetts, USA",Acting,1.2097,commercial,,,,
-Patrick Wilson,17178,Male,1973-07-03,"Norfolk, Virginia, USA",Acting,2.8872,commercial,,,,
-John Goodman,1230,Male,1952-06-20,"Saint Louis, Missouri, USA",Acting,4.072,commercial,,,,
-Vin Diesel,12835,Male,1967-07-18,"Alameda County, California, USA",Acting,13.9632,commercial,,,,
-Emma Watson,10990,Female,1990-04-15,"Paris, France",Acting,20.8756,commercial,,,,
-Olivia Wilde,59315,Female,1984-03-10,"New York City, New York, USA",Acting,3.0315,commercial,,,,
-Kevin Durand,79072,Male,1974-01-14,"Thunder Bay, Ontario, Canada",Acting,2.176,commercial,,,,
-Jaden Smith,120724,Male,1998-07-08,"Los Angeles, California, USA",Acting,2.8641,commercial,,,,
-Kitty Zhang Yuqi,74947,Female,1986-08-08,"Dezhou, Shandong, China",Acting,1.0341,commercial,,,,
-Vincent Cassel,1925,Male,1966-11-23,"Paris, France",Acting,4.2079,commercial,,,,
-Bee Vang,74309,Male,1991-11-04,"Fresno, California, USA",Acting,0.1907,commercial,,,,
-Léa Seydoux,121529,Female,1985-07-01,"Passy, Paris, France",Acting,2.5351,commercial,,,,
-Jason Momoa,117642,Male,1979-08-01,"Honolulu, Hawaii, USA",Acting,18.0404,commercial,,,,
-Juno Temple,36594,Female,1989-07-21,"Hammersmith, London, England, UK",Acting,2.1452,commercial,,,,
-Maria Bello,49,Female,1967-04-18,"Norristown, Pennsylvania, USA",Acting,2.637,commercial,,,,
-Hugh Grant,3291,Male,1960-09-09,"London, England, UK",Acting,2.1763,commercial,,,,
-Alec Baldwin,7447,Male,1958-04-03,"Amityville, New York, USA",Acting,2.8997,commercial,,,,
-Sophia Ali,1163789,Female,1995-11-07,"San Diego, California, USA",Acting,0.9966,commercial,,,,
-Sean Laughton,2826940,Not set,,,Acting,0.0867,commercial,,,,
-Rosie Perez,4810,Female,1964-09-06,"Bushwick, Brooklyn, New York City, New York, USA",Acting,1.3008,commercial,,,,
-Cliff Curtis,7248,Male,1968-07-27,"Rotorua, North Island, New Zealand",Acting,2.0875,commercial,,,,
-Karen Allen,650,Female,1951-10-05,"Carrollton, Illinois, USA",Acting,1.455,commercial,,,,
-Pierce Brosnan,517,Male,1953-05-16,"Navan, County Meath, Ireland",Acting,3.408,commercial,,,,
-Robert Pattinson,11288,Male,1986-05-13,"Barnes, London, England, UK",Acting,9.1115,commercial,,,,
-Satoshi Tsumabuki,80108,Male,1980-12-13,"Yanagawa, Fukuoka, Japan",Acting,1.4367,commercial,,,,
-Xiao Yang,4353641,Not set,,,Visual Effects,0.0261,commercial,,,,
-Bill Murray,1532,Male,1950-09-21,"Wilmette, Illinois, USA",Acting,2.7956,commercial,,,,
-Ken Watanabe,1357546,Male,,"Koide, Niigata, Japan",Acting,0.0474,commercial,,,,
-Justin Chatwin,503,Male,1982-10-31,"Nanaimo, British Columbia, Canada",Acting,1.7646,commercial,,,,
-Allen Ai Lun,3894986,Not set,,,Acting,0.0,commercial,,,,
-Camilla Belle,38670,Female,1986-10-02,"Los Angeles, California, USA",Acting,1.3185,commercial,,,,
-Eva Mendes,8170,Female,1974-03-05,"Miami, Florida, USA",Acting,2.4172,commercial,,,,
-Ewan McGregor,3061,Male,1971-03-31,"Perth, Scotland, UK",Acting,3.235,commercial,,,,
-Amanda Peet,2956,Female,1972-01-11,"New York City, New York, USA",Acting,3.3286,commercial,,,,
-Georgie Henley,5526,Female,1995-07-09,"Ilkley, West Yorkshire, England, UK",Acting,0.8393,commercial,,,,
-Rainn Wilson,11678,Male,1966-01-20,"Seattle, Washington, USA",Acting,1.7838,commercial,,,,
-Gemma Arterton,59620,Female,1986-02-02,"Gravesend, Kent, England, UK",Acting,3.189,commercial,,,,
-Elisabeth Moss,32798,Female,1982-07-24,"Los Angeles, California, USA",Acting,2.8214,commercial,,,,
-Bo-Han Huang,3098081,Not set,,,Acting,0.0143,commercial,,,,
-Letitia Wright,1083010,Female,1993-10-31,"Georgetown, Guyana",Acting,1.3265,commercial,,,,
-Gerard Butler,17276,Male,1969-11-13,"Paisley, Scotland, UK",Acting,11.5649,commercial,,,,
-Aaron Taylor-Johnson,27428,Male,1990-06-13,"High Wycombe, Buckinghamshire, England, UK",Acting,3.7815,commercial,,,,
-Katherine Waterston,77795,Female,1980-03-03,"London, England, UK",Acting,1.7218,commercial,,,,
-Kevin James,1354419,Not set,,,Acting,0.045,commercial,,,,
-Sarah Jessica Parker,520,Female,1965-03-25,"Nelsonville, Ohio, USA",Acting,2.2474,commercial,,,,
-Vanessa Hudgens,67599,Female,1988-12-14,"Salinas, California, USA",Acting,1.9722,commercial,,,,
-Alexander Skarsgård,28846,Male,1976-08-25,"Stockholm, Sweden",Acting,4.5794,commercial,,,,
-Celina Jade,1224028,Female,1985-06-10,Hongkong，China,Acting,0.6071,commercial,,,,
-Jamie Dornan,1254583,Male,1982-05-01,"Belfast, Northern Ireland, UK",Acting,2.5815,commercial,,,,
-Awkwafina,1625558,Female,1988-06-02,"Stony Brook, Brookhaven, New York, USA",Acting,4.6277,commercial,,,,
-Noomi Rapace,87722,Female,1979-12-28,"Hudiksvall, Gävleborgs län, Sweden ",Acting,2.2321,commercial,,,,
-Nicolas Cage,2963,Male,1964-01-07,"Long Beach, California, USA",Acting,6.4799,commercial,,,,
-Tobey Maguire,2219,Male,1975-06-27,"Santa Monica, California, USA",Acting,5.5765,commercial,,,,
-Evangeline Lilly,19034,Female,1979-08-03,"Fort Saskatchewan, Alberta, Canada",Acting,3.7937,commercial,,,,
-Aaron Eckhart,6383,Male,1968-03-12,"Cupertino, California, USA",Acting,2.1485,commercial,,,,
-Mark Strong,1421138,Male,1884-01-21,"Chico, California, USA",Acting,0.1038,commercial,,,,
-Oscar Isaac,25072,Male,1979-03-09,"Guatemala City, Guatemala",Acting,7.7047,commercial,,,,
-Lei Jiayin,1724403,Male,1983-08-29,"Anshan, Liaoning, China",Acting,0.5178,commercial,,,,
-Dominique Fishback,1676520,Female,1991-03-22,"Brooklyn, New York City, New York, U.S.",Acting,0.6072,commercial,,,,
-Ayelet Zurer,8786,Female,1969-06-28,"Tel Aviv, Israel",Acting,1.2915,commercial,,,,
-Rhys Ifans,7026,Male,1967-07-22,"Haverfordwest, Pembrokeshire, Wales, UK",Acting,1.6598,commercial,,,,
-Paul Walker,8167,Male,1973-09-12,"Glendale, California, USA",Acting,3.5347,commercial,,,,
-Ben Schwartz,222121,Male,1981-09-15,"New York City, New York, USA",Acting,2.8592,commercial,,,,
-Wang Baoqiang,4581370,Not set,,,Acting,0.0,commercial,,,,
-Shuya Sophia Cai,1704579,Female,2008-04-22,"Beijing, China",Acting,3.5558,commercial,,,,
-Chang Yuan,4316887,Female,1974-05-06,"中国,内蒙古",Acting,0.0261,commercial,,,,
-Jing Boran,1094210,Male,1989-04-19,"Shenyang, Liaoning Province, China",Acting,0.8133,commercial,,,,
-Olga Kurylenko,18182,Female,1979-11-14,"Berdiansk, Ukrainian SSR, USSR [now Zaporizhzhia Oblast, Ukraine]",Acting,3.0797,commercial,,,,
-Juliette Binoche,1137,Female,1964-03-09,"Paris, France",Acting,1.5889,commercial,,,,
-Zazie Beetz,1545693,Female,1991-06-01,"Mitte, Berlin, Germany",Acting,1.9509,commercial,,,,
-Diane Kruger,9824,Female,1976-07-15,"Algermissen, Lower Saxony, Germany",Acting,2.8007,commercial,,,,
-Jack Nicholson,514,Male,1937-04-22,"Manhattan, New York, USA",Acting,3.0567,commercial,,,,
-Harris Dickinson,1716493,Male,1996-06-24,"London, England, UK",Acting,3.0414,commercial,,,,
-Audrey Tautou,2405,Female,1976-08-09,"Beaumont, Puy-de-Dôme, France",Acting,2.204,commercial,,,,
-Hai Qing,3848628,Not set,,,Acting,0.0,commercial,,,,
-Yi Shan,1828467,Not set,,,Visual Effects,0.0456,commercial,,,,
-William Moseley,5528,Male,1987-04-27,"Sheepscombe, Gloucestershire, England, UK",Acting,1.2473,commercial,,,,
-Lang Qin,2566285,Male,,,Writing,0.0071,commercial,,,,
-Bruce Willis,62,Male,1955-03-19,"Idar-Oberstein, West Germany [now Germany]",Acting,3.2372,commercial,,,,
-Vince Vaughn,4937,Male,1970-03-28,"Minneapolis, Minnesota, USA",Acting,2.3985,commercial,,,,
-Bryce Dallas Howard,18997,Female,1981-03-02,"Los Angeles, California, USA",Acting,2.9384,commercial,,,,
-Pang-Ni Landrum,1225347,Not set,,,Writing,0.1126,commercial,,,,
-Chris Hemsworth,74568,Male,1983-08-11,"Melbourne, Victoria, Australia",Acting,14.2958,commercial,,,,
-Jia Ling,1582107,Female,,,Acting,0.1604,commercial,,,,
-Hayden Christensen,17244,Male,1981-04-19,"Vancouver, British Columbia, Canada",Acting,6.0319,commercial,,,,
-François Cluzet,33161,Male,1955-09-21,"Paris, France",Acting,0.9074,commercial,,,,
-Emma Corrin,2324569,Non-binary/Other,1995-12-13,"Royal Tunbridge Wells, Kent, England, UK",Acting,3.2649,commercial,,,,
-Lena Headey,17286,Female,1973-10-03,"Hamilton, Bermuda",Acting,4.0005,commercial,,,,
-Abdul Henderson,122287,Not set,,,Acting,0.0674,commercial,,,,
-Anthony Ramos,1560244,Male,1991-11-01,"New York City, New York, USA",Acting,1.6145,commercial,,,,
-Simon Pegg,11108,Male,1970-02-14,"Brockworth, Gloucestershire, England, UK",Acting,1.7848,commercial,,,,
-Tika Sumpter,110742,Female,1980-06-20,"Queens, New York City, New York, USA",Acting,1.6263,commercial,,,,
-Chris Evans,16828,Male,1981-06-13,"Boston, Massachusetts, USA",Acting,6.9589,commercial,,,,
-Mark Ryan,19541,Male,1956-06-07,"Doncaster, Yorkshire, England, UK",Acting,0.3721,commercial,,,,
-Laura Haddock,209578,Female,1985-08-21,"Enfield, London, England, UK",Acting,2.0495,commercial,,,,
-Jack Dylan Grazer,1774679,Male,2003-09-03,"Los Angeles, California, USA",Acting,1.9719,commercial,,,,
-Bai Baihe,588057,Female,1984-03-01,Qingdao，Shandong Province，China,Acting,0.777,commercial,,,,
-Freida Pinto,76792,Female,1984-10-18,"Bombay, Maharashtra, India",Acting,1.1724,commercial,,,,
-Kyle Gallner,59219,Male,1986-10-22,"West Chester, Pennsylvania, USA",Acting,1.7037,commercial,,,,
-Jason Bateman,23532,Male,1969-01-14,"Rye, New York, USA",Acting,2.8282,commercial,,,,
-Viktoriya Miroshnichenko,2299889,Female,1994-05-17,"Irkutsk, Russia",Acting,0.0941,commercial,,,,
-Jennifer Ehle,49971,Female,1969-12-29,"Winston-Salem, North Carolina, USA",Acting,2.4704,commercial,,,,
-You Ge,3431700,Not set,,,Acting,0.0777,commercial,,,,
-Maia Morgenstern,8768,Female,1962-05-01,"Bucharest, Romania",Acting,2.9905,commercial,,,,
-Madhur Mittal,964549,Male,1987-01-01,"Agra, Uttar Pradesh, India",Acting,0.4788,commercial,,,,
-Gwilym Lee,1220123,Male,1983-11-24,"Bristol, England, UK",Acting,0.8587,commercial,,,,
-Gal Gadot,90633,Female,1985-04-30,"Petah Tikva, Israel",Acting,11.6889,commercial,,,,
-Huang Zhizhong,1338063,Male,1969-03-05,"Tianjin, China",Acting,0.4259,commercial,,,,
-Jeremy Irons,16940,Male,1948-09-19,"Cowes, Isle of Wight, England, UK",Acting,2.5486,commercial,,,,
-Kristin Davis,2045355,Female,,,Camera,0.0214,commercial,,,,
-Li Jiuxiao,1724347,Male,1990-05-20,China,Acting,0.1749,commercial,,,,
-Jason Lee,1318681,Not set,,,Acting,0.0286,commercial,,,,
-Gwyneth Paltrow,12052,Female,1972-09-27,"Los Angeles, California, USA",Acting,1.7801,commercial,,,,
-Dominic West,17287,Male,1969-10-15,"Sheffield, Yorkshire, England, UK",Acting,1.5846,commercial,,,,
-Josh Hutcherson,27972,Male,1992-10-12,"Union, Kentucky, USA",Acting,5.1961,commercial,,,,
-Dan Fogler,58873,Male,1976-10-20,"Brooklyn, New York City, New York, USA",Acting,1.2508,commercial,,,,
-Ed Speleers,25438,Male,1988-04-07,"Chichester, West Sussex, England",Acting,0.8648,commercial,,,,
-Rafe Spall,28847,Male,1983-03-10,"East Dulwich, London, England, UK",Acting,0.9775,commercial,,,,
-Li Bingbing,109432,Female,1973-02-27,"Wuchang, Heilongjiang, China",Acting,1.526,commercial,,,,
-John Legend,113461,Male,1978-12-28,"Springfield, Ohio, USA",Acting,0.9793,commercial,,,,
-Ed Helms,27105,Male,1974-01-24,"Atlanta, Georgia, USA",Acting,1.6816,commercial,,,,
-Karin Konoval,58395,Female,1961-06-04,"Baltimore, Maryland, USA",Acting,0.5744,commercial,,,,
-Brandon Routh,17271,Male,1979-10-09,"Des Moines, Iowa, USA",Acting,1.331,commercial,,,,
-Morena Baccarin,54882,Female,1979-06-02,"Rio de Janeiro, Rio de Janeiro, Brazil",Acting,4.9898,commercial,,,,
-Cameron Richardson,49914,Female,1979-09-11,"Baton Rouge, Louisiana, USA",Acting,1.02,commercial,,,,
-Au Wei Xiang Xavier,4160704,Not set,,,Acting,0.0071,commercial,,,,
-Ben Whishaw,17064,Male,1980-10-14,"Clifton, Bedfordshire, England, UK",Acting,3.0401,commercial,,,,
-Michael Douglas,3392,Male,1944-09-25,"New Brunswick, New Jersey, USA",Acting,2.7085,commercial,,,,
-Taron Egerton,1303037,Male,1989-11-10,"Birkenhead, Merseyside, England, UK",Acting,3.3944,commercial,,,,
-Ioan Gruffudd,65524,Male,1973-10-06,"Llwydcoed, Aberdare, Glamorgan, Wales, UK",Acting,1.428,commercial,,,,
-Haoran Liu,3561528,Not set,,,Acting,0.0261,commercial,,,,
-Diego Luna,8688,Male,1979-12-29,"Toluca, State of Mexico, Mexico",Acting,2.377,commercial,,,,
-John Hannah,10727,Male,1962-04-23,"East Kilbride, Scotland, UK",Acting,1.5391,commercial,,,,
-Mia Wasikowska,76070,Female,1989-10-25,"Canberra, Australian Capital Territory, Australia",Acting,1.6163,commercial,,,,
-Rebecca Ferguson,933238,Female,1983-10-19,"Stockholm, Sweden",Acting,5.7842,commercial,,,,
-Connie Nielsen,935,Female,1965-07-03,"Elling, Frederikshavn, Denmark",Acting,2.7828,commercial,,,,
-Nicholas Hoult,3292,Male,1989-12-07,"Wokingham, England, UK",Acting,3.6759,commercial,,,,
-Andy Serkis,1333,Male,1964-04-20,"Ruislip, Middlesex, England, UK",Acting,3.1564,commercial,,,,
-Zhang Benyu,1759993,Male,1985-01-18,"中国,内蒙古,呼和浩特",Acting,0.2106,commercial,,,,
-Ben Affleck,880,Male,1972-08-15,"Berkeley, California, USA",Acting,4.7076,commercial,,,,
-Elizabeth Debicki,1133349,Female,1990-08-24,"Paris, France",Acting,1.6708,commercial,,,,
-Michelle Rodriguez,17647,Female,1978-07-12,"Bexar County, Texas, USA",Acting,3.982,commercial,,,,
-Zhang Xiaofei,1993057,Female,1986-01-10,"Anshan, Liaoning, China",Acting,0.4319,commercial,,,,
-Paula Patton,52851,Female,1975-12-05,"Los Angeles, California, USA",Acting,1.8476,commercial,,,,
-Rupert Grint,10989,Male,1988-08-24,"Harlow, Essex, England, UK",Acting,1.8527,commercial,,,,
-Shia LaBeouf,10959,Male,1986-06-11,"Los Angeles, California, USA",Acting,3.6226,commercial,,,,
-Jude Law,9642,Male,1972-12-29,"Lewisham, London, England, UK",Acting,2.756,commercial,,,,
-Zhu Yilong,1743471,Male,1988-04-16,"Wuhan, Hubei Province, China",Acting,0.8682,commercial,,,,
-Ben Foster,11107,Male,1980-10-29,"Boston, Massachusetts, USA",Acting,1.4413,commercial,,,,
-Dean-Charles Chapman,1332971,Male,1997-09-07,"Romford, Essex, England, UK",Acting,0.7278,commercial,,,,
-Luenell,6735,Female,1959-03-12,"Tollette, Arkansas, USA",Acting,0.4863,commercial,,,,
-Timothy Olyphant,18082,Male,1968-05-20,"Honolulu, Hawaii, USA",Acting,1.892,commercial,,,,
-Joey Lauren Adams,16484,Female,1968-01-09,"Little Rock, Arkansas, USA",Acting,0.5773,commercial,,,,
-Mark Hamill,2,Male,1951-09-25,"Oakland, California, USA",Acting,2.4256,commercial,,,,
-Wang Ge,3356357,Male,,,Acting,0.0338,commercial,,,,
-Teng Shen,1519026,Male,1979-10-23,"Qiqihar, Heilongjiang, China",Acting,0.8891,commercial,,,,
-Duan Yihong,126736,Male,1973-05-16,"Yili, Xinjiang, China",Acting,0.7674,commercial,,,,
-Dwayne Johnson,18918,Male,1972-05-02,"Hayward, California, USA",Acting,5.9062,commercial,,,,
-Olivia Cooke,1173984,Female,1993-12-27,"Oldham, Greater Manchester, England, UK",Acting,2.2683,commercial,,,,
-Kirk Hammett,69231,Male,1962-11-18,"San Francisco, California, USA",Acting,0.3744,commercial,,,,
-Dick Van Dyke,61303,Male,1925-12-13,"West Plains, Missouri, USA",Acting,2.7694,commercial,,,,
-Lyna,3727172,Not set,,,Acting,0.0,commercial,,,,
-Omar Sy,78423,Male,1978-01-20,"Trappes, Yvelines, France",Acting,2.6312,commercial,,,,
-Kaylee Hottle,2948491,Female,2008-05-01,"Atlanta, Georgia, USA",Acting,0.8857,commercial,,,,
-Dakota Fanning,501,Female,1994-02-23,"Conyers, Georgia, USA",Acting,3.8888,commercial,,,,
-Édgar Ramírez,4091412,Male,,,Directing,0.0362,commercial,,,,
-John Krasinski,17697,Male,1979-10-20,"Boston, Massachusetts, USA",Acting,2.7323,commercial,,,,
-Choi Min-sik,64880,Male,1962-01-22,"Seoul, South Korea",Acting,1.0249,commercial,,,,
-Pedro Pascal,1253360,Male,1975-04-02,"Santiago, Chile",Acting,17.5666,commercial,,,,
-Peter Sarsgaard,133,Male,1971-03-07,"Belleville, Illinois, USA",Acting,1.2634,commercial,,,,
-Johnny Huang,2558012,Not set,,,Acting,0.0193,commercial,,,,
-Jim Caviezel,8767,Male,1968-09-26,"Mount Vernon, Washington, USA",Acting,8.8757,commercial,,,,
-Keanu Reeves,6384,Male,1964-09-02,"Beirut, Lebanon",Acting,18.5733,commercial,,,,
-Ed Skrein,1047649,Male,1983-03-29,"Camden, London, England",Acting,2.1386,commercial,,,,
-Ma Li,2300712,Female,1996-01-24,"Sanming, Fujian Province, China",Acting,0.2885,commercial,,,,
-Jada Pinkett Smith,9575,Female,1971-09-18,"Baltimore, Maryland, USA",Acting,3.2521,commercial,,,,
-Tony Leung,2465958,Not set,,,Acting,0.0071,commercial,,,,
-Elle Fanning,18050,Female,1998-04-09,"Conyers, Georgia, USA",Acting,6.1998,commercial,,,,
-Donnie Yen,1341,Male,1963-07-27,"Guangzhou, Guangdong province, China",Acting,3.1343,commercial,,,,
-Jaeden Martell,1274508,Male,2003-01-04,"Philadelphia, Pennsylvania, USA",Acting,2.1416,commercial,,,,
-Jai Courtney,224181,Male,1986-03-15,"Cherrybrook, Sydney, Australia",Acting,1.5649,commercial,,,,
-Tom Holland,1136406,Male,1996-06-01,"Surrey, England, UK",Acting,9.0085,commercial,,,,
-Jeff Goldblum,4785,Male,1952-10-22,"Pittsburgh, Pennsylvania, USA",Acting,3.8151,commercial,,,,
-Jessica Alba,56731,Female,1981-04-28,"Pomona, California, USA",Acting,4.1747,commercial,,,,
-George MacKay,146750,Male,1992-03-13," London, England, UK",Acting,1.6318,commercial,,,,
-Ben Hardy,1452045,Male,1991-01-02,"Bournemouth, Dorset, England, UK",Acting,0.8699,commercial,,,,
-Liam Hemsworth,96066,Male,1990-01-13,"Melbourne, Victoria, Australia",Acting,2.5144,commercial,,,,
-Jovan Bogdanović,4348479,Not set,,,Crew,0.0143,commercial,,,,
-Sam Worthington,65731,Male,1976-08-02,"Surrey, England, UK ",Acting,2.5771,commercial,,,,
-Jennifer Aniston,4491,Female,1969-02-11,"Sherman Oaks, Los Angeles, California, USA",Acting,12.8818,commercial,,,,
-Faith Ford,62054,Female,1964-09-14,"Alexandria, Louisiana, USA",Acting,0.6541,commercial,,,,
-John Cusack,2281095,Not set,,,Acting,0.0264,commercial,,,,
-Freddie Highmore,1281,Male,1992-02-14,"London, England, UK",Acting,2.9502,commercial,,,,
-Ben Kingsley,2282,Male,1943-12-31,"Snainton, North Riding of Yorkshire, England, UK",Acting,3.5929,commercial,,,,
-Rebecca Hall,15556,Female,1982-05-03,"London, England, UK",Acting,1.721,commercial,,,,
-Martin Freeman,7060,Male,1971-09-08,"Aldershot, Hampshire, England, UK",Acting,2.5298,commercial,,,,
-Richard Madden,512991,Male,1986-06-18,"Elderslie, Renfrewshire, Scotland, UK",Acting,4.2269,commercial,,,,
-Domhnall Gleeson,93210,Male,1983-05-12,"Dublin, Ireland",Acting,2.1376,commercial,,,,
-Eva Green,10912,Female,1980-07-06,"Paris, France",Acting,6.0961,commercial,,,,
-Ken Davitian,6734,Male,1953-06-19,"Los Angeles, California, USA",Acting,0.596,commercial,,,,
-John Conyers,1539343,Male,1929-05-16,"Highland Park, Michigan, USA",Acting,0.142,commercial,,,,
-Billy Burke,3910634,Not set,,,Acting,0.0143,commercial,,,,
-Richard Armitage,30315,Male,1971-08-22,"Leicester, England, UK",Acting,1.7167,commercial,,,,
-Justice Smith,1029934,Male,1995-08-09,"Los Angeles, California, USA",Acting,1.2585,commercial,,,,
-Dakota Blue Richards,45589,Female,1994-04-11,"Chelsea, London, England, UK",Acting,0.7709,commercial,,,,
-Neel Sethi,1414734,Male,2003-12-22,"New York, New York, USA",Acting,0.478,commercial,,,,
-Bill Skarsgård,137905,Male,1990-08-09,"Vällingby, Sweden",Acting,5.4832,commercial,,,,
-Anna Popplewell,5529,Female,1988-12-16,"London, England, UK",Acting,1.3748,commercial,,,,
-Shi Pengyuan,2682525,Male,2005-08-16,"Beizhen, Jinzhou, Liaoning, China",Acting,0.3856,commercial,,,,
-Jodie Comer,1388593,Female,1993-03-11,"Liverpool, Merseyside, England, UK",Acting,3.4571,commercial,,,,
-Ben Barnes,25130,Male,1981-08-20,"London, England, UK",Acting,1.7267,commercial,,,,
-Wu Jiang,4393778,Not set,,,Acting,0.0338,commercial,,,,
-Orlando Bloom,114,Male,1977-01-13,"Canterbury, Kent, England, UK",Acting,2.127,commercial,,,,
-Joseph Gordon-Levitt,24045,Male,1981-02-17,"Los Angeles, California, USA",Acting,4.266,commercial,,,,
-Andy Lau,25246,Male,1961-09-27,"Tai Po, Hong Kong, British Crown Colony (now China)",Acting,4.2137,commercial,,,,
-Lauren Graham,3809377,Not set,,,Acting,0.0214,commercial,,,,
-Emilia Clarke,1223786,Female,1986-10-23,"London, England, UK",Acting,7.0596,commercial,,,,
-Tom Hiddleston,91606,Male,1981-02-09,"Westminster, London, England, UK",Acting,2.9984,commercial,,,,
-Lars Ulrich,69230,Male,1963-12-26,"Gentofte, Denmark",Acting,0.3168,commercial,,,,
-Jennifer Connelly,6161,Female,1970-12-12,"Cairo, New York, USA",Acting,13.7897,commercial,,,,
-Moon Bloodgood,56455,Female,1975-09-20,"Anaheim, California, USA",Acting,0.8379,commercial,,,,
-Paul Rudd,1228670,Male,1940-05-15,"Boston, Massachusetts, USA",Acting,0.2172,commercial,,,,
-Carla Gugino,17832,Female,1971-08-29,"Sarasota, Florida, USA",Acting,2.8578,commercial,,,,
-Mireille Enos,175826,Female,1975-09-22,"Houston, Texas, USA",Acting,1.1273,commercial,,,,
-Dan Stevens,221018,Male,1982-10-10,"Croydon, London, England, UK",Acting,2.6531,commercial,,,,
-Zachary Quinto,17306,Male,1977-06-02,"Pittsburgh, Pennsylvania, USA",Acting,1.2831,commercial,,,,
-Nikola Samardžić,4348475,Not set,,,Acting,0.0071,commercial,,,,
-David Patrick Kelly,1737,Male,1951-01-23,"Detroit, Michigan, USA",Acting,0.7936,commercial,,,,
-Noah Centineo,1253353,Male,1996-05-09,"Miami, Florida, USA",Acting,4.0012,commercial,,,,
-Julia Stiles,12041,Female,1981-03-28,"New York City, New York, USA",Acting,2.3836,commercial,,,,
-Sienna Guillory,7055,Female,1975-03-16,"Kettering, England, UK",Acting,1.5538,commercial,,,,
-Qianyuan Wang,980150,Not set,,,Acting,0.0387,commercial,,,,
-Catherine O'Hara,11514,Female,1954-03-04,"Toronto, Ontario, Canada",Acting,1.9721,commercial,,,,
-Richard Roxburgh,12206,Male,1962-01-23,"Albury, New South Wales, Australia",Acting,0.8201,commercial,,,,
-Idris Elba,17605,Male,1972-09-06,"Hackney, London, England, UK",Acting,6.713,commercial,,,,
-Maggie Grace,11825,Female,1983-09-21,"Worthington, Columbus, Ohio, USA",Acting,1.8387,commercial,,,,
-Martin Lawrence,78029,Male,1965-04-16,"Frankfurt am Main, Germany",Acting,4.8124,commercial,,,,
-Ian McKellen,1327,Male,1939-05-25,"Burnley, Lancashire, England, UK",Acting,3.0999,commercial,,,,
-Bridget Moynahan,18354,Female,1971-04-28,"Binghamton, New York, USA",Acting,1.4796,commercial,,,,
-Megan Fox,19537,Female,1986-05-16,"Oak Ridge, Tennessee, USA",Acting,8.2425,commercial,,,,
-Alice Braga,8602,Female,1983-04-15,"São Paulo, São Paulo, Brazil",Acting,2.231,commercial,,,,
-Simu Liu,1489211,Male,1989-04-19,"Harbin, Heilongjiang, China",Acting,1.498,commercial,,,,
-Erika Christensen,21711,Female,1982-08-19,"Seattle, Washington, USA",Acting,1.0618,commercial,,,,
-Vikram Kochhar,1715408,Male,,,Acting,0.2522,commercial,,,,
-Famke Janssen,10696,Female,1964-11-05,"Amstelveen, Noord-Holland, Netherlands",Acting,4.1814,commercial,,,,
-Emma Thompson,7056,Female,1959-04-15,"Paddington, London, England, UK",Acting,4.5428,commercial,,,,
-Eric Winter,74409,Male,1976-07-17,"La Mirada, California, USA",Acting,3.8425,commercial,,,,
-Téa Leoni,4939,Female,1966-02-25,"New York City, New York, USA",Acting,2.3144,commercial,,,,
-Travis Fimmel,77700,Male,1979-07-15,"Echuca, Victoria, Australia",Acting,5.3917,commercial,,,,
-Mary Elizabeth Winstead,17628,Female,1984-11-28,"Rocky Mount, North Carolina, USA",Acting,3.2442,commercial,,,,
-Tom Cruise,500,Male,1962-07-03,"Syracuse, New York, USA",Acting,13.2309,commercial,,,,
-Kate Beckinsale,3967,Female,1973-07-26,"Chiswick, London, England, UK",Acting,6.7168,commercial,,,,
-Daisy Ridley,1315036,Female,1992-04-10,"Westminster, London, England, UK",Acting,2.55,commercial,,,,
-Phoebe Waller-Bridge,1023483,Female,1985-07-14,"London, England, UK",Acting,1.363,commercial,,,,
-Mélanie Laurent,19119,Female,1983-02-21,"Paris, France",Acting,2.6382,commercial,,,,
-Michael B. Jordan,135651,Male,1987-02-09,"Santa Ana, California, USA",Acting,11.936,commercial,,,,
-Brian Cox,1296991,Male,,,Production,0.1375,commercial,,,,
-Ruairí O'Connor,1731961,Male,1991-07-09,"Howth, County Dublin, Ireland",Acting,0.4797,commercial,,,,
-Charlie Tahan,49918,Male,1998-06-11,"Glen Rock, New Jersey, USA",Acting,0.6294,commercial,,,,
-Eric Bana,8783,Male,1968-08-09,"Melbourne, Australia",Acting,2.472,commercial,,,,
-Jonah Hauer-King,1599391,Male,1995-05-30,"London, England, UK",Acting,1.2155,commercial,,,,
-Michelle Dockery,70904,Female,1981-12-15,"Rush Green, Romford, Essex, England, UK",Acting,1.6647,commercial,,,,
-James McAvoy,5530,Male,1979-04-21,"Glasgow, Scotland, UK",Acting,3.6418,commercial,,,,
-Ma Yung-lin,1675486,Male,1955-10-26,"Taipei, Taiwan",Acting,0.044,commercial,,,,
-Glen Powell,83271,Male,1988-10-21,"Austin, Texas, USA",Acting,4.2972,commercial,,,,
-Fionn Whitehead,1687041,Male,1997-07-18,"Richmond upon Thames, London, England, UK",Acting,0.5988,commercial,,,,
-Daniella Kertesz,1180907,Female,1989-03-11,"Jerusalem, Israel",Acting,0.3867,commercial,,,,
-Hiroyuki Sanada,9195,Male,1960-10-12,"Shinagawa, Tokyo, Japan",Acting,2.9912,commercial,,,,
-Nicola Peltz Beckham,61186,Female,1995-01-09,"Westchester County, New York, USA",Acting,0.646,commercial,,,,
-Rosie Huntington-Whiteley,236048,Female,1987-04-18,"Plymouth, Devon, England, UK",Acting,1.2709,commercial,,,,
-Michael Sheen,3968,Male,1969-02-05,"Newport, Monmouthshire, Wales, UK",Acting,2.3406,commercial,,,,
-Xochitl Gomez,1912381,Female,2006-04-29,"Los Angeles, California, USA",Acting,1.4533,commercial,,,,
-Tyrese Gibson,8169,Male,1978-12-30,"Los Angeles, California, USA",Acting,2.6153,commercial,,,,
-Mathieu Amalric,8789,Male,1965-10-25,"Neuilly-sur-Seine, Hauts-de-Seine, France",Acting,0.8376,commercial,,,,
-John Cena,56446,Male,1977-04-23,"West Newbury, Massachusetts, USA",Acting,5.0079,commercial,,,,
-Chris Pine,62064,Male,1980-08-26,"Los Angeles, California, USA",Acting,3.1004,commercial,,,,
-Mads Mikkelsen,1019,Male,1965-11-22,"Østerbro, Copenhagen, Denmark",Acting,7.1353,commercial,,,,
-Joel Fry,54811,Male,1984-05-20,"London, England",Acting,1.0362,commercial,,,,
-Sienna Miller,23459,Female,1981-12-28,"New York City, New York, USA",Acting,2.3037,commercial,,,,
-Zoë Kravitz,37153,Female,1988-12-01,"Los Angeles, California, USA",Acting,2.0569,commercial,,,,
-Franka Potente,679,Female,1974-07-22,"Münster, North Rhine-Westphalia, Germany",Acting,1.4193,commercial,,,,
-Charlie Hunnam,56365,Male,1980-04-10,"Newcastle upon Tyne, England, UK",Acting,11.554,commercial,,,,
-Hayley Atwell,39459,Female,1982-04-05,"London, England, UK",Acting,4.2299,commercial,,,,
-Sigourney Weaver,10205,Female,1949-10-08,"Manhattan, New York City, New York, USA",Acting,3.1769,commercial,,,,
-Peter Cullen,19540,Male,1941-07-28,"Montréal, Québec, Canada",Acting,1.1756,commercial,,,,
-Noah Ringer,88816,Male,1997-11-18,"Dallas, Texas, USA",Acting,0.346,commercial,,,,
-Pete Ploszek,1163622,Male,1987-01-20,Hinsdale - Illinois - USA,Acting,0.4706,commercial,,,,
-Freya Allan,2146942,Female,2001-09-06,"Oxfordshire, England, UK",Acting,1.9372,commercial,,,,
-Seth MacFarlane,52139,Male,1973-10-26,"Kent, Connecticut, USA",Acting,2.8884,commercial,,,,
-Katherine Heigl,25541,Female,1978-11-24,"Washington, District of Columbia, USA",Acting,4.072,commercial,,,,
-Ayush Tandon,935504,Male,,,Acting,0.1698,commercial,,,,
-Danny Huston,6413,Male,1962-05-14,"Rome, Italy",Acting,1.2885,commercial,,,,
-Justin Bartha,21180,Male,1978-07-21,"Fort Lauderdale, Florida, USA",Acting,0.6826,commercial,,,,
-Ving Rhames,10182,Male,1959-05-12,"New York City, New York, USA",Acting,2.4498,commercial,,,,
-Owen Teague,1586047,Male,1998-12-08,"Tampa, Florida, USA",Acting,1.0622,commercial,,,,
-Michael Caine,3895,Male,1933-03-14,"Rotherhithe, London, England, UK",Acting,3.9345,commercial,,,,
-Mena Massoud,1515478,Male,1991-09-17,"Cairo, Egypt",Acting,1.2207,commercial,,,,
-Miles Teller,996701,Male,1987-02-20,"Downingtown, Pennsylvania, USA",Acting,4.0532,commercial,,,,
-Ben Stiller,7399,Male,1965-11-30,"New York City, New York, USA",Acting,2.8254,commercial,,,,
-Storm Reid,1344344,Female,2003-07-01,"Atlanta, Georgia, USA",Acting,2.0665,commercial,,,,
-Alexandra Daddario,109513,Female,1986-03-16,"New York City, New York, USA",Acting,25.6847,commercial,,,,
-Steven Strait,54815,Male,1986-03-23,"New York City, New York, USA",Acting,0.9593,commercial,,,,
-Calah Lane,1939373,Female,2009-04-20,"Houston, Texas, USA",Acting,0.2735,commercial,,,,
-James Marsden,11006,Male,1973-09-18,"Stillwater, Oklahoma, USA",Acting,6.1159,commercial,,,,
+"ID","Gender","Birthday","Place of Birth","Known For","Popularity","type","oscar_type","multiple_nominations","nominated_years","winner","year_winner","age","gender","american","name","birth_year","nominee"
+1896,"Male",1964-11-29,"Kansas City, Missouri, USA","Acting",1.8064,"both","leading",0,"[2004]",0,NA,1964,0,1,"don cheadle",1964,1
+85,"Male",1963-06-09,"Owensboro, Kentucky, USA","Acting",15.9675,"both","leading",1,"[2004, 2007]",0,NA,1963,0,1,"johnny depp",1963,1
+6193,"Male",1974-11-11,"Los Angeles, California, USA","Acting",12.009,"both","leading",1,"[2004, 2006, 2013, 2015, 2019]",1,"[2015]",1974,0,1,"leonardo dicaprio",1974,1
+190,"Male",1930-05-31,"San Francisco, California, USA","Acting",2.7558,"both","leading",0,"[2004]",0,NA,1930,0,1,"clint eastwood",1930,1
+134,"Male",1967-12-13,"Terrell, Texas, USA","Acting",3.7637,"both","both",1,"[2004]",1,"[2004]",1967,0,1,"jamie foxx",1967,1
+21278,"Male",1936-01-28,"New York City, New York, USA","Acting",0.877,"oscar","supporting",0,"[2004]",0,NA,1936,0,1,"alan alda",1936,1
+19159,"Male",1960-06-17,"Yolo County, California, USA","Acting",1.3239,"oscar","supporting",0,"[2004]",0,NA,1960,0,1,"thomas haden church",1960,1
+192,"Male",1937-06-01,"Memphis, Tennessee, USA","Acting",7.5719,"both","both",1,"[2004, 2009]",1,"[2004]",1937,0,1,"morgan freeman",1937,1
+2296,"Male",1964-10-03,"Keresley, Coventry, Warwickshire, England, UK","Acting",2.57,"oscar","supporting",0,"[2004]",0,NA,1964,0,0,"clive owen",1964,1
+516,"Female",1958-05-29,"Topeka, Kansas, USA","Acting",1.6232,"oscar","leading",1,"[2004, 2010, 2023]",0,NA,1958,1,1,"annette bening",1958,1
+5887,"Female",1981-04-19,"Bogotá, Colombia","Acting",1.3797,"oscar","leading",0,"[2004]",0,NA,1981,1,0,"catalina sandino moreno",1981,1
+11356,"Female",1956-01-09,"Archway, London, England, UK","Acting",1.6659,"both","leading",0,"[2004]",0,NA,1956,1,0,"imelda staunton",1956,1
+448,"Female",1974-07-30,"Lincoln, Nebraska, USA","Acting",1.8886,"oscar","leading",0,"[2004]",1,"[2004]",1974,1,1,"hilary swank",1974,1
+204,"Female",1975-10-05,"Reading, Berkshire, England, UK","Acting",7.3317,"both","both",1,"[2004, 2006, 2008, 2015]",1,"[2008]",1975,1,0,"kate winslet",1975,1
+112,"Female",1969-05-14,"Melbourne, Victoria, Australia","Acting",3.6201,"both","both",1,"[2004, 2006, 2007, 2013, 2015, 2022]",1,"[2004, 2013]",1969,1,0,"cate blanchett",1969,1
+350,"Female",1964-02-05,"New York City, New York, USA","Acting",1.6051,"oscar","both",1,"[2004, 2007]",0,NA,1964,1,1,"laura linney",1964,1
+12519,"Female",1961-09-11,"Chicago, Illinois, USA","Acting",1.9866,"oscar","supporting",0,"[2004]",0,NA,1961,1,1,"virginia madsen",1961,1
+2598,"Female",1968-08-11,"London, England, UK","Acting",2.1537,"oscar","supporting",0,"[2004]",0,NA,1968,1,0,"sophie okonedo",1968,1
+524,"Female",1981-06-09,"Jerusalem, Israel","Acting",6.4622,"both","both",1,"[2004, 2010, 2016]",1,"[2010]",1981,1,0,"natalie portman",1981,1
+1233,"Male",1967-07-23,"Fairport, New York, USA","Acting",1.9885,"both","both",1,"[2005, 2007, 2008, 2012]",1,"[2005]",1967,0,1,"philip seymour hoffman",1967,1
+18288,"Male",1969-03-11,"Chicago, Illinois, USA","Acting",1.6898,"both","leading",0,"[2005]",0,NA,1969,0,1,"terrence howard",1969,1
+1810,"Male",1979-04-04,"Perth, Western Australia, Australia","Acting",2.8357,"both","both",1,"[2005, 2008]",1,"[2008]",1979,0,0,"heath ledger",1979,1
+73421,"Male",1974-10-28,"San Juan, Puerto Rico","Acting",3.04,"both","leading",1,"[2005, 2012, 2019]",1,"[2019]",1974,0,0,"joaquin phoenix",1974,1
+11064,"Male",1949-01-26,"San Francisco, California, USA","Acting",1.1055,"both","leading",0,"[2005]",0,NA,1949,0,1,"david strathairn",1949,1
+1461,"Male",1961-05-06,"Lexington, Kentucky, USA","Acting",2.9311,"both","both",1,"[2005, 2007, 2009, 2011]",1,"[2005]",1961,0,1,"george clooney",1961,1
+2876,"Male",1964-02-18,"New Rochelle, New York, USA","Acting",2.1691,"oscar","supporting",0,"[2005]",0,NA,1964,0,1,"matt dillon",1964,1
+13242,"Male",1967-06-06,"New Haven, Connecticut, USA","Acting",2.9977,"oscar","both",1,"[2005, 2023]",0,NA,1967,0,1,"paul giamatti",1967,1
+131,"Male",1980-12-19,"Los Angeles, California, USA","Acting",7.2706,"both","supporting",0,"[2005]",0,NA,1980,0,1,"jake gyllenhaal",1980,1
+118472,"Male",1919-04-07,"Chicago, Illinois, USA","Directing",0.1249,"oscar",NA,0,NA,0,NA,1919,0,1,"william t. hurtz",1919,0
+5309,"Female",1934-12-09,"York, North Yorkshire, England","Acting",1.3201,"both","both",1,"[2005, 2006, 2013, 2021]",0,NA,1934,1,0,"judi dench",1934,1
+7427,"Female",1962-12-09,"Bedford, New York, USA","Acting",0.8355,"oscar","leading",0,"[2005]",0,NA,1962,1,1,"felicity huffman",1962,1
+116,"Female",1985-03-26,"Teddington, London, England, UK","Acting",5.6004,"both","both",1,"[2005, 2014]",0,NA,1985,1,0,"keira knightley",1985,1
+6885,"Female",1975-08-07,"Benoni, Gauteng, South Africa","Acting",5.7998,"both","leading",1,"[2005, 2019]",0,NA,1975,1,0,"charlize theron",1975,1
+368,"Female",1976-03-22,"New Orleans, Louisiana, USA","Acting",9.5293,"oscar","leading",1,"[2005, 2014]",1,"[2005]",1976,1,1,"reese witherspoon",1976,1
+9273,"Female",1974-08-20,"Vicenza, Veneto, Italy","Acting",4.1767,"both","both",1,"[2005, 2008, 2010, 2012, 2013, 2018]",0,NA,1974,1,0,"amy adams",1974,1
+2229,"Female",1959-03-26,"Miami, Florida, USA","Acting",1.6534,"oscar","supporting",0,"[2005]",0,NA,1959,1,1,"catherine keener",1959,1
+3910,"Female",1957-06-23,"Gibson City, Illinois, USA","Acting",1.3247,"oscar","both",1,"[2005, 2017, 2020]",1,"[2017, 2020]",1957,1,1,"frances mcdormand",1957,1
+3293,"Female",1970-03-07,"Westminster, London, England, UK","Acting",4.1385,"both","supporting",1,"[2005, 2018]",1,"[2005]",1970,1,0,"rachel weisz",1970,1
+1812,"Female",1980-09-09,"Kalispell, Montana, USA","Acting",2.4552,"both","both",1,"[2005, 2010, 2011, 2016, 2022]",0,NA,1980,1,1,"michelle williams",1980,1
+30614,"Male",1980-11-12,"London, Ontario, Canada","Acting",7.084,"both","both",1,"[2006, 2016, 2023]",0,NA,1980,0,0,"ryan gosling",1980,1
+1995515,"Not set",NA,NA,"Lighting",0.0407,"oscar","leading",0,"[2006]",0,NA,NA,1,NA,"peter o'toole",NA,1
+2888,"Male",1968-09-25,"Philadelphia, Pennsylvania, USA","Acting",7.4083,"both","leading",1,"[2006, 2021]",1,"[2021]",1968,0,1,"will smith",1968,1
+2178,"Male",1961-07-15,"Longview, Texas, USA","Acting",2.3078,"oscar","leading",0,"[2006]",1,"[2006]",1961,0,1,"forest whitaker",1961,1
+1903,"Male",1934-03-26,"New York City, New York, USA","Acting",1.2573,"oscar","supporting",1,"[2006, 2012]",1,"[2006]",1934,0,1,"alan arkin",1934,1
+17183,"Male",1961-07-14,"Northridge, California, USA","Acting",1.1636,"oscar","supporting",0,"[2006]",0,NA,1961,0,1,"jackie earle haley",1961,1
+938,"Male",1964-04-24,"Cotonou, Dahomey [now Benin]","Acting",1.4817,"oscar","supporting",0,"[2006]",0,NA,1964,0,0,"djimon hounsou",1964,1
+776,"Male",1961-04-03,"Brooklyn, New York City, New York, USA","Acting",3.8854,"oscar","supporting",0,"[2006]",0,NA,1961,0,1,"eddie murphy",1961,1
+13240,"Male",1971-06-05,"Boston, Massachusetts, USA","Acting",3.8111,"both","supporting",0,"[2006]",0,NA,1971,0,1,"mark wahlberg",1971,1
+955,"Female",1974-04-28,"Madrid, Spain","Acting",4.4885,"both","both",1,"[2006, 2008, 2009, 2021]",1,"[2008]",1974,1,0,"penélope cruz",1974,1
+15735,"Female",1945-07-26,"Hammersmith, London, England, UK","Acting",3.521,"oscar","leading",1,"[2006, 2009]",1,"[2006]",1945,1,0,"helen mirren",1945,1
+5064,"Female",1949-06-22,"Summit, New Jersey, USA","Acting",2.5122,"both","both",1,"[2006, 2008, 2009, 2011, 2013, 2014, 2016, 2017]",1,"[2011]",1949,1,1,"meryl streep",1949,1
+270,"Female",1956-03-05,"Toluca, Estado de Mexico, Mexico","Acting",0.5788,"oscar","supporting",0,"[2006]",0,NA,1956,1,0,"adriana barraza",1956,1
+17140,"Female",1996-04-14,"New York City, New York, USA","Acting",4.0742,"oscar","supporting",0,"[2006]",0,NA,1996,1,1,"abigail breslin",1996,1
+15565,"Female",1981-09-12,"Chicago, Illinois, USA","Acting",0.7187,"oscar","supporting",0,"[2006]",1,"[2006]",1981,1,1,"jennifer hudson",1981,1
+18054,"Female",1981-01-06,"Hadano, Kanagawa, Japan","Acting",1.5897,"both","supporting",0,"[2006]",0,NA,1981,1,0,"rinko kikuchi",1981,1
+11856,"Male",1957-04-29,"Greenwich, London, England, UK","Acting",1.6151,"oscar","leading",1,"[2007, 2012, 2017]",1,"[2007, 2012]",1957,0,0,"daniel day-lewis",1957,1
+2176,"Male",1946-09-15,"San Saba, Texas, USA","Acting",2.7255,"both","both",1,"[2007, 2012]",0,NA,1946,0,1,"tommy lee jones",1946,1
+110,"Male",1958-10-20,"Watertown, New York, USA","Acting",2.793,"oscar","leading",1,"[2007, 2016, 2018]",0,NA,1958,0,1,"viggo mortensen",1958,1
+1893,"Male",1975-08-12,"Falmouth, Massachusetts, USA","Acting",2.3839,"oscar","both",1,"[2007, 2016]",1,"[2016]",1975,0,1,"casey affleck",1975,1
+3810,"Male",1969-03-01,"Las Palmas de Gran Canaria, Gran Canaria, Canary Islands, Spain","Acting",2.6146,"both","both",1,"[2007, 2010, 2021]",1,"[2007]",1969,0,0,"javier bardem",1969,1
+4563253,"Not set",NA,NA,"Acting",0.0379,"oscar","supporting",0,"[2007]",0,NA,NA,1,NA,"hal holbrook",NA,1
+207,"Male",1948-02-05,"Leeds, England, UK","Acting",1.2644,"oscar","supporting",0,"[2007]",0,NA,1948,0,0,"tom wilkinson",1948,1
+2405208,"Female",NA,NA,"Acting",0.4001,"oscar","leading",0,"[2007]",0,NA,NA,1,NA,"julie christie",NA,1
+8293,"Female",1975-09-30,"Paris, France","Acting",2.3703,"oscar","leading",1,"[2007, 2014]",1,"[2007]",1975,1,0,"marion cotillard",1975,1
+27578,"Non-binary/Other",1987-02-21,"Halifax, Nova Scotia, Canada","Acting",3.3274,"oscar","leading",0,"[2007]",0,NA,1987,1,0,"elliot page",1987,1
+15532,"Female",1922-10-27,"Cleveland, Ohio, USA","Acting",0.5986,"oscar","supporting",0,"[2007]",0,NA,1922,1,1,"ruby dee",1922,1
+36592,"Female",1994-04-12,"The Bronx, New York City, New York, USA","Acting",2.4227,"oscar","both",1,"[2007, 2015, 2017, 2019]",0,NA,1994,1,1,"saoirse ronan",1994,1
+39388,"Female",1968-05-03,"Queens, New York City, New York, USA","Acting",1.8519,"oscar","supporting",0,"[2007]",0,NA,1968,1,1,"amy ryan",1968,1
+3063,"Female",1960-11-05,"London, England, UK","Acting",3.7397,"oscar","supporting",0,"[2007]",1,"[2007]",1960,1,0,"tilda swinton",1960,1
+28633,"Male",1947-05-04,"DeKalb, Illinois, USA","Acting",1.48,"oscar","both",1,"[2008, 2017]",0,NA,1947,0,1,"richard jenkins",1947,1
+8924,"Male",1938-01-01,"Bayonne, New Jersey, USA","Acting",0.829,"oscar","leading",0,"[2008]",0,NA,1938,0,1,"frank langella",1938,1
+2228,"Male",1960-08-17,"Santa Monica, California, USA","Acting",3.0963,"oscar","leading",0,"[2008]",1,"[2008]",1960,0,1,"sean penn",1960,1
+287,"Male",1963-12-18,"Shawnee, Oklahoma, USA","Acting",5.8135,"both","both",1,"[2008, 2011, 2019]",1,"[2019]",1963,0,1,"brad pitt",1963,1
+2295,"Male",1952-09-16,"Schenectady, New York, USA","Acting",4.585,"oscar","leading",0,"[2008]",0,NA,1952,0,1,"mickey rourke",1952,1
+16851,"Male",1968-02-12,"Santa Monica, Los Angeles, California, USA","Acting",2.8974,"both","supporting",0,"[2008]",0,NA,1968,0,1,"josh brolin",1968,1
+3223,"Male",1965-04-04,"New York City, New York, USA","Acting",10.8396,"both","supporting",1,"[2008, 2023]",1,"[2023]",1965,0,1,"robert downey jr.",1965,1
+3555530,"Male",NA,"Paddington, London, England, UK","Acting",0.1005,"oscar","supporting",1,"[2008, 2016]",0,NA,NA,0,0,"michael shannon",NA,1
+1813,"Female",1982-11-12,"Brooklyn, New York City, New York, USA","Acting",8.4794,"both","both",1,"[2008, 2012]",1,"[2012]",1982,1,1,"anne hathaway",1982,1
+11701,"Female",1975-06-04,"Los Angeles, California, USA","Acting",12.1333,"both","leading",0,"[2008]",0,NA,1975,1,1,"angelina jolie",1975,1
+6832,"Female",1960-09-14,"New York City, New York, USA","Acting",0.9503,"oscar","both",1,"[2008, 2010]",1,"[2010]",1960,1,1,"melissa leo",1960,1
+19492,"Female",1965-08-11,"St. Matthews, South Carolina, USA","Acting",3.9926,"oscar","both",1,"[2008, 2011, 2016, 2020]",1,"[2016]",1965,1,1,"viola davis",1965,1
+40036,"Female",1970-09-11,"Washington, D.C., USA","Acting",4.1905,"both","supporting",0,"[2008]",0,NA,1970,1,1,"taraji p. henson",1970,1
+3141,"Female",1964-12-04,"Brooklyn, New York City, New York, USA","Acting",2.9988,"oscar","supporting",0,"[2008]",0,NA,1964,1,1,"marisa tomei",1964,1
+1229,"Male",1949-12-04,"Los Angeles, California, USA","Acting",2.2267,"both","both",1,"[2009, 2010, 2016]",1,"[2009]",1949,0,1,"jeff bridges",1949,1
+5472,"Male",1960-09-10,"Grayshott, Hampshire, England, UK","Acting",3.9676,"both","leading",1,"[2009, 2010]",1,"[2010]",1960,0,0,"colin firth",1960,1
+17604,"Male",1971-01-07,"Modesto, California, USA","Acting",7.2614,"both","both",1,"[2009, 2010]",0,NA,1971,0,1,"jeremy renner",1971,1
+1892,"Male",1970-10-08,"Boston, Massachusetts, USA","Acting",6.8919,"both","both",1,"[2009, 2015]",0,NA,1970,0,1,"matt damon",1970,1
+57755,"Male",1961-07-23,"Midland, Texas, USA","Acting",2.8588,"both","supporting",1,"[2009, 2017]",0,NA,1961,0,1,"woody harrelson",1961,1
+290,"Male",1929-12-13,"Toronto, Ontario, Canada","Acting",1.91,"oscar","supporting",1,"[2009, 2011, 2017]",1,"[2011]",1929,0,0,"christopher plummer",1929,1
+2283,"Male",1960-11-11,"Peekskill, New York, USA","Acting",2.754,"both","supporting",0,"[2009]",0,NA,1960,0,1,"stanley tucci",1960,1
+27319,"Male",1956-10-04,"Vienna, Austria","Acting",3.313,"both","supporting",1,"[2009, 2012]",1,"[2009, 2012]",1956,0,0,"christoph waltz",1956,1
+18277,"Female",1964-07-26,"Arlington County, Virginia, USA","Acting",17.6878,"both","leading",1,"[2009, 2013]",1,"[2009]",1964,1,1,"sandra bullock",1964,1
+36662,"Female",1985-05-28,"Westminster, London, England, UK","Acting",1.787,"oscar","leading",1,"[2009, 2020, 2023]",0,NA,1985,1,0,"carey mulligan",1985,1
+109560,"Female",1983-05-06,"New York City, New York, USA","Acting",0.9906,"oscar","leading",0,"[2009]",0,NA,1983,1,1,"gabourey sidibe",1983,1
+21657,"Female",1973-08-06,"Clifton, New Jersey, USA","Acting",3.6605,"both","supporting",0,"[2009]",0,NA,1973,1,1,"vera farmiga",1973,1
+1579,"Female",1977-11-16,"Lower East Side, New York City, New York, USA","Acting",2.128,"oscar","supporting",0,"[2009]",0,NA,1977,1,1,"maggie gyllenhaal",1977,1
+84223,"Female",1985-08-09,"Portland, Maine, USA","Acting",5.2402,"oscar","supporting",0,"[2009]",0,NA,1985,1,1,"anna kendrick",1985,1
+60561,"Female",1967-12-11,"Woodlawn, Maryland, USA","Acting",0.8743,"oscar","supporting",0,"[2009]",1,"[2009]",1967,1,1,"mo'nique",1967,1
+44735,"Male",1983-10-05,"New York City, New York, USA","Acting",2.8564,"both","leading",0,"[2010]",0,NA,1983,0,1,"jesse eisenberg",1983,1
+17051,"Male",1978-04-19,"Palo Alto, California, USA","Acting",4.4709,"both","leading",0,"[2010]",0,NA,1978,0,1,"james franco",1978,1
+3894,"Male",1974-01-30,"Haverfordwest, Pembrokeshire, Wales, UK","Acting",2.5616,"both","both",1,"[2010, 2013, 2015, 2018]",1,"[2010]",1974,0,0,"christian bale",1974,1
+2923795,"Not set",NA,NA,"Writing",0.0336,"oscar","supporting",0,"[2010]",0,NA,NA,1,NA,"john hawkes",NA,1
+103,"Male",1967-11-22,"Kenosha, Wisconsin, USA","Acting",3.3427,"both","supporting",1,"[2010, 2014, 2015, 2023]",0,NA,1967,0,1,"mark ruffalo",1967,1
+118,"Male",1951-07-06,"Toowoomba, Queensland, Australia","Acting",1.8065,"both","supporting",0,"[2010]",0,NA,1951,0,0,"geoffrey rush",1951,1
+2227,"Female",1967-06-20,"Honolulu, Hawaii, USA","Acting",6.6525,"both","both",1,"[2010, 2016, 2021]",0,NA,1967,1,1,"nicole kidman",1967,1
+72129,"Female",1990-08-15,"Indian Hills, Kentucky, USA","Acting",6.7526,"both","both",1,"[2010, 2012, 2013, 2015]",1,"[2012]",1990,1,1,"jennifer lawrence",1990,1
+1283,"Female",1966-05-26,"Golders Green, London, England, UK","Acting",2.9344,"both","supporting",0,"[2010]",0,NA,1966,1,0,"helena bonham carter",1966,1
+130640,"Female",1996-12-11,"Tarzana, Los Angeles, California, USA","Acting",10.9313,"both","supporting",0,"[2010]",0,NA,1996,1,1,"hailee steinfeld",1996,1
+67837,"Female",1947-05-25,"Sydney, New South Wales, Australia","Acting",1.2714,"oscar","supporting",1,"[2010, 2012]",0,NA,1947,1,0,"jacki weaver",1947,1
+76961,"Male",1963-08-01,"Mexico City, Distrito Federal, Mexico","Acting",0.722,"oscar","leading",0,"[2011]",0,NA,1963,0,0,"demián bichir",1963,1
+56024,"Male",1972-06-19,"Rueil-Malmaison, France","Acting",1.1973,"oscar","leading",0,"[2011]",1,"[2011]",1972,0,0,"jean dujardin",1972,1
+64,"Male",1958-03-21,"London, England, UK","Acting",19.1859,"both","leading",1,"[2011, 2017, 2020]",1,"[2017]",1958,0,0,"gary oldman",1958,1
+11181,"Male",1960-12-10,"Belfast, Northern Ireland, UK","Acting",2.7043,"oscar","supporting",0,"[2011]",0,NA,1960,0,0,"kenneth branagh",1960,1
+21007,"Male",1983-12-20,"Los Angeles, California, USA","Acting",2.1655,"both","supporting",1,"[2011, 2013]",0,NA,1983,0,1,"jonah hill",1983,1
+1733,"Male",1941-02-08,"Omaha, Nebraska, USA","Acting",1.9499,"oscar","supporting",0,"[2011]",0,NA,1941,0,1,"nick nolte",1941,1
+2201,"Male",1929-04-10,"Lund, Skåne län, Sweden","Acting",1.5136,"both","supporting",0,"[2011]",0,NA,1929,0,0,"max von sydow",1929,1
+515,"Female",1947-03-19,"Greenwich, Connecticut, USA","Acting",2.1619,"oscar","both",1,"[2011, 2018, 2020]",0,NA,1947,1,1,"glenn close",1947,1
+108916,"Female",1985-04-17,"Bedford, New York, USA","Acting",2.7046,"oscar","both",1,"[2011, 2015]",0,NA,1985,1,1,"rooney mara",1985,1
+82923,"Female",1976-07-07,"Buenos Aires, Argentina","Acting",0.9447,"oscar","supporting",0,"[2011]",0,NA,1976,1,0,"bérénice bejo",1976,1
+83002,"Female",1977-03-24,"Southern California, California, USA","Acting",2.7215,"both","both",1,"[2011, 2012, 2021]",1,"[2021]",1977,1,1,"jessica chastain",1977,1
+55536,"Female",1970-08-26,"Plainfield, Illinois, USA","Acting",1.2614,"both","both",1,"[2011, 2018]",0,NA,1970,1,1,"melissa mccarthy",1970,1
+47627,"Female",1961-08-05,"Newcastle upon Tyne, Tyne and Wear, England, UK","Acting",1.5803,"oscar","supporting",0,"[2011]",0,NA,1961,1,0,"janet mcteer",1961,1
+6944,"Female",1970-05-25,"Montgomery, Alabama, USA","Acting",2.1306,"oscar","supporting",1,"[2011, 2016, 2017]",1,"[2011]",1970,1,1,"octavia spencer",1970,1
+51329,"Male",1975-01-05,"Philadelphia, Pennsylvania, USA","Acting",4.3401,"both","both",1,"[2012, 2013, 2014, 2018, 2023]",0,NA,1975,0,1,"bradley cooper",1975,1
+6968,"Male",1968-10-12,"Sydney, New South Wales, Australia","Acting",4.783,"both","leading",0,"[2012]",0,NA,1968,0,0,"hugh jackman",1968,1
+5292,"Male",1954-12-28,"Mount Vernon, New York, USA","Acting",3.966,"both","leading",1,"[2012, 2016, 2017, 2021]",0,NA,1954,0,1,"denzel washington",1954,1
+380,"Male",1943-08-17,"Greenwich Village, New York City, New York, USA","Acting",8.0383,"both","supporting",1,"[2012, 2023]",0,NA,1943,0,1,"robert de niro",1943,1
+267962,"Female",1927-02-24,"Cheniménil, Vosges, France","Acting",0.4663,"oscar","leading",0,"[2012]",0,NA,1927,1,0,"emmanuelle riva",1927,1
+1055235,"Female",2003-08-28,"Houma, Louisiana, USA","Acting",0.5547,"oscar","leading",0,"[2012]",0,NA,2003,1,1,"quvenzhané wallis",2003,1
+3489,"Female",1968-09-28,"Shoreham, Kent, England, UK","Acting",2.3235,"both","leading",0,"[2012]",0,NA,1968,1,0,"naomi watts",1968,1
+35,"Female",1946-11-06,"Pasadena, California, USA","Acting",1.7371,"oscar","supporting",0,"[2012]",0,NA,1946,1,1,"sally field",1946,1
+9994,"Female",1963-06-15,"Los Angeles, California, USA","Acting",1.9884,"oscar","supporting",0,"[2012]",0,NA,1963,1,1,"helen hunt",1963,1
+6905,"Male",1936-06-04,"Chicago, Illinois, USA","Acting",2.0483,"oscar","leading",0,"[2013]",0,NA,1936,0,1,"bruce dern",1936,1
+5294,"Male",1977-07-10,"Forest Gate, London, England, UK","Acting",2.0299,"both","leading",0,"[2013]",0,NA,1977,0,0,"chiwetel ejiofor",1977,1
+10297,"Male",1969-11-04,"Uvalde, Texas, USA","Acting",4.4771,"both","leading",0,"[2013]",1,"[2013]",1969,0,1,"matthew mcconaughey",1969,1
+1266859,"Male",1994-06-05,"Galkayo, Somalia","Acting",0.1365,"oscar",NA,0,NA,0,NA,1994,0,0,"barkhad abdirahman",1994,0
+17288,"Male",1977-04-02,"Heidelberg, Baden-Wurttemburg, Germany","Acting",4.9312,"both","both",1,"[2013, 2015]",0,NA,1977,0,0,"michael fassbender",1977,1
+7499,"Male",1971-12-26,"Bossier City, Louisiana, USA","Acting",4.1181,"both","supporting",0,"[2013]",1,"[2013]",1971,0,1,"jared leto",1971,1
+39658,"Female",1976-04-27,"London, England, UK","Acting",1.287,"oscar","both",1,"[2013, 2017]",0,NA,1976,1,0,"sally hawkins",1976,1
+1267329,"Female",1983-03-01,"Mexico City, Mexico","Acting",3.6481,"both","supporting",0,"[2013]",1,"[2013]",1983,1,0,"lupita nyong'o",1983,1
+1204,"Female",1967-10-28,"Smyrna, Georgia, USA","Acting",7.7718,"oscar","supporting",0,"[2013]",0,NA,1967,1,1,"julia roberts",1967,1
+35515,"Female",1929-11-06,"Vandalia, Illinois, USA","Acting",0.67,"oscar","supporting",0,"[2013]",0,NA,1929,1,1,"june squibb",1929,1
+4495,"Male",1962-08-16,"Concord, Massachusetts, USA","Acting",3.4239,"oscar","leading",0,"[2014]",0,NA,1962,0,1,"steve carell",1962,1
+71580,"Male",1976-07-19,"Hammersmith, London, England, UK","Acting",4.4471,"both","leading",1,"[2014, 2021]",0,NA,1976,0,0,"benedict cumberbatch",1976,1
+2232,"Male",1951-09-05,"Coraopolis, Pennsylvania, USA","Acting",1.9609,"both","leading",0,"[2014]",0,NA,1951,0,1,"michael keaton",1951,1
+37632,"Male",1982-01-06,"London, England, UK","Acting",3.9223,"both","leading",1,"[2014, 2015]",1,"[2014]",1982,0,0,"eddie redmayne",1982,1
+3087,"Male",1931-01-05,"San Diego, California, USA","Acting",2.6072,"oscar","supporting",0,"[2014]",0,NA,1931,0,1,"robert duvall",1931,1
+569,"Male",1970-11-06,"Austin, Texas, USA","Acting",2.3594,"oscar","supporting",0,"[2014]",0,NA,1970,0,1,"ethan hawke",1970,1
+819,"Male",1969-08-18,"Boston, Massachusetts, USA","Acting",3.0548,"oscar","supporting",1,"[2014, 2024]",0,NA,1969,0,1,"edward norton",1969,1
+18999,"Male",1955-01-09,"Detroit, Michigan, USA","Acting",4.1993,"oscar","supporting",1,"[2014, 2021]",1,"[2014]",1955,0,1,"j.k. simmons",1955,1
+72855,"Female",1983-10-17,"Birmingham, West Midlands, England, UK","Acting",4.0016,"both","both",1,"[2014, 2024]",0,NA,1983,1,0,"felicity jones",1983,1
+1231,"Female",1960-12-03,"Fayetteville, North Carolina, USA","Acting",2.8005,"oscar","leading",0,"[2014]",1,"[2014]",1960,1,1,"julianne moore",1960,1
+10882,"Female",1979-01-27,"Hammersmith, London, England, UK","Acting",6.7421,"both","leading",0,"[2014]",0,NA,1979,1,0,"rosamund pike",1979,1
+4687,"Female",1968-04-08,"Chicago, Illinois, USA","Acting",2.0333,"oscar","supporting",0,"[2014]",1,"[2014]",1968,1,1,"patricia arquette",1968,1
+4784,"Female",1967-02-10,"Los Angeles, California, USA","Acting",2.0338,"both","supporting",1,"[2014, 2019]",1,"[2019]",1967,1,1,"laura dern",1967,1
+54693,"Female",1988-11-06,"Scottsdale, Arizona, USA","Acting",4.4364,"both","both",1,"[2014, 2016, 2018, 2023]",1,"[2016, 2023]",1988,1,1,"emma stone",1988,1
+17419,"Male",1956-03-07,"Hollywood, Los Angeles, California, USA","Acting",4.519,"oscar","leading",0,"[2015]",0,NA,1956,0,1,"bryan cranston",1956,1
+2524,"Male",1977-09-15,"Hammersmith, London, England, UK","Acting",11.6924,"both","supporting",0,"[2015]",0,NA,1977,0,0,"tom hardy",1977,1
+40900,"Male",1960-01-18,"Ashford, Kent, England, UK","Acting",1.3179,"both","supporting",0,"[2015]",1,"[2015]",1960,0,0,"mark rylance",1960,1
+16483,"Male",1946-07-06,"New York City, New York, USA","Acting",8.0413,"oscar","supporting",0,"[2015]",0,NA,1946,0,1,"sylvester stallone",1946,1
+60073,"Female",1989-10-01,"Sacramento, California, USA","Acting",3.3609,"both","leading",0,"[2015]",1,"[2015]",1989,1,1,"brie larson",1989,1
+44079,"Female",1946-02-05,"England, UK","Acting",1.2229,"oscar","leading",0,"[2015]",0,NA,1946,1,0,"charlotte rampling",1946,1
+10431,"Female",1962-02-05,"Hollywood, Los Angeles, California, USA","Acting",2.3318,"oscar","supporting",0,"[2015]",0,NA,1962,1,1,"jennifer jason leigh",1962,1
+53714,"Female",1978-11-17,"London, Ontario, Canada","Acting",3.0269,"both","supporting",0,"[2015]",0,NA,1978,1,0,"rachel mcadams",1978,1
+227454,"Female",1988-10-03,"Gothenburg, Västra Götalands län, Sweden","Acting",5.2202,"both","supporting",0,"[2015]",1,"[2015]",1988,1,0,"alicia vikander",1988,1
+37625,"Male",1983-08-20,"Los Angeles, California, USA","Acting",8.6686,"both","leading",1,"[2016, 2021]",0,NA,1983,0,1,"andrew garfield",1983,1
+932967,"Male",1974-02-16,"Oakland, California, USA","Acting",2.485,"oscar","supporting",1,"[2016, 2018]",1,"[2016, 2018]",1974,0,1,"mahershala ali",1974,1
+1105079,"Male",1996-12-12,"Brooklyn, New York, USA","Acting",1.1083,"oscar","supporting",0,"[2016]",0,NA,1996,0,1,"lucas hedges",1996,1
+76788,"Male",1990-04-23,"Harrow, Greater London, England, UK","Acting",2.1466,"both","supporting",0,"[2016]",0,NA,1990,0,0,"dev patel",1990,1
+17882,"Female",1953-03-16,"Parc Montsouris, Paris, France","Acting",1.7267,"oscar","leading",0,"[2016]",0,NA,1953,1,0,"isabelle huppert",1953,1
+17018,"Female",1981-05-04,"Addis Ababa, Ethiopia","Acting",0.9063,"oscar","leading",0,"[2016]",0,NA,1981,1,0,"ruth negga",1981,1
+2038,"Female",1976-09-06,"Islington, London, England, UK","Acting",1.5409,"oscar","supporting",0,"[2016]",0,NA,1976,1,0,"naomie harris",1976,1
+1190668,"Male",1995-12-27,"Manhattan, New York City, New York, USA","Acting",13.8487,"both","leading",1,"[2017, 2024]",0,NA,1995,0,1,"timothée chalamet",1995,1
+206919,"Male",1989-02-24,"London, England, UK","Acting",1.5824,"oscar","both",1,"[2017, 2020]",1,"[2020]",1989,0,0,"daniel kaluuya",1989,1
+5293,"Male",1955-07-22,"Appleton, Wisconsin, USA","Acting",3.9864,"both","both",1,"[2017, 2018]",0,NA,1955,0,1,"willem dafoe",1955,1
+6807,"Male",1968-11-05,"Daly City, California, USA","Acting",2.3531,"oscar","supporting",1,"[2017, 2018]",1,"[2017]",1968,0,1,"sam rockwell",1968,1
+234352,"Female",1990-07-02,"Dalby, Queensland, Australia","Acting",7.278,"both","both",1,"[2017, 2019]",0,NA,1990,1,0,"margot robbie",1990,1
+84933,"Female",1971-01-11,"Yonkers, New York, USA","Acting",0.904,"oscar","supporting",0,"[2017]",0,NA,1971,1,1,"mary j. blige",1971,1
+19,"Female",1959-11-19,"Boston, Massachusetts, USA","Acting",1.853,"oscar","supporting",0,"[2017]",1,"[2017]",1959,1,1,"allison janney",1959,1
+72305,"Female",1956-03-12,"Brighton, England, UK","Acting",1.0947,"oscar","supporting",0,"[2017]",0,NA,1956,1,0,"lesley manville",1956,1
+12133,"Female",1955-06-16,"Carbondale, Illinois, USA","Acting",1.7564,"oscar","supporting",0,"[2017]",0,NA,1955,1,1,"laurie metcalf",1955,1
+17838,"Male",1981-05-12,"Torrance, California, USA","Acting",6.9257,"both","leading",0,"[2018]",1,"[2018]",1981,0,1,"rami malek",1981,1
+1023139,"Male",1983-11-19,"San Diego, California, USA","Acting",1.912,"both","both",1,"[2018, 2019]",0,NA,1983,0,1,"adam driver",1983,1
+16431,"Male",1944-08-09,"Sacramento, California, USA","Acting",4.4187,"both","supporting",0,"[2018]",0,NA,1944,0,1,"sam elliott",1944,1
+20766,"Male",1957-05-05,"Mbabane, Swaziland [now Eswatini]","Acting",1.487,"oscar","supporting",0,"[2018]",0,NA,1957,0,0,"richard e. grant",1957,1
+1775557,"Female",1993-12-11,"Heroica Ciudad de Tlaxiaco, Oaxaca, México","Acting",0.5889,"oscar","leading",0,"[2018]",0,NA,1993,1,0,"yalitza aparicio",1993,1
+39187,"Female",1974-01-30,"Norwich, Norfolk, England, UK","Acting",2.8046,"oscar","both",1,"[2018, 2020, 2021]",1,"[2018]",1974,1,0,"olivia colman",1974,1
+237405,"Female",1986-03-28,"New York City, New York, USA","Acting",3.5646,"both","leading",0,"[2018]",0,NA,1986,1,1,"lady gaga",1986,1
+78883,"Female",1974-11-21,"Mexico City, Mexico","Acting",0.2734,"oscar","supporting",0,"[2018]",0,NA,1974,1,0,"marina de tavira",1974,1
+9788,"Female",1971-01-15,"Los Angeles, California, USA","Acting",1.9507,"oscar","supporting",0,"[2018]",1,"[2018]",1971,1,1,"regina king",1971,1
+3131,"Male",1960-08-10,"Málaga, Andalusia, Spain","Acting",4.0236,"oscar","leading",0,"[2019]",0,NA,1960,0,0,"antonio banderas",1960,1
+378,"Male",1947-06-01,"Carmel, Flintshire, Wales, UK","Acting",1.8894,"both","leading",0,"[2019]",0,NA,1947,0,0,"jonathan pryce",1947,1
+31,"Male",1956-07-09,"Concord, California, USA","Acting",7.1083,"both","supporting",0,"[2019]",0,NA,1956,0,1,"tom hanks",1956,1
+4173,"Male",1937-12-31,"Margam, Port Talbot, Glamorgan, Wales, UK","Acting",4.6207,"oscar","both",1,"[2019, 2020]",1,"[2020]",1937,0,0,"anthony hopkins",1937,1
+1158,"Male",1940-04-25,"New York City, New York, USA","Acting",6.2308,"oscar","supporting",0,"[2019]",0,NA,1940,0,1,"al pacino",1940,1
+4517,"Male",1943-02-09,"Newark, New Jersey, USA","Acting",1.8087,"oscar","supporting",0,"[2019]",0,NA,1943,0,1,"joe pesci",1943,1
+1765068,"Female",1987-01-08,"Stockwell, London, England, UK","Acting",2.0499,"both","leading",1,"[2019, 2024]",0,NA,1987,1,0,"cynthia erivo",1987,1
+1245,"Female",1984-11-22,"New York City, New York, USA","Acting",18.0898,"both","both",1,"[2019]",0,NA,1984,1,1,"scarlett johansson",1984,1
+9137,"Female",1969-04-25,"Katy, Texas, USA","Acting",2.5399,"both","leading",0,"[2019]",1,"[2019]",1969,1,1,"renée zellweger",1969,1
+8534,"Female",1948-06-28,"Memphis, Tennessee, USA","Acting",1.8639,"oscar","supporting",0,"[2019]",0,NA,1948,1,1,"kathy bates",1948,1
+1373737,"Female",1996-01-03,"Oxford, Oxfordshire, England UK","Acting",9.3249,"both","supporting",0,"[2019]",0,NA,1996,1,0,"florence pugh",1996,1
+53240,"Male",1982-12-01,"Wembley, London, England, UK","Acting",1.0004,"both","leading",0,"[2020]",0,NA,1982,0,0,"riz ahmed",1982,1
+172069,"Male",1976-11-29,"Anderson, South Carolina, USA","Acting",1.6466,"both","leading",0,"[2020]",0,NA,1976,0,1,"chadwick boseman",1976,1
+215055,"Male",1983-12-21,"Seoul, South Korea","Acting",2.6819,"oscar","leading",0,"[2020]",0,NA,1983,0,0,"steven yeun",1983,1
+6730,"Male",1971-10-13,"Hammersmith, London, England, UK","Acting",1.4556,"both","supporting",0,"[2020]",0,NA,1971,0,0,"sacha baron cohen",1971,1
+1254614,"Male",1981-08-06,"Queens, New York City, New York, USA","Acting",0.8652,"oscar",NA,0,NA,0,NA,1981,0,1,"leslie odom jr.",1981,0
+1216195,"Male",1948-04-07,"Chicago, Illinois, USA","Acting",0.3599,"oscar","supporting",0,"[2020]",0,NA,1948,0,1,"paul raci",1948,1
+1200864,"Male",1991-08-12,"San Bernardino, California, USA","Acting",2.229,"oscar",NA,0,NA,0,NA,1991,0,1,"lakeith stanfield",1991,0
+3554076,"Not set",NA,NA,"Acting",0.0631,"oscar","leading",0,"[2020]",0,NA,NA,1,NA,"andra day",NA,1
+556356,"Female",1988-04-18,"Wimbledon, London, England, UK","Acting",5.2016,"oscar","leading",0,"[2020]",0,NA,1988,1,0,"vanessa kirby",1988,1
+4877640,"Female",NA,NA,"Directing",0,"oscar","supporting",0,"[2020]",0,NA,NA,1,NA,"maria bakalova",NA,1
+71070,"Female",1985-12-03,"Allentown, Pennsylvania, USA","Acting",9.3452,"both","supporting",0,"[2020]",0,NA,1985,1,1,"amanda seyfried",1985,1
+1080935,"Female",1947-06-19,"Gaeseong, Gyeonggi, Korea","Acting",1.2314,"oscar",NA,0,NA,0,NA,1947,1,0,"youn yuh-jung",1947,0
+8785,"Male",1953-02-09,"Belfast, Northern Ireland, UK","Acting",3.1434,"oscar","supporting",0,"[2021]",0,NA,1953,0,0,"ciarán hinds",1953,1
+1571661,"Male",1968-07-24,"Mesa, Arizona, USA","Acting",0.364,"oscar","supporting",0,"[2021]",1,"[2021]",1968,0,1,"troy kotsur",1968,1
+88124,"Male",1988-04-02,"Dallas, Texas, USA","Acting",5.7209,"oscar","supporting",0,"[2021]",0,NA,1988,0,1,"jesse plemons",1988,1
+113505,"Male",1996-06-13,"Sydney, New South Wales, Australia","Acting",0.8659,"oscar","supporting",0,"[2021]",0,NA,1996,0,0,"kodi smit-mcphee",1996,1
+37917,"Female",1990-04-09,"Los Angeles, California, USA","Acting",4.6349,"both","leading",0,"[2021]",0,NA,1990,1,1,"kristen stewart",1990,1
+1498158,"Female",1989-12-28,"Killarney, Ireland","Acting",2.0832,"oscar","supporting",0,"[2021]",0,NA,1989,1,0,"jessie buckley",1989,1
+1437491,"Female",1991-01-25,"North Carolina, USA","Acting",1.1322,"oscar","supporting",0,"[2021]",1,"[2021]",1991,1,1,"ariana debose",1991,1
+205,"Female",1982-04-30,"Point Pleasant, New Jersey, USA","Acting",3.279,"both","supporting",0,"[2021]",0,NA,1982,1,1,"kirsten dunst",1982,1
+53923,"Female",1969-02-21,"San Francisco, California, USA","Acting",1.2596,"oscar",NA,0,NA,0,NA,1969,1,1,"aunjanue ellis-taylor",1969,0
+86654,"Male",1991-08-17,"Anaheim, California, USA","Acting",8.2717,"both","leading",0,"[2022]",0,NA,1991,0,1,"austin butler",1991,1
+1492649,"Male",1938-12-06,"London, England, UK","Acting",0.889,"oscar","leading",0,"[2022]",0,NA,1938,0,0,"colin farrell",1938,1
+18269,"Male",1968-12-03,"Indianapolis, Indiana, USA","Acting",1.7295,"both","leading",0,"[2022]",1,"[2022]",1968,0,1,"brendan fraser",1968,1
+2326151,"Male",1996-02-02,"Maynooth, County Kildare, Republic of Ireland","Acting",2.4936,"both","leading",0,"[2022]",0,NA,1996,0,0,"paul mescal",1996,1
+2440,"Male",1949-12-12,"Caterham, Surrey, England, UK","Acting",2.8821,"oscar","leading",0,"[2022]",0,NA,1949,0,0,"bill nighy",1949,1
+2039,"Male",1955-03-29,"Dublin, Ireland","Acting",2.2798,"oscar","supporting",0,"[2022]",0,NA,1955,0,0,"brendan gleeson",1955,1
+226366,"Male",1982-03-31,"Fayetteville, North Carolina, USA","Acting",1.6498,"both","supporting",0,"[2022]",0,NA,1982,0,1,"brian tyree henry",1982,1
+6167,"Male",1935-03-15,"New York City, New York, USA","Acting",1.629,"oscar","supporting",0,"[2022]",0,NA,1935,0,1,"judd hirsch",1935,1
+1290466,"Male",1992-10-18,"Dublin, Ireland","Acting",2.6934,"oscar","supporting",0,"[2022]",0,NA,1992,0,0,"barry keoghan",1992,1
+690,"Male",1971-08-20,"Saigon, Vietnam [now Ho Chi Minh City]","Acting",1.2452,"oscar","supporting",0,"[2022]",1,"[2022]",1971,0,0,"ke huy quan",1971,1
+224513,"Female",1988-04-30,"Santa Cruz del Norte, Cuba","Acting",17.6673,"oscar","leading",0,"[2022]",0,NA,1988,1,0,"ana de armas",1988,1
+127558,"Female",1981-11-20,"Whitley Bay, Northumberland, UK","Acting",1.3803,"oscar","leading",0,"[2022]",0,NA,1981,1,0,"andrea riseborough",1981,1
+1620,"Female",1962-08-06,"Ipoh, Perak, Malaysia","Acting",3.1886,"oscar","leading",0,"[2022]",1,"[2022]",1962,1,0,"michelle yeoh",1962,1
+9780,"Female",1958-08-16,"New York City, New York, USA","Acting",2.5353,"oscar","supporting",0,"[2022]",0,NA,1958,1,1,"angela bassett",1958,1
+1360317,"Female",1979-06-25,"Thailand","Acting",0.8222,"oscar","supporting",0,"[2022]",0,NA,1979,1,0,"hong chau",1979,1
+62105,"Female",1983-01-09,"Tipperary, Ireland","Acting",1.6563,"oscar","supporting",0,"[2022]",0,NA,1983,1,0,"kerry condon",1983,1
+8944,"Female",1958-11-22,"Los Angeles, California, USA","Acting",2.3974,"oscar","supporting",0,"[2022]",1,"[2022]",1958,1,1,"jamie lee curtis",1958,1
+1381186,"Female",1990-11-25,"Torrance, California, USA","Acting",0.9235,"oscar","supporting",0,"[2022]",0,NA,1990,1,1,"stephanie hsu",1990,1
+91671,"Male",1969-11-28,"Philadelphia, Pennsylvania, USA","Acting",1.4803,"oscar","leading",1,"[2023, 2024]",0,NA,1969,0,1,"colman domingo",1969,1
+2037,"Male",1976-05-25,"Douglas, Cork, Ireland","Acting",8.1887,"both","leading",0,"[2023]",1,"[2023]",1976,0,0,"cillian murphy",1976,1
+2954,"Male",1965-12-07,"Washington, D.C., USA","Acting",1.8167,"both","leading",0,"[2023]",0,NA,1965,0,1,"jeffrey wright",1965,1
+1225953,"Male",1976-04-05,"St. Louis, Missouri, USA","Acting",2.1172,"oscar","supporting",0,"[2023]",0,NA,1976,0,1,"sterling k. brown",1976,1
+1183917,"Female",1986-08-02,"Kalispell, Montana, USA","Acting",1.0535,"oscar","leading",0,"[2023]",0,NA,1986,1,1,"lily gladstone",1986,1
+7152,"Female",1978-04-30,"Suhl, Germany","Acting",0.8353,"oscar","leading",0,"[2023]",0,NA,1978,1,0,"sandra hüller",1978,1
+5081,"Female",1983-02-23,"Wandsworth, London, England, UK","Acting",5.2042,"both","supporting",0,"[2023]",0,NA,1983,1,0,"emily blunt",1983,1
+1075037,"Female",1989-09-17,"Augusta, Georgia, USA","Acting",3.5688,"oscar","supporting",0,"[2023]",0,NA,1989,1,1,"danielle brooks",1989,1
+59174,"Female",1984-04-18,"Los Angeles, California, USA","Acting",1.5003,"both","supporting",0,"[2023]",0,NA,1984,1,1,"america ferrera",1984,1
+1038,"Female",1962-11-19,"Los Angeles, California, USA","Acting",4.5639,"both","supporting",0,"[2023]",0,NA,1962,1,1,"jodie foster",1962,1
+1180099,"Female",1986-05-21,"Philadelphia, Pennsylvania, USA","Acting",0.7068,"oscar","supporting",0,"[2023]",1,"[2023]",1986,1,1,"da'vine joy randolph",1986,1
+3490,"Male",1973-04-14,"Woodhaven, Queens, New York City, New York, USA","Acting",3.4795,"both","leading",0,"[2024]",1,"[2024]",1973,0,1,"adrien brody",1973,1
+5469,"Male",1962-12-22,"Ipswich, Suffolk, England, UK","Acting",4.7639,"oscar","leading",0,"[2024]",0,NA,1962,0,0,"ralph fiennes",1962,1
+60898,"Male",1982-08-13,"Constanta, Romania","Acting",4.8326,"both","leading",0,"[2024]",0,NA,1982,0,0,"sebastian stan",1982,1
+1266686,"Male",1992-12-08,"Reutov, Moscow oblast, Russia","Acting",1.4647,"oscar","supporting",0,"[2024]",0,NA,1992,0,0,"yura borisov",1992,1
+18793,"Male",1982-09-30,"New York City, New York, USA","Acting",1.4702,"oscar","supporting",0,"[2024]",1,"[2024]",1982,0,1,"kieran culkin",1982,1
+1377159,"Male",1893-12-14,"Cheltenham, Gloucestershire, England, UK","Costume & Make-Up",0.098,"oscar","supporting",0,"[2024]",0,NA,1893,0,0,"guy pearce",1893,1
+1347327,"Not set",NA,NA,"Acting",0.0434,"oscar","supporting",0,"[2024]",0,NA,NA,1,NA,"jeremy strong",NA,1
+1505938,"Female",1972-03-31,"Madrid, Spain","Acting",0.8961,"oscar","leading",0,"[2024]",0,NA,1972,1,0,"karla sofía gascón",1972,1
+1640439,"Female",1999-03-25,"Los Angeles, California, USA","Acting",7.168,"oscar","leading",0,"[2024]",1,"[2024]",1999,1,1,"mikey madison",1999,1
+3416,"Female",1962-11-11,"Roswell, New Mexico, USA","Acting",3.9238,"oscar","leading",0,"[2024]",0,NA,1962,1,1,"demi moore",1962,1
+87335,"Female",1965-09-14,"Rio de Janeiro, Rio de Janeiro, Brazil","Acting",0.6296,"oscar","leading",0,"[2024]",0,NA,1965,1,0,"fernanda torres",1965,1
+1525043,"Female",1990-06-17,"San Francisco, California, USA","Acting",1.5155,"both","supporting",0,"[2024]",0,NA,1990,1,1,"monica barbaro",1990,1
+226001,"Female",1993-06-26,"Boca Raton, Florida, USA","Acting",2.4727,"both","supporting",0,"[2024]",0,NA,1993,1,1,"ariana grande",1993,1
+6588,"Female",1952-06-18,"Rome, Lazio, Italy","Acting",1.6365,"oscar","supporting",0,"[2024]",0,NA,1952,1,0,"isabella rossellini",1952,1
+8691,"Female",1978-06-19,"Passaic, New Jersey, USA","Acting",8.3862,"both","supporting",0,"[2024]",1,"[2024]",1978,1,1,"zoe saldaña",1978,1
+9828,"Male",1984-09-03,"Roseau, Minnesota, USA","Acting",1.1779,"commercial",NA,0,NA,0,NA,1984,0,1,"garrett hedlund",1984,0
+64295,"Male",1982-11-28,"Grand Forks, North Dakota, USA","Acting",6.8917,"commercial",NA,0,NA,0,NA,1982,0,1,"alan ritchson",1982,0
+240724,"Female",1993-05-06,"Hounslow, Greater London, England, UK","Acting",5.1246,"commercial",NA,0,NA,0,NA,1993,1,0,"naomi scott",1993,0
+934,"Male",1964-04-07,"Wellington, New Zealand","Acting",5.2753,"commercial",NA,0,NA,0,NA,1964,0,0,"russell crowe",1964,0
+58225,"Male",1969-10-01,"Wilkesboro, North Carolina, USA","Acting",3.1104,"commercial",NA,0,NA,0,NA,1969,0,1,"zach galifianakis",1969,0
+35742,"Male",1965-11-02,"New Delhi, Delhi, India","Acting",3.5019,"commercial",NA,0,NA,0,NA,1965,0,0,"shah rukh khan",1965,0
+118545,"Female",1989-10-04,"Austin, Texas, USA","Acting",6.4109,"commercial",NA,0,NA,0,NA,1989,1,1,"dakota johnson",1989,0
+9030,"Female",1972-11-06,"London, England, UK","Acting",2.3988,"commercial",NA,0,NA,0,NA,1972,1,0,"thandiwe newton",1972,0
+4730,"Female",1986-09-12,"New York City, New York, USA","Acting",4.471,"commercial",NA,0,NA,0,NA,1986,1,1,"emmy rossum",1986,0
+228,"Male",1950-11-28,"Englewood, New Jersey, USA","Acting",2.6168,"commercial",NA,0,NA,0,NA,1950,0,1,"ed harris",1950,0
+114019,"Male",1979-04-15,"Pontypool, Wales, UK","Acting",2.9418,"commercial",NA,0,NA,0,NA,1979,0,0,"luke evans",1979,0
+4690,"Male",1943-03-31,"Queens, New York City, New York, USA","Acting",3.7139,"commercial",NA,0,NA,0,NA,1943,0,1,"christopher walken",1943,0
+568728,"Female",1985-04-19,"Novosibirsk, Russia","Acting",0.416,"commercial",NA,0,NA,0,NA,1985,1,0,"masha mashkova",1985,0
+976,"Male",1967-07-26,"Shirebrook, Derbyshire, England, UK","Acting",27.5604,"commercial",NA,0,NA,0,NA,1967,0,0,"jason statham",1967,0
+8769,"Male",1975-02-18,"Sofia, Bulgaria","Acting",0.5861,"commercial",NA,0,NA,0,NA,1975,0,0,"christo jivkov",1975,0
+6065,"Male",1954-04-09,"Houston, Texas, USA","Acting",3.1266,"commercial",NA,0,NA,0,NA,1954,0,1,"dennis quaid",1954,0
+3637136,"Not set",NA,NA,"Acting",0.0071,"commercial",NA,0,NA,0,NA,NA,1,NA,"jeremy howard",NA,0
+4,"Female",1956-10-21,"Beverly Hills, Los Angeles, California, USA","Acting",1.5892,"commercial",NA,0,NA,0,NA,1956,1,1,"carrie fisher",1956,0
+18973,"Female",1983-08-14,"Chernovtsy, Ukrainian SSR, USSR [now Chernivtsi, Ukraine]","Acting",11.2029,"commercial",NA,0,NA,0,NA,1983,1,0,"mila kunis",1983,0
+84214,"Male",1992-02-11,"Grand Rapids, Michigan, USA","Acting",2.5102,"commercial",NA,0,NA,0,NA,1992,0,1,"taylor lautner",1992,0
+41091,"Female",1973-08-22,"Canandaigua, New York, USA","Acting",1.7652,"commercial",NA,0,NA,0,NA,1973,1,1,"kristen wiig",1973,0
+1789952,"Male",2004-01-17,"Havering, London, UK","Acting",0.6093,"commercial",NA,0,NA,0,NA,2004,0,0,"harry collett",2004,0
+2956442,"Female",2013-10-16,"Chengdu, Sichuan Province, China","Acting",0.4045,"commercial",NA,0,NA,0,NA,2013,1,0,"yang enyou",2013,0
+2231,"Male",1948-12-21,"Washington, D.C., USA","Acting",6.9129,"commercial",NA,0,NA,0,NA,1948,0,1,"samuel l. jackson",1948,0
+2109,"Female",1956-08-21,"Mossley Hill, Liverpool, England, UK","Acting",2.0018,"commercial",NA,0,NA,0,NA,1956,1,0,"kim cattrall",1956,0
+1100,"Male",1947-07-30,"Thal, Styria, Austria","Acting",3.6163,"commercial",NA,0,NA,0,NA,1947,0,0,"arnold schwarzenegger",1947,0
+887,"Male",1968-11-18,"Dallas, Texas, USA","Acting",2.7649,"commercial",NA,0,NA,0,NA,1968,0,1,"owen wilson",1968,0
+70851,"Male",1969-08-28,"Santa Monica, California, USA","Acting",13.03,"commercial",NA,0,NA,0,NA,1969,0,1,"jack black",1969,0
+76793,"Male",1967-01-07,"Jaipur, Rajasthan, India","Acting",1.5851,"commercial",NA,0,NA,0,NA,1967,0,0,"irrfan khan",1967,0
+74308,"Male",1978-05-31,"Suffern, New York, USA","Acting",0.3852,"commercial",NA,0,NA,0,NA,1978,0,1,"christopher carley",1978,0
+298410,"Male",1971-03-22,"Southfield, Michigan, USA","Acting",1.8407,"commercial",NA,0,NA,0,NA,1971,0,1,"keegan-michael key",1971,0
+2387,"Male",1940-07-13,"Mirfield, West Yorkshire, England, UK","Acting",2.4468,"commercial",NA,0,NA,0,NA,1940,0,0,"patrick stewart",1940,0
+2440968,"Female",2000-02-10,NA,"Acting",0.3678,"commercial",NA,0,NA,0,NA,2000,1,NA,"zhang yifan",2000,0
+3319642,"Not set",NA,NA,"Acting",0,"commercial",NA,0,NA,0,NA,NA,1,NA,"wu jing",NA,0
+127442,"Male",1933-02-10,"New Jersey, USA","Acting",0.1103,"commercial",NA,0,NA,0,NA,1933,0,1,"david cross",1933,0
+76512,"Male",1969-07-17,"Winton, Queensland, Australia","Acting",1.6105,"commercial",NA,0,NA,0,NA,1969,0,0,"jason clarke",1969,0
+1016168,"Female",1989-04-05,"Esher, Surrey, England, UK","Acting",3.673,"commercial",NA,0,NA,0,NA,1989,1,0,"lily james",1989,0
+576500,"Male",1972-06-29,"Zibo,Shandong,China","Acting",0.2342,"commercial",NA,0,NA,0,NA,1972,0,0,"gao yalin",1972,0
+73968,"Male",1983-05-05,"St. Helier, Jersey, Channel Islands","Acting",15.6124,"commercial",NA,0,NA,0,NA,1983,0,0,"henry cavill",1983,0
+3896,"Male",1952-06-07,"Ballymena, County Antrim, Northern Ireland, UK","Acting",6.939,"commercial",NA,0,NA,0,NA,1952,0,0,"liam neeson",1952,0
+1488961,"Male",1979-12-17,"Chicago, Illinois, USA","Acting",1.0058,"commercial",NA,0,NA,0,NA,1979,0,1,"lil rel howery",1979,0
+1117313,"Male",1984-07-28,"Los Angeles, California, USA","Acting",1.5004,"commercial",NA,0,NA,0,NA,1984,0,1,"john david washington",1984,0
+23626,"Male",1967-10-04,"San Francisco, California, USA","Acting",2.6609,"commercial",NA,0,NA,0,NA,1967,0,1,"liev schreiber",1967,0
+505710,"Female",1996-09-01,"Oakland, California, USA","Acting",9.499,"commercial",NA,0,NA,0,NA,1996,1,1,"zendaya",1996,0
+41686,"Male",1973-06-15,"Albuquerque, New Mexico, USA","Acting",2.5486,"commercial",NA,0,NA,0,NA,1973,0,1,"neil patrick harris",1973,0
+21088,"Male",1971-03-16,"El Paso, Texas, USA","Acting",1.9808,"commercial",NA,0,NA,0,NA,1971,0,1,"alan tudyk",1971,0
+1735828,"Female",2000-03-27,"Atlanta, Georgia, USA","Acting",1.1238,"commercial",NA,0,NA,0,NA,2000,1,1,"halle bailey",2000,0
+83860,"Male",1986-09-20,"Onslow County, North Carolina, USA","Acting",1.4479,"commercial",NA,0,NA,0,NA,1986,0,1,"aldis hodge",1986,0
+2223265,"Male",2000-11-28,"Huaihua, Hunan, China","Acting",2.7265,"commercial",NA,0,NA,0,NA,2000,0,0,"jackson yee",2000,0
+10859,"Male",1976-10-23,"Vancouver, British Columbia, Canada","Acting",7.0533,"commercial",NA,0,NA,0,NA,1976,0,0,"ryan reynolds",1976,0
+2230991,"Female",1998-05-24,"Islington, London, England, UK","Acting",1.8908,"commercial",NA,0,NA,0,NA,1998,1,0,"daisy edgar-jones",1998,0
+55638,"Male",1979-07-06,"Philadelphia, Pennsylvania, USA","Acting",6.6975,"commercial",NA,0,NA,0,NA,1979,0,1,"kevin hart",1979,0
+55085,"Female",1986-04-22,"Austin, Texas, USA","Acting",4.993,"commercial",NA,0,NA,0,NA,1986,1,1,"amber heard",1986,0
+933160,"Male",1993-03-21,"New Delhi, India","Acting",0.754,"commercial",NA,0,NA,0,NA,1993,0,0,"suraj sharma",1993,0
+7517,"Female",1983-01-02,"Los Angeles, California, USA","Acting",1.3691,"commercial",NA,0,NA,0,NA,1983,1,1,"kate bosworth",1983,0
+1920,"Female",1971-10-29,"Winona, Minnesota, USA","Acting",3.7253,"commercial",NA,0,NA,0,NA,1971,1,1,"winona ryder",1971,0
+2297434,"Male",NA,NA,"Acting",0.0404,"commercial",NA,0,NA,0,NA,NA,0,NA,"michael moore",NA,0
+1156024,"Female",1985-05-22,"Chiba, Japan","Acting",0.7495,"commercial",NA,0,NA,0,NA,1985,1,0,"tao okamoto",1985,0
+8784,"Male",1968-03-02,"Chester, Cheshire, England, UK","Acting",3.8584,"commercial",NA,0,NA,0,NA,1968,0,0,"daniel craig",1968,0
+6941,"Female",1972-08-30,"San Diego, California, USA","Acting",2.5182,"commercial",NA,0,NA,0,NA,1972,1,1,"cameron diaz",1972,0
+2682877,"Female",2000-05-20,"Changchun,Jilin Province,China","Acting",1.6375,"commercial",NA,0,NA,0,NA,2000,1,0,"liu haocun",2000,0
+15033,"Male",1978-06-02,"Fairfield, Connecticut, USA","Acting",1.6185,"commercial",NA,0,NA,0,NA,1978,0,1,"justin long",1978,0
+1815539,"Female",2003-03-06,"Utah, USA","Acting",0.3271,"commercial",NA,0,NA,0,NA,2003,1,1,"millicent simmonds",2003,0
+1660946,"Male",1991-12-21,"San Francisco, California, USA","Acting",1.4109,"commercial",NA,0,NA,0,NA,1991,0,1,"colin woodell",1991,0
+550843,"Female",1989-02-16,"Sherman Oaks, California, USA","Acting",8.0759,"commercial",NA,0,NA,0,NA,1989,1,1,"elizabeth olsen",1989,0
+22123,"Female",1980-04-26,"Panama City, Panama","Acting",1.6285,"commercial",NA,0,NA,0,NA,1980,1,0,"jordana brewster",1980,0
+3,"Male",1942-07-13,"Chicago, Illinois, USA","Acting",4.4896,"commercial",NA,0,NA,0,NA,1942,0,1,"harrison ford",1942,0
+206,"Male",1962-01-17,"Newmarket, Ontario, Canada","Acting",4.7709,"commercial",NA,0,NA,0,NA,1962,0,0,"jim carrey",1962,0
+66,"Male",1971-08-31,"Atlanta, Georgia, USA","Acting",2.4425,"commercial",NA,0,NA,0,NA,1971,0,1,"chris tucker",1971,0
+10980,"Male",1989-07-23,"Hammersmith, London, England, UK","Acting",7.5227,"commercial",NA,0,NA,0,NA,1989,0,0,"daniel radcliffe",1989,0
+20286,"Male",1982-07-09,"Pontefract, England, UK","Acting",1.5899,"commercial",NA,0,NA,0,NA,1982,0,0,"toby kebbell",1982,0
+973667,"Female",1985-07-16,"Washington, D.C., USA","Acting",1.7694,"commercial",NA,0,NA,0,NA,1985,1,1,"rosa salazar",1985,0
+99689,"Male",1979-02-08,"Nanchang, Jiangxi, China","Acting",0.6774,"commercial",NA,0,NA,0,NA,1979,0,0,"deng chao",1979,0
+97576,"Female",1982-11-29,"London, England, UK","Acting",1.6027,"commercial",NA,0,NA,0,NA,1982,1,0,"gemma chan",1982,0
+1939095,"Not set",NA,NA,"Directing",0.0922,"commercial",NA,0,NA,0,NA,NA,1,NA,"dominique henry",NA,0
+1385063,"Female",1998-04-30,"Melbourne, Australia","Acting",0.4151,"commercial",NA,0,NA,0,NA,1998,1,0,"olivia dejonge",1998,0
+1481238,"Female",2002-02-13,"Crown Heights, Brooklyn, New York City, New York, USA","Acting",2.0424,"commercial",NA,0,NA,0,NA,2002,1,1,"sophia lillis",2002,0
+1519030,"Male",1986-12-30,"Baotou, Neimenggu, China","Acting",0.6019,"commercial",NA,0,NA,0,NA,1986,0,0,"yin zheng",1986,0
+4483,"Male",1937-08-08,"Los Angeles, California, USA","Acting",2.0679,"commercial",NA,0,NA,0,NA,1937,0,1,"dustin hoffman",1937,0
+18352,"Male",1966-01-13,"Lewiston, Maine, USA","Acting",1.8374,"commercial",NA,0,NA,0,NA,1966,0,1,"patrick dempsey",1966,0
+18897,"Male",1954-04-07,"Victoria Peak, Hong Kong","Acting",14.7791,"commercial",NA,0,NA,0,NA,1954,0,0,"jackie chan",1954,0
+87265,"Male",1981-01-29,"Ecatepec, State of Mexico, Mexico","Acting",1.041,"commercial",NA,0,NA,0,NA,1981,0,0,"tenoch huerta mejía",1981,0
+81685,"Male",1965-06-08,"New York City, New York, USA","Acting",3.1924,"commercial",NA,0,NA,0,NA,1965,0,1,"frank grillo",1965,0
+5527,"Male",1991-09-05,"Camden, London, England, UK","Acting",1.621,"commercial",NA,0,NA,0,NA,1991,0,0,"skandar keynes",1991,0
+1034681,"Male",1996-11-11,"Elkhart, Texas, USA","Acting",1.456,"commercial",NA,0,NA,0,NA,1996,0,1,"tye sheridan",1996,0
+70106,"Male",1980-08-29,"Hong Kong, China","Acting",1.1644,"commercial",NA,0,NA,0,NA,1980,0,0,"nicholas tse ting-fung",1980,0
+527393,"Male",1991-08-26,"New York City, New York, USA","Acting",4.3815,"commercial",NA,0,NA,0,NA,1991,0,1,"dylan o'brien",1991,0
+73457,"Male",1979-06-21,"Virginia, Minnesota, USA","Acting",3.6814,"commercial",NA,0,NA,0,NA,1979,0,1,"chris pratt",1979,0
+1639847,"Male",1986-07-15,"New Orleans, Louisiana, USA","Acting",0.8118,"commercial",NA,0,NA,0,NA,1986,0,1,"yahya abdul-mateen ii",1986,0
+1464650,"Female",2005-01-04,"Fuenlabrada, Madrid, Spain","Acting",1.5912,"commercial",NA,0,NA,0,NA,2005,1,0,"dafne keen",2005,0
+77335,"Male",1969-04-03,"Melbourne, Victoria, Australia","Acting",2.3071,"commercial",NA,0,NA,0,NA,1969,0,0,"ben mendelsohn",1969,0
+57637,"Male",1963-08-03,"Downey, California, USA","Acting",0.4375,"commercial",NA,0,NA,0,NA,1963,0,1,"james hetfield",1963,0
+550167,"Female",1987-08-01,"Delhi, India","Acting",0.7667,"commercial",NA,0,NA,0,NA,1987,1,0,"taapsee pannu",1987,0
+221192,"Female",1997-02-08,"Orlando, Florida, USA","Acting",2.5729,"commercial",NA,0,NA,0,NA,1997,1,1,"kathryn newton",1997,0
+19278,"Male",1978-06-07,"Tulsa, Oklahoma, USA","Acting",2.1193,"commercial",NA,0,NA,0,NA,1978,0,1,"bill hader",1978,0
+1979,"Male",1959-07-26,"South Orange, New Jersey, USA","Acting",1.6956,"commercial",NA,0,NA,0,NA,1959,0,1,"kevin spacey",1959,0
+19292,"Male",1966-09-09,"Brooklyn, New York, USA","Acting",5.5862,"commercial",NA,0,NA,0,NA,1966,0,1,"adam sandler",1966,0
+543530,"Male",1969-01-18,"Washington, D.C., USA","Acting",3.5323,"commercial",NA,0,NA,0,NA,1969,0,1,"dave bautista",1969,0
+1749,"Male",1931-03-26,"Boston, Massachusetts, USA","Acting",1.2097,"commercial",NA,0,NA,0,NA,1931,0,1,"leonard nimoy",1931,0
+17178,"Male",1973-07-03,"Norfolk, Virginia, USA","Acting",2.8872,"commercial",NA,0,NA,0,NA,1973,0,1,"patrick wilson",1973,0
+1230,"Male",1952-06-20,"Saint Louis, Missouri, USA","Acting",4.072,"commercial",NA,0,NA,0,NA,1952,0,1,"john goodman",1952,0
+12835,"Male",1967-07-18,"Alameda County, California, USA","Acting",13.9632,"commercial",NA,0,NA,0,NA,1967,0,1,"vin diesel",1967,0
+10990,"Female",1990-04-15,"Paris, France","Acting",20.8756,"commercial",NA,0,NA,0,NA,1990,1,0,"emma watson",1990,0
+59315,"Female",1984-03-10,"New York City, New York, USA","Acting",3.0315,"commercial",NA,0,NA,0,NA,1984,1,1,"olivia wilde",1984,0
+79072,"Male",1974-01-14,"Thunder Bay, Ontario, Canada","Acting",2.176,"commercial",NA,0,NA,0,NA,1974,0,0,"kevin durand",1974,0
+120724,"Male",1998-07-08,"Los Angeles, California, USA","Acting",2.8641,"commercial",NA,0,NA,0,NA,1998,0,1,"jaden smith",1998,0
+74947,"Female",1986-08-08,"Dezhou, Shandong, China","Acting",1.0341,"commercial",NA,0,NA,0,NA,1986,1,0,"kitty zhang yuqi",1986,0
+1925,"Male",1966-11-23,"Paris, France","Acting",4.2079,"commercial",NA,0,NA,0,NA,1966,0,0,"vincent cassel",1966,0
+74309,"Male",1991-11-04,"Fresno, California, USA","Acting",0.1907,"commercial",NA,0,NA,0,NA,1991,0,1,"bee vang",1991,0
+121529,"Female",1985-07-01,"Passy, Paris, France","Acting",2.5351,"commercial",NA,0,NA,0,NA,1985,1,0,"léa seydoux",1985,0
+117642,"Male",1979-08-01,"Honolulu, Hawaii, USA","Acting",18.0404,"commercial",NA,0,NA,0,NA,1979,0,1,"jason momoa",1979,0
+36594,"Female",1989-07-21,"Hammersmith, London, England, UK","Acting",2.1452,"commercial",NA,0,NA,0,NA,1989,1,0,"juno temple",1989,0
+49,"Female",1967-04-18,"Norristown, Pennsylvania, USA","Acting",2.637,"commercial",NA,0,NA,0,NA,1967,1,1,"maria bello",1967,0
+3291,"Male",1960-09-09,"London, England, UK","Acting",2.1763,"commercial",NA,0,NA,0,NA,1960,0,0,"hugh grant",1960,0
+7447,"Male",1958-04-03,"Amityville, New York, USA","Acting",2.8997,"commercial",NA,0,NA,0,NA,1958,0,1,"alec baldwin",1958,0
+1163789,"Female",1995-11-07,"San Diego, California, USA","Acting",0.9966,"commercial",NA,0,NA,0,NA,1995,1,1,"sophia ali",1995,0
+2826940,"Not set",NA,NA,"Acting",0.0867,"commercial",NA,0,NA,0,NA,NA,1,NA,"sean laughton",NA,0
+4810,"Female",1964-09-06,"Bushwick, Brooklyn, New York City, New York, USA","Acting",1.3008,"commercial",NA,0,NA,0,NA,1964,1,1,"rosie perez",1964,0
+7248,"Male",1968-07-27,"Rotorua, North Island, New Zealand","Acting",2.0875,"commercial",NA,0,NA,0,NA,1968,0,0,"cliff curtis",1968,0
+650,"Female",1951-10-05,"Carrollton, Illinois, USA","Acting",1.455,"commercial",NA,0,NA,0,NA,1951,1,1,"karen allen",1951,0
+517,"Male",1953-05-16,"Navan, County Meath, Ireland","Acting",3.408,"commercial",NA,0,NA,0,NA,1953,0,0,"pierce brosnan",1953,0
+11288,"Male",1986-05-13,"Barnes, London, England, UK","Acting",9.1115,"commercial",NA,0,NA,0,NA,1986,0,0,"robert pattinson",1986,0
+80108,"Male",1980-12-13,"Yanagawa, Fukuoka, Japan","Acting",1.4367,"commercial",NA,0,NA,0,NA,1980,0,0,"satoshi tsumabuki",1980,0
+4353641,"Not set",NA,NA,"Visual Effects",0.0261,"commercial",NA,0,NA,0,NA,NA,1,NA,"xiao yang",NA,0
+1532,"Male",1950-09-21,"Wilmette, Illinois, USA","Acting",2.7956,"commercial",NA,0,NA,0,NA,1950,0,1,"bill murray",1950,0
+1357546,"Male",NA,"Koide, Niigata, Japan","Acting",0.0474,"commercial",NA,0,NA,0,NA,NA,0,0,"ken watanabe",NA,0
+503,"Male",1982-10-31,"Nanaimo, British Columbia, Canada","Acting",1.7646,"commercial",NA,0,NA,0,NA,1982,0,0,"justin chatwin",1982,0
+3894986,"Not set",NA,NA,"Acting",0,"commercial",NA,0,NA,0,NA,NA,1,NA,"allen ai lun",NA,0
+38670,"Female",1986-10-02,"Los Angeles, California, USA","Acting",1.3185,"commercial",NA,0,NA,0,NA,1986,1,1,"camilla belle",1986,0
+8170,"Female",1974-03-05,"Miami, Florida, USA","Acting",2.4172,"commercial",NA,0,NA,0,NA,1974,1,1,"eva mendes",1974,0
+3061,"Male",1971-03-31,"Perth, Scotland, UK","Acting",3.235,"commercial",NA,0,NA,0,NA,1971,0,0,"ewan mcgregor",1971,0
+2956,"Female",1972-01-11,"New York City, New York, USA","Acting",3.3286,"commercial",NA,0,NA,0,NA,1972,1,1,"amanda peet",1972,0
+5526,"Female",1995-07-09,"Ilkley, West Yorkshire, England, UK","Acting",0.8393,"commercial",NA,0,NA,0,NA,1995,1,0,"georgie henley",1995,0
+11678,"Male",1966-01-20,"Seattle, Washington, USA","Acting",1.7838,"commercial",NA,0,NA,0,NA,1966,0,1,"rainn wilson",1966,0
+59620,"Female",1986-02-02,"Gravesend, Kent, England, UK","Acting",3.189,"commercial",NA,0,NA,0,NA,1986,1,0,"gemma arterton",1986,0
+32798,"Female",1982-07-24,"Los Angeles, California, USA","Acting",2.8214,"commercial",NA,0,NA,0,NA,1982,1,1,"elisabeth moss",1982,0
+3098081,"Not set",NA,NA,"Acting",0.0143,"commercial",NA,0,NA,0,NA,NA,1,NA,"bo-han huang",NA,0
+1083010,"Female",1993-10-31,"Georgetown, Guyana","Acting",1.3265,"commercial",NA,0,NA,0,NA,1993,1,0,"letitia wright",1993,0
+17276,"Male",1969-11-13,"Paisley, Scotland, UK","Acting",11.5649,"commercial",NA,0,NA,0,NA,1969,0,0,"gerard butler",1969,0
+27428,"Male",1990-06-13,"High Wycombe, Buckinghamshire, England, UK","Acting",3.7815,"commercial",NA,0,NA,0,NA,1990,0,0,"aaron taylor-johnson",1990,0
+77795,"Female",1980-03-03,"London, England, UK","Acting",1.7218,"commercial",NA,0,NA,0,NA,1980,1,0,"katherine waterston",1980,0
+1354419,"Not set",NA,NA,"Acting",0.045,"commercial",NA,0,NA,0,NA,NA,1,NA,"kevin james",NA,0
+520,"Female",1965-03-25,"Nelsonville, Ohio, USA","Acting",2.2474,"commercial",NA,0,NA,0,NA,1965,1,1,"sarah jessica parker",1965,0
+67599,"Female",1988-12-14,"Salinas, California, USA","Acting",1.9722,"commercial",NA,0,NA,0,NA,1988,1,1,"vanessa hudgens",1988,0
+28846,"Male",1976-08-25,"Stockholm, Sweden","Acting",4.5794,"commercial",NA,0,NA,0,NA,1976,0,0,"alexander skarsgård",1976,0
+1224028,"Female",1985-06-10,"Hongkong，China","Acting",0.6071,"commercial",NA,0,NA,0,NA,1985,1,0,"celina jade",1985,0
+1254583,"Male",1982-05-01,"Belfast, Northern Ireland, UK","Acting",2.5815,"commercial",NA,0,NA,0,NA,1982,0,0,"jamie dornan",1982,0
+1625558,"Female",1988-06-02,"Stony Brook, Brookhaven, New York, USA","Acting",4.6277,"commercial",NA,0,NA,0,NA,1988,1,1,"awkwafina",1988,0
+87722,"Female",1979-12-28,"Hudiksvall, Gävleborgs län, Sweden","Acting",2.2321,"commercial",NA,0,NA,0,NA,1979,1,0,"noomi rapace",1979,0
+2963,"Male",1964-01-07,"Long Beach, California, USA","Acting",6.4799,"commercial",NA,0,NA,0,NA,1964,0,1,"nicolas cage",1964,0
+2219,"Male",1975-06-27,"Santa Monica, California, USA","Acting",5.5765,"commercial",NA,0,NA,0,NA,1975,0,1,"tobey maguire",1975,0
+19034,"Female",1979-08-03,"Fort Saskatchewan, Alberta, Canada","Acting",3.7937,"commercial",NA,0,NA,0,NA,1979,1,0,"evangeline lilly",1979,0
+6383,"Male",1968-03-12,"Cupertino, California, USA","Acting",2.1485,"commercial",NA,0,NA,0,NA,1968,0,1,"aaron eckhart",1968,0
+1421138,"Male",1884-01-21,"Chico, California, USA","Acting",0.1038,"commercial",NA,0,NA,0,NA,1884,0,1,"mark strong",1884,0
+25072,"Male",1979-03-09,"Guatemala City, Guatemala","Acting",7.7047,"commercial",NA,0,NA,0,NA,1979,0,0,"oscar isaac",1979,0
+1724403,"Male",1983-08-29,"Anshan, Liaoning, China","Acting",0.5178,"commercial",NA,0,NA,0,NA,1983,0,0,"lei jiayin",1983,0
+1676520,"Female",1991-03-22,"Brooklyn, New York City, New York, U.S.","Acting",0.6072,"commercial",NA,0,NA,0,NA,1991,1,0,"dominique fishback",1991,0
+8786,"Female",1969-06-28,"Tel Aviv, Israel","Acting",1.2915,"commercial",NA,0,NA,0,NA,1969,1,0,"ayelet zurer",1969,0
+7026,"Male",1967-07-22,"Haverfordwest, Pembrokeshire, Wales, UK","Acting",1.6598,"commercial",NA,0,NA,0,NA,1967,0,0,"rhys ifans",1967,0
+8167,"Male",1973-09-12,"Glendale, California, USA","Acting",3.5347,"commercial",NA,0,NA,0,NA,1973,0,1,"paul walker",1973,0
+222121,"Male",1981-09-15,"New York City, New York, USA","Acting",2.8592,"commercial",NA,0,NA,0,NA,1981,0,1,"ben schwartz",1981,0
+4581370,"Not set",NA,NA,"Acting",0,"commercial",NA,0,NA,0,NA,NA,1,NA,"wang baoqiang",NA,0
+1704579,"Female",2008-04-22,"Beijing, China","Acting",3.5558,"commercial",NA,0,NA,0,NA,2008,1,0,"shuya sophia cai",2008,0
+4316887,"Female",1974-05-06,"中国,内蒙古","Acting",0.0261,"commercial",NA,0,NA,0,NA,1974,1,0,"chang yuan",1974,0
+1094210,"Male",1989-04-19,"Shenyang, Liaoning Province, China","Acting",0.8133,"commercial",NA,0,NA,0,NA,1989,0,0,"jing boran",1989,0
+18182,"Female",1979-11-14,"Berdiansk, Ukrainian SSR, USSR [now Zaporizhzhia Oblast, Ukraine]","Acting",3.0797,"commercial",NA,0,NA,0,NA,1979,1,0,"olga kurylenko",1979,0
+1137,"Female",1964-03-09,"Paris, France","Acting",1.5889,"commercial",NA,0,NA,0,NA,1964,1,0,"juliette binoche",1964,0
+1545693,"Female",1991-06-01,"Mitte, Berlin, Germany","Acting",1.9509,"commercial",NA,0,NA,0,NA,1991,1,0,"zazie beetz",1991,0
+9824,"Female",1976-07-15,"Algermissen, Lower Saxony, Germany","Acting",2.8007,"commercial",NA,0,NA,0,NA,1976,1,0,"diane kruger",1976,0
+514,"Male",1937-04-22,"Manhattan, New York, USA","Acting",3.0567,"commercial",NA,0,NA,0,NA,1937,0,1,"jack nicholson",1937,0
+1716493,"Male",1996-06-24,"London, England, UK","Acting",3.0414,"commercial",NA,0,NA,0,NA,1996,0,0,"harris dickinson",1996,0
+2405,"Female",1976-08-09,"Beaumont, Puy-de-Dôme, France","Acting",2.204,"commercial",NA,0,NA,0,NA,1976,1,0,"audrey tautou",1976,0
+3848628,"Not set",NA,NA,"Acting",0,"commercial",NA,0,NA,0,NA,NA,1,NA,"hai qing",NA,0
+1828467,"Not set",NA,NA,"Visual Effects",0.0456,"commercial",NA,0,NA,0,NA,NA,1,NA,"yi shan",NA,0
+5528,"Male",1987-04-27,"Sheepscombe, Gloucestershire, England, UK","Acting",1.2473,"commercial",NA,0,NA,0,NA,1987,0,0,"william moseley",1987,0
+2566285,"Male",NA,NA,"Writing",0.0071,"commercial",NA,0,NA,0,NA,NA,0,NA,"lang qin",NA,0
+62,"Male",1955-03-19,"Idar-Oberstein, West Germany [now Germany]","Acting",3.2372,"commercial",NA,0,NA,0,NA,1955,0,0,"bruce willis",1955,0
+4937,"Male",1970-03-28,"Minneapolis, Minnesota, USA","Acting",2.3985,"commercial",NA,0,NA,0,NA,1970,0,1,"vince vaughn",1970,0
+18997,"Female",1981-03-02,"Los Angeles, California, USA","Acting",2.9384,"commercial",NA,0,NA,0,NA,1981,1,1,"bryce dallas howard",1981,0
+1225347,"Not set",NA,NA,"Writing",0.1126,"commercial",NA,0,NA,0,NA,NA,1,NA,"pang-ni landrum",NA,0
+74568,"Male",1983-08-11,"Melbourne, Victoria, Australia","Acting",14.2958,"commercial",NA,0,NA,0,NA,1983,0,0,"chris hemsworth",1983,0
+1582107,"Female",NA,NA,"Acting",0.1604,"commercial",NA,0,NA,0,NA,NA,1,NA,"jia ling",NA,0
+17244,"Male",1981-04-19,"Vancouver, British Columbia, Canada","Acting",6.0319,"commercial",NA,0,NA,0,NA,1981,0,0,"hayden christensen",1981,0
+33161,"Male",1955-09-21,"Paris, France","Acting",0.9074,"commercial",NA,0,NA,0,NA,1955,0,0,"françois cluzet",1955,0
+2324569,"Non-binary/Other",1995-12-13,"Royal Tunbridge Wells, Kent, England, UK","Acting",3.2649,"commercial",NA,0,NA,0,NA,1995,1,0,"emma corrin",1995,0
+17286,"Female",1973-10-03,"Hamilton, Bermuda","Acting",4.0005,"commercial",NA,0,NA,0,NA,1973,1,0,"lena headey",1973,0
+122287,"Not set",NA,NA,"Acting",0.0674,"commercial",NA,0,NA,0,NA,NA,1,NA,"abdul henderson",NA,0
+1560244,"Male",1991-11-01,"New York City, New York, USA","Acting",1.6145,"commercial",NA,0,NA,0,NA,1991,0,1,"anthony ramos",1991,0
+11108,"Male",1970-02-14,"Brockworth, Gloucestershire, England, UK","Acting",1.7848,"commercial",NA,0,NA,0,NA,1970,0,0,"simon pegg",1970,0
+110742,"Female",1980-06-20,"Queens, New York City, New York, USA","Acting",1.6263,"commercial",NA,0,NA,0,NA,1980,1,1,"tika sumpter",1980,0
+16828,"Male",1981-06-13,"Boston, Massachusetts, USA","Acting",6.9589,"commercial",NA,0,NA,0,NA,1981,0,1,"chris evans",1981,0
+19541,"Male",1956-06-07,"Doncaster, Yorkshire, England, UK","Acting",0.3721,"commercial",NA,0,NA,0,NA,1956,0,0,"mark ryan",1956,0
+209578,"Female",1985-08-21,"Enfield, London, England, UK","Acting",2.0495,"commercial",NA,0,NA,0,NA,1985,1,0,"laura haddock",1985,0
+1774679,"Male",2003-09-03,"Los Angeles, California, USA","Acting",1.9719,"commercial",NA,0,NA,0,NA,2003,0,1,"jack dylan grazer",2003,0
+588057,"Female",1984-03-01,"Qingdao，Shandong Province，China","Acting",0.777,"commercial",NA,0,NA,0,NA,1984,1,0,"bai baihe",1984,0
+76792,"Female",1984-10-18,"Bombay, Maharashtra, India","Acting",1.1724,"commercial",NA,0,NA,0,NA,1984,1,0,"freida pinto",1984,0
+59219,"Male",1986-10-22,"West Chester, Pennsylvania, USA","Acting",1.7037,"commercial",NA,0,NA,0,NA,1986,0,1,"kyle gallner",1986,0
+23532,"Male",1969-01-14,"Rye, New York, USA","Acting",2.8282,"commercial",NA,0,NA,0,NA,1969,0,1,"jason bateman",1969,0
+2299889,"Female",1994-05-17,"Irkutsk, Russia","Acting",0.0941,"commercial",NA,0,NA,0,NA,1994,1,0,"viktoriya miroshnichenko",1994,0
+49971,"Female",1969-12-29,"Winston-Salem, North Carolina, USA","Acting",2.4704,"commercial",NA,0,NA,0,NA,1969,1,1,"jennifer ehle",1969,0
+3431700,"Not set",NA,NA,"Acting",0.0777,"commercial",NA,0,NA,0,NA,NA,1,NA,"you ge",NA,0
+8768,"Female",1962-05-01,"Bucharest, Romania","Acting",2.9905,"commercial",NA,0,NA,0,NA,1962,1,0,"maia morgenstern",1962,0
+964549,"Male",1987-01-01,"Agra, Uttar Pradesh, India","Acting",0.4788,"commercial",NA,0,NA,0,NA,1987,0,0,"madhur mittal",1987,0
+1220123,"Male",1983-11-24,"Bristol, England, UK","Acting",0.8587,"commercial",NA,0,NA,0,NA,1983,0,0,"gwilym lee",1983,0
+90633,"Female",1985-04-30,"Petah Tikva, Israel","Acting",11.6889,"commercial",NA,0,NA,0,NA,1985,1,0,"gal gadot",1985,0
+1338063,"Male",1969-03-05,"Tianjin, China","Acting",0.4259,"commercial",NA,0,NA,0,NA,1969,0,0,"huang zhizhong",1969,0
+16940,"Male",1948-09-19,"Cowes, Isle of Wight, England, UK","Acting",2.5486,"commercial",NA,0,NA,0,NA,1948,0,0,"jeremy irons",1948,0
+2045355,"Female",NA,NA,"Camera",0.0214,"commercial",NA,0,NA,0,NA,NA,1,NA,"kristin davis",NA,0
+1724347,"Male",1990-05-20,"China","Acting",0.1749,"commercial",NA,0,NA,0,NA,1990,0,0,"li jiuxiao",1990,0
+1318681,"Not set",NA,NA,"Acting",0.0286,"commercial",NA,0,NA,0,NA,NA,1,NA,"jason lee",NA,0
+12052,"Female",1972-09-27,"Los Angeles, California, USA","Acting",1.7801,"commercial",NA,0,NA,0,NA,1972,1,1,"gwyneth paltrow",1972,0
+17287,"Male",1969-10-15,"Sheffield, Yorkshire, England, UK","Acting",1.5846,"commercial",NA,0,NA,0,NA,1969,0,0,"dominic west",1969,0
+27972,"Male",1992-10-12,"Union, Kentucky, USA","Acting",5.1961,"commercial",NA,0,NA,0,NA,1992,0,1,"josh hutcherson",1992,0
+58873,"Male",1976-10-20,"Brooklyn, New York City, New York, USA","Acting",1.2508,"commercial",NA,0,NA,0,NA,1976,0,1,"dan fogler",1976,0
+25438,"Male",1988-04-07,"Chichester, West Sussex, England","Acting",0.8648,"commercial",NA,0,NA,0,NA,1988,0,0,"ed speleers",1988,0
+28847,"Male",1983-03-10,"East Dulwich, London, England, UK","Acting",0.9775,"commercial",NA,0,NA,0,NA,1983,0,0,"rafe spall",1983,0
+109432,"Female",1973-02-27,"Wuchang, Heilongjiang, China","Acting",1.526,"commercial",NA,0,NA,0,NA,1973,1,0,"li bingbing",1973,0
+113461,"Male",1978-12-28,"Springfield, Ohio, USA","Acting",0.9793,"commercial",NA,0,NA,0,NA,1978,0,1,"john legend",1978,0
+27105,"Male",1974-01-24,"Atlanta, Georgia, USA","Acting",1.6816,"commercial",NA,0,NA,0,NA,1974,0,1,"ed helms",1974,0
+58395,"Female",1961-06-04,"Baltimore, Maryland, USA","Acting",0.5744,"commercial",NA,0,NA,0,NA,1961,1,1,"karin konoval",1961,0
+17271,"Male",1979-10-09,"Des Moines, Iowa, USA","Acting",1.331,"commercial",NA,0,NA,0,NA,1979,0,1,"brandon routh",1979,0
+54882,"Female",1979-06-02,"Rio de Janeiro, Rio de Janeiro, Brazil","Acting",4.9898,"commercial",NA,0,NA,0,NA,1979,1,0,"morena baccarin",1979,0
+49914,"Female",1979-09-11,"Baton Rouge, Louisiana, USA","Acting",1.02,"commercial",NA,0,NA,0,NA,1979,1,1,"cameron richardson",1979,0
+4160704,"Not set",NA,NA,"Acting",0.0071,"commercial",NA,0,NA,0,NA,NA,1,NA,"au wei xiang xavier",NA,0
+17064,"Male",1980-10-14,"Clifton, Bedfordshire, England, UK","Acting",3.0401,"commercial",NA,0,NA,0,NA,1980,0,0,"ben whishaw",1980,0
+3392,"Male",1944-09-25,"New Brunswick, New Jersey, USA","Acting",2.7085,"commercial",NA,0,NA,0,NA,1944,0,1,"michael douglas",1944,0
+1303037,"Male",1989-11-10,"Birkenhead, Merseyside, England, UK","Acting",3.3944,"commercial",NA,0,NA,0,NA,1989,0,0,"taron egerton",1989,0
+65524,"Male",1973-10-06,"Llwydcoed, Aberdare, Glamorgan, Wales, UK","Acting",1.428,"commercial",NA,0,NA,0,NA,1973,0,0,"ioan gruffudd",1973,0
+3561528,"Not set",NA,NA,"Acting",0.0261,"commercial",NA,0,NA,0,NA,NA,1,NA,"haoran liu",NA,0
+8688,"Male",1979-12-29,"Toluca, State of Mexico, Mexico","Acting",2.377,"commercial",NA,0,NA,0,NA,1979,0,0,"diego luna",1979,0
+10727,"Male",1962-04-23,"East Kilbride, Scotland, UK","Acting",1.5391,"commercial",NA,0,NA,0,NA,1962,0,0,"john hannah",1962,0
+76070,"Female",1989-10-25,"Canberra, Australian Capital Territory, Australia","Acting",1.6163,"commercial",NA,0,NA,0,NA,1989,1,0,"mia wasikowska",1989,0
+933238,"Female",1983-10-19,"Stockholm, Sweden","Acting",5.7842,"commercial",NA,0,NA,0,NA,1983,1,0,"rebecca ferguson",1983,0
+935,"Female",1965-07-03,"Elling, Frederikshavn, Denmark","Acting",2.7828,"commercial",NA,0,NA,0,NA,1965,1,0,"connie nielsen",1965,0
+3292,"Male",1989-12-07,"Wokingham, England, UK","Acting",3.6759,"commercial",NA,0,NA,0,NA,1989,0,0,"nicholas hoult",1989,0
+1333,"Male",1964-04-20,"Ruislip, Middlesex, England, UK","Acting",3.1564,"commercial",NA,0,NA,0,NA,1964,0,0,"andy serkis",1964,0
+1759993,"Male",1985-01-18,"中国,内蒙古,呼和浩特","Acting",0.2106,"commercial",NA,0,NA,0,NA,1985,0,0,"zhang benyu",1985,0
+880,"Male",1972-08-15,"Berkeley, California, USA","Acting",4.7076,"commercial",NA,0,NA,0,NA,1972,0,1,"ben affleck",1972,0
+1133349,"Female",1990-08-24,"Paris, France","Acting",1.6708,"commercial",NA,0,NA,0,NA,1990,1,0,"elizabeth debicki",1990,0
+17647,"Female",1978-07-12,"Bexar County, Texas, USA","Acting",3.982,"commercial",NA,0,NA,0,NA,1978,1,1,"michelle rodriguez",1978,0
+1993057,"Female",1986-01-10,"Anshan, Liaoning, China","Acting",0.4319,"commercial",NA,0,NA,0,NA,1986,1,0,"zhang xiaofei",1986,0
+52851,"Female",1975-12-05,"Los Angeles, California, USA","Acting",1.8476,"commercial",NA,0,NA,0,NA,1975,1,1,"paula patton",1975,0
+10989,"Male",1988-08-24,"Harlow, Essex, England, UK","Acting",1.8527,"commercial",NA,0,NA,0,NA,1988,0,0,"rupert grint",1988,0
+10959,"Male",1986-06-11,"Los Angeles, California, USA","Acting",3.6226,"commercial",NA,0,NA,0,NA,1986,0,1,"shia labeouf",1986,0
+9642,"Male",1972-12-29,"Lewisham, London, England, UK","Acting",2.756,"commercial",NA,0,NA,0,NA,1972,0,0,"jude law",1972,0
+1743471,"Male",1988-04-16,"Wuhan, Hubei Province, China","Acting",0.8682,"commercial",NA,0,NA,0,NA,1988,0,0,"zhu yilong",1988,0
+11107,"Male",1980-10-29,"Boston, Massachusetts, USA","Acting",1.4413,"commercial",NA,0,NA,0,NA,1980,0,1,"ben foster",1980,0
+1332971,"Male",1997-09-07,"Romford, Essex, England, UK","Acting",0.7278,"commercial",NA,0,NA,0,NA,1997,0,0,"dean-charles chapman",1997,0
+6735,"Female",1959-03-12,"Tollette, Arkansas, USA","Acting",0.4863,"commercial",NA,0,NA,0,NA,1959,1,1,"luenell",1959,0
+18082,"Male",1968-05-20,"Honolulu, Hawaii, USA","Acting",1.892,"commercial",NA,0,NA,0,NA,1968,0,1,"timothy olyphant",1968,0
+16484,"Female",1968-01-09,"Little Rock, Arkansas, USA","Acting",0.5773,"commercial",NA,0,NA,0,NA,1968,1,1,"joey lauren adams",1968,0
+2,"Male",1951-09-25,"Oakland, California, USA","Acting",2.4256,"commercial",NA,0,NA,0,NA,1951,0,1,"mark hamill",1951,0
+3356357,"Male",NA,NA,"Acting",0.0338,"commercial",NA,0,NA,0,NA,NA,0,NA,"wang ge",NA,0
+1519026,"Male",1979-10-23,"Qiqihar, Heilongjiang, China","Acting",0.8891,"commercial",NA,0,NA,0,NA,1979,0,0,"teng shen",1979,0
+126736,"Male",1973-05-16,"Yili, Xinjiang, China","Acting",0.7674,"commercial",NA,0,NA,0,NA,1973,0,0,"duan yihong",1973,0
+18918,"Male",1972-05-02,"Hayward, California, USA","Acting",5.9062,"commercial",NA,0,NA,0,NA,1972,0,1,"dwayne johnson",1972,0
+1173984,"Female",1993-12-27,"Oldham, Greater Manchester, England, UK","Acting",2.2683,"commercial",NA,0,NA,0,NA,1993,1,0,"olivia cooke",1993,0
+69231,"Male",1962-11-18,"San Francisco, California, USA","Acting",0.3744,"commercial",NA,0,NA,0,NA,1962,0,1,"kirk hammett",1962,0
+61303,"Male",1925-12-13,"West Plains, Missouri, USA","Acting",2.7694,"commercial",NA,0,NA,0,NA,1925,0,1,"dick van dyke",1925,0
+3727172,"Not set",NA,NA,"Acting",0,"commercial",NA,0,NA,0,NA,NA,1,NA,"lyna",NA,0
+78423,"Male",1978-01-20,"Trappes, Yvelines, France","Acting",2.6312,"commercial",NA,0,NA,0,NA,1978,0,0,"omar sy",1978,0
+2948491,"Female",2008-05-01,"Atlanta, Georgia, USA","Acting",0.8857,"commercial",NA,0,NA,0,NA,2008,1,1,"kaylee hottle",2008,0
+501,"Female",1994-02-23,"Conyers, Georgia, USA","Acting",3.8888,"commercial",NA,0,NA,0,NA,1994,1,1,"dakota fanning",1994,0
+4091412,"Male",NA,NA,"Directing",0.0362,"commercial",NA,0,NA,0,NA,NA,0,NA,"édgar ramírez",NA,0
+17697,"Male",1979-10-20,"Boston, Massachusetts, USA","Acting",2.7323,"commercial",NA,0,NA,0,NA,1979,0,1,"john krasinski",1979,0
+64880,"Male",1962-01-22,"Seoul, South Korea","Acting",1.0249,"commercial",NA,0,NA,0,NA,1962,0,0,"choi min-sik",1962,0
+1253360,"Male",1975-04-02,"Santiago, Chile","Acting",17.5666,"commercial",NA,0,NA,0,NA,1975,0,0,"pedro pascal",1975,0
+133,"Male",1971-03-07,"Belleville, Illinois, USA","Acting",1.2634,"commercial",NA,0,NA,0,NA,1971,0,1,"peter sarsgaard",1971,0
+2558012,"Not set",NA,NA,"Acting",0.0193,"commercial",NA,0,NA,0,NA,NA,1,NA,"johnny huang",NA,0
+8767,"Male",1968-09-26,"Mount Vernon, Washington, USA","Acting",8.8757,"commercial",NA,0,NA,0,NA,1968,0,1,"jim caviezel",1968,0
+6384,"Male",1964-09-02,"Beirut, Lebanon","Acting",18.5733,"commercial",NA,0,NA,0,NA,1964,0,0,"keanu reeves",1964,0
+1047649,"Male",1983-03-29,"Camden, London, England","Acting",2.1386,"commercial",NA,0,NA,0,NA,1983,0,0,"ed skrein",1983,0
+2300712,"Female",1996-01-24,"Sanming, Fujian Province, China","Acting",0.2885,"commercial",NA,0,NA,0,NA,1996,1,0,"ma li",1996,0
+9575,"Female",1971-09-18,"Baltimore, Maryland, USA","Acting",3.2521,"commercial",NA,0,NA,0,NA,1971,1,1,"jada pinkett smith",1971,0
+2465958,"Not set",NA,NA,"Acting",0.0071,"commercial",NA,0,NA,0,NA,NA,1,NA,"tony leung",NA,0
+18050,"Female",1998-04-09,"Conyers, Georgia, USA","Acting",6.1998,"commercial",NA,0,NA,0,NA,1998,1,1,"elle fanning",1998,0
+1341,"Male",1963-07-27,"Guangzhou, Guangdong province, China","Acting",3.1343,"commercial",NA,0,NA,0,NA,1963,0,0,"donnie yen",1963,0
+1274508,"Male",2003-01-04,"Philadelphia, Pennsylvania, USA","Acting",2.1416,"commercial",NA,0,NA,0,NA,2003,0,1,"jaeden martell",2003,0
+224181,"Male",1986-03-15,"Cherrybrook, Sydney, Australia","Acting",1.5649,"commercial",NA,0,NA,0,NA,1986,0,0,"jai courtney",1986,0
+1136406,"Male",1996-06-01,"Surrey, England, UK","Acting",9.0085,"commercial",NA,0,NA,0,NA,1996,0,0,"tom holland",1996,0
+4785,"Male",1952-10-22,"Pittsburgh, Pennsylvania, USA","Acting",3.8151,"commercial",NA,0,NA,0,NA,1952,0,1,"jeff goldblum",1952,0
+56731,"Female",1981-04-28,"Pomona, California, USA","Acting",4.1747,"commercial",NA,0,NA,0,NA,1981,1,1,"jessica alba",1981,0
+146750,"Male",1992-03-13,"London, England, UK","Acting",1.6318,"commercial",NA,0,NA,0,NA,1992,0,0,"george mackay",1992,0
+1452045,"Male",1991-01-02,"Bournemouth, Dorset, England, UK","Acting",0.8699,"commercial",NA,0,NA,0,NA,1991,0,0,"ben hardy",1991,0
+96066,"Male",1990-01-13,"Melbourne, Victoria, Australia","Acting",2.5144,"commercial",NA,0,NA,0,NA,1990,0,0,"liam hemsworth",1990,0
+4348479,"Not set",NA,NA,"Crew",0.0143,"commercial",NA,0,NA,0,NA,NA,1,NA,"jovan bogdanović",NA,0
+65731,"Male",1976-08-02,"Surrey, England, UK","Acting",2.5771,"commercial",NA,0,NA,0,NA,1976,0,0,"sam worthington",1976,0
+4491,"Female",1969-02-11,"Sherman Oaks, Los Angeles, California, USA","Acting",12.8818,"commercial",NA,0,NA,0,NA,1969,1,1,"jennifer aniston",1969,0
+62054,"Female",1964-09-14,"Alexandria, Louisiana, USA","Acting",0.6541,"commercial",NA,0,NA,0,NA,1964,1,1,"faith ford",1964,0
+2281095,"Not set",NA,NA,"Acting",0.0264,"commercial",NA,0,NA,0,NA,NA,1,NA,"john cusack",NA,0
+1281,"Male",1992-02-14,"London, England, UK","Acting",2.9502,"commercial",NA,0,NA,0,NA,1992,0,0,"freddie highmore",1992,0
+2282,"Male",1943-12-31,"Snainton, North Riding of Yorkshire, England, UK","Acting",3.5929,"commercial",NA,0,NA,0,NA,1943,0,0,"ben kingsley",1943,0
+15556,"Female",1982-05-03,"London, England, UK","Acting",1.721,"commercial",NA,0,NA,0,NA,1982,1,0,"rebecca hall",1982,0
+7060,"Male",1971-09-08,"Aldershot, Hampshire, England, UK","Acting",2.5298,"commercial",NA,0,NA,0,NA,1971,0,0,"martin freeman",1971,0
+512991,"Male",1986-06-18,"Elderslie, Renfrewshire, Scotland, UK","Acting",4.2269,"commercial",NA,0,NA,0,NA,1986,0,0,"richard madden",1986,0
+93210,"Male",1983-05-12,"Dublin, Ireland","Acting",2.1376,"commercial",NA,0,NA,0,NA,1983,0,0,"domhnall gleeson",1983,0
+10912,"Female",1980-07-06,"Paris, France","Acting",6.0961,"commercial",NA,0,NA,0,NA,1980,1,0,"eva green",1980,0
+6734,"Male",1953-06-19,"Los Angeles, California, USA","Acting",0.596,"commercial",NA,0,NA,0,NA,1953,0,1,"ken davitian",1953,0
+1539343,"Male",1929-05-16,"Highland Park, Michigan, USA","Acting",0.142,"commercial",NA,0,NA,0,NA,1929,0,1,"john conyers",1929,0
+3910634,"Not set",NA,NA,"Acting",0.0143,"commercial",NA,0,NA,0,NA,NA,1,NA,"billy burke",NA,0
+30315,"Male",1971-08-22,"Leicester, England, UK","Acting",1.7167,"commercial",NA,0,NA,0,NA,1971,0,0,"richard armitage",1971,0
+1029934,"Male",1995-08-09,"Los Angeles, California, USA","Acting",1.2585,"commercial",NA,0,NA,0,NA,1995,0,1,"justice smith",1995,0
+45589,"Female",1994-04-11,"Chelsea, London, England, UK","Acting",0.7709,"commercial",NA,0,NA,0,NA,1994,1,0,"dakota blue richards",1994,0
+1414734,"Male",2003-12-22,"New York, New York, USA","Acting",0.478,"commercial",NA,0,NA,0,NA,2003,0,1,"neel sethi",2003,0
+137905,"Male",1990-08-09,"Vällingby, Sweden","Acting",5.4832,"commercial",NA,0,NA,0,NA,1990,0,0,"bill skarsgård",1990,0
+5529,"Female",1988-12-16,"London, England, UK","Acting",1.3748,"commercial",NA,0,NA,0,NA,1988,1,0,"anna popplewell",1988,0
+2682525,"Male",2005-08-16,"Beizhen, Jinzhou, Liaoning, China","Acting",0.3856,"commercial",NA,0,NA,0,NA,2005,0,0,"shi pengyuan",2005,0
+1388593,"Female",1993-03-11,"Liverpool, Merseyside, England, UK","Acting",3.4571,"commercial",NA,0,NA,0,NA,1993,1,0,"jodie comer",1993,0
+25130,"Male",1981-08-20,"London, England, UK","Acting",1.7267,"commercial",NA,0,NA,0,NA,1981,0,0,"ben barnes",1981,0
+4393778,"Not set",NA,NA,"Acting",0.0338,"commercial",NA,0,NA,0,NA,NA,1,NA,"wu jiang",NA,0
+114,"Male",1977-01-13,"Canterbury, Kent, England, UK","Acting",2.127,"commercial",NA,0,NA,0,NA,1977,0,0,"orlando bloom",1977,0
+24045,"Male",1981-02-17,"Los Angeles, California, USA","Acting",4.266,"commercial",NA,0,NA,0,NA,1981,0,1,"joseph gordon-levitt",1981,0
+25246,"Male",1961-09-27,"Tai Po, Hong Kong, British Crown Colony (now China)","Acting",4.2137,"commercial",NA,0,NA,0,NA,1961,0,0,"andy lau",1961,0
+3809377,"Not set",NA,NA,"Acting",0.0214,"commercial",NA,0,NA,0,NA,NA,1,NA,"lauren graham",NA,0
+1223786,"Female",1986-10-23,"London, England, UK","Acting",7.0596,"commercial",NA,0,NA,0,NA,1986,1,0,"emilia clarke",1986,0
+91606,"Male",1981-02-09,"Westminster, London, England, UK","Acting",2.9984,"commercial",NA,0,NA,0,NA,1981,0,0,"tom hiddleston",1981,0
+69230,"Male",1963-12-26,"Gentofte, Denmark","Acting",0.3168,"commercial",NA,0,NA,0,NA,1963,0,0,"lars ulrich",1963,0
+6161,"Female",1970-12-12,"Cairo, New York, USA","Acting",13.7897,"commercial",NA,0,NA,0,NA,1970,1,1,"jennifer connelly",1970,0
+56455,"Female",1975-09-20,"Anaheim, California, USA","Acting",0.8379,"commercial",NA,0,NA,0,NA,1975,1,1,"moon bloodgood",1975,0
+1228670,"Male",1940-05-15,"Boston, Massachusetts, USA","Acting",0.2172,"commercial",NA,0,NA,0,NA,1940,0,1,"paul rudd",1940,0
+17832,"Female",1971-08-29,"Sarasota, Florida, USA","Acting",2.8578,"commercial",NA,0,NA,0,NA,1971,1,1,"carla gugino",1971,0
+175826,"Female",1975-09-22,"Houston, Texas, USA","Acting",1.1273,"commercial",NA,0,NA,0,NA,1975,1,1,"mireille enos",1975,0
+221018,"Male",1982-10-10,"Croydon, London, England, UK","Acting",2.6531,"commercial",NA,0,NA,0,NA,1982,0,0,"dan stevens",1982,0
+17306,"Male",1977-06-02,"Pittsburgh, Pennsylvania, USA","Acting",1.2831,"commercial",NA,0,NA,0,NA,1977,0,1,"zachary quinto",1977,0
+4348475,"Not set",NA,NA,"Acting",0.0071,"commercial",NA,0,NA,0,NA,NA,1,NA,"nikola samardžić",NA,0
+1737,"Male",1951-01-23,"Detroit, Michigan, USA","Acting",0.7936,"commercial",NA,0,NA,0,NA,1951,0,1,"david patrick kelly",1951,0
+1253353,"Male",1996-05-09,"Miami, Florida, USA","Acting",4.0012,"commercial",NA,0,NA,0,NA,1996,0,1,"noah centineo",1996,0
+12041,"Female",1981-03-28,"New York City, New York, USA","Acting",2.3836,"commercial",NA,0,NA,0,NA,1981,1,1,"julia stiles",1981,0
+7055,"Female",1975-03-16,"Kettering, England, UK","Acting",1.5538,"commercial",NA,0,NA,0,NA,1975,1,0,"sienna guillory",1975,0
+980150,"Not set",NA,NA,"Acting",0.0387,"commercial",NA,0,NA,0,NA,NA,1,NA,"qianyuan wang",NA,0
+11514,"Female",1954-03-04,"Toronto, Ontario, Canada","Acting",1.9721,"commercial",NA,0,NA,0,NA,1954,1,0,"catherine o'hara",1954,0
+12206,"Male",1962-01-23,"Albury, New South Wales, Australia","Acting",0.8201,"commercial",NA,0,NA,0,NA,1962,0,0,"richard roxburgh",1962,0
+17605,"Male",1972-09-06,"Hackney, London, England, UK","Acting",6.713,"commercial",NA,0,NA,0,NA,1972,0,0,"idris elba",1972,0
+11825,"Female",1983-09-21,"Worthington, Columbus, Ohio, USA","Acting",1.8387,"commercial",NA,0,NA,0,NA,1983,1,1,"maggie grace",1983,0
+78029,"Male",1965-04-16,"Frankfurt am Main, Germany","Acting",4.8124,"commercial",NA,0,NA,0,NA,1965,0,0,"martin lawrence",1965,0
+1327,"Male",1939-05-25,"Burnley, Lancashire, England, UK","Acting",3.0999,"commercial",NA,0,NA,0,NA,1939,0,0,"ian mckellen",1939,0
+18354,"Female",1971-04-28,"Binghamton, New York, USA","Acting",1.4796,"commercial",NA,0,NA,0,NA,1971,1,1,"bridget moynahan",1971,0
+19537,"Female",1986-05-16,"Oak Ridge, Tennessee, USA","Acting",8.2425,"commercial",NA,0,NA,0,NA,1986,1,1,"megan fox",1986,0
+8602,"Female",1983-04-15,"São Paulo, São Paulo, Brazil","Acting",2.231,"commercial",NA,0,NA,0,NA,1983,1,0,"alice braga",1983,0
+1489211,"Male",1989-04-19,"Harbin, Heilongjiang, China","Acting",1.498,"commercial",NA,0,NA,0,NA,1989,0,0,"simu liu",1989,0
+21711,"Female",1982-08-19,"Seattle, Washington, USA","Acting",1.0618,"commercial",NA,0,NA,0,NA,1982,1,1,"erika christensen",1982,0
+1715408,"Male",NA,NA,"Acting",0.2522,"commercial",NA,0,NA,0,NA,NA,0,NA,"vikram kochhar",NA,0
+10696,"Female",1964-11-05,"Amstelveen, Noord-Holland, Netherlands","Acting",4.1814,"commercial",NA,0,NA,0,NA,1964,1,0,"famke janssen",1964,0
+7056,"Female",1959-04-15,"Paddington, London, England, UK","Acting",4.5428,"commercial",NA,0,NA,0,NA,1959,1,0,"emma thompson",1959,0
+74409,"Male",1976-07-17,"La Mirada, California, USA","Acting",3.8425,"commercial",NA,0,NA,0,NA,1976,0,1,"eric winter",1976,0
+4939,"Female",1966-02-25,"New York City, New York, USA","Acting",2.3144,"commercial",NA,0,NA,0,NA,1966,1,1,"téa leoni",1966,0
+77700,"Male",1979-07-15,"Echuca, Victoria, Australia","Acting",5.3917,"commercial",NA,0,NA,0,NA,1979,0,0,"travis fimmel",1979,0
+17628,"Female",1984-11-28,"Rocky Mount, North Carolina, USA","Acting",3.2442,"commercial",NA,0,NA,0,NA,1984,1,1,"mary elizabeth winstead",1984,0
+500,"Male",1962-07-03,"Syracuse, New York, USA","Acting",13.2309,"commercial",NA,0,NA,0,NA,1962,0,1,"tom cruise",1962,0
+3967,"Female",1973-07-26,"Chiswick, London, England, UK","Acting",6.7168,"commercial",NA,0,NA,0,NA,1973,1,0,"kate beckinsale",1973,0
+1315036,"Female",1992-04-10,"Westminster, London, England, UK","Acting",2.55,"commercial",NA,0,NA,0,NA,1992,1,0,"daisy ridley",1992,0
+1023483,"Female",1985-07-14,"London, England, UK","Acting",1.363,"commercial",NA,0,NA,0,NA,1985,1,0,"phoebe waller-bridge",1985,0
+19119,"Female",1983-02-21,"Paris, France","Acting",2.6382,"commercial",NA,0,NA,0,NA,1983,1,0,"mélanie laurent",1983,0
+135651,"Male",1987-02-09,"Santa Ana, California, USA","Acting",11.936,"commercial",NA,0,NA,0,NA,1987,0,1,"michael b. jordan",1987,0
+1296991,"Male",NA,NA,"Production",0.1375,"commercial",NA,0,NA,0,NA,NA,0,NA,"brian cox",NA,0
+1731961,"Male",1991-07-09,"Howth, County Dublin, Ireland","Acting",0.4797,"commercial",NA,0,NA,0,NA,1991,0,0,"ruairí o'connor",1991,0
+49918,"Male",1998-06-11,"Glen Rock, New Jersey, USA","Acting",0.6294,"commercial",NA,0,NA,0,NA,1998,0,1,"charlie tahan",1998,0
+8783,"Male",1968-08-09,"Melbourne, Australia","Acting",2.472,"commercial",NA,0,NA,0,NA,1968,0,0,"eric bana",1968,0
+1599391,"Male",1995-05-30,"London, England, UK","Acting",1.2155,"commercial",NA,0,NA,0,NA,1995,0,0,"jonah hauer-king",1995,0
+70904,"Female",1981-12-15,"Rush Green, Romford, Essex, England, UK","Acting",1.6647,"commercial",NA,0,NA,0,NA,1981,1,0,"michelle dockery",1981,0
+5530,"Male",1979-04-21,"Glasgow, Scotland, UK","Acting",3.6418,"commercial",NA,0,NA,0,NA,1979,0,0,"james mcavoy",1979,0
+1675486,"Male",1955-10-26,"Taipei, Taiwan","Acting",0.044,"commercial",NA,0,NA,0,NA,1955,0,0,"ma yung-lin",1955,0
+83271,"Male",1988-10-21,"Austin, Texas, USA","Acting",4.2972,"commercial",NA,0,NA,0,NA,1988,0,1,"glen powell",1988,0
+1687041,"Male",1997-07-18,"Richmond upon Thames, London, England, UK","Acting",0.5988,"commercial",NA,0,NA,0,NA,1997,0,0,"fionn whitehead",1997,0
+1180907,"Female",1989-03-11,"Jerusalem, Israel","Acting",0.3867,"commercial",NA,0,NA,0,NA,1989,1,0,"daniella kertesz",1989,0
+9195,"Male",1960-10-12,"Shinagawa, Tokyo, Japan","Acting",2.9912,"commercial",NA,0,NA,0,NA,1960,0,0,"hiroyuki sanada",1960,0
+61186,"Female",1995-01-09,"Westchester County, New York, USA","Acting",0.646,"commercial",NA,0,NA,0,NA,1995,1,1,"nicola peltz beckham",1995,0
+236048,"Female",1987-04-18,"Plymouth, Devon, England, UK","Acting",1.2709,"commercial",NA,0,NA,0,NA,1987,1,0,"rosie huntington-whiteley",1987,0
+3968,"Male",1969-02-05,"Newport, Monmouthshire, Wales, UK","Acting",2.3406,"commercial",NA,0,NA,0,NA,1969,0,0,"michael sheen",1969,0
+1912381,"Female",2006-04-29,"Los Angeles, California, USA","Acting",1.4533,"commercial",NA,0,NA,0,NA,2006,1,1,"xochitl gomez",2006,0
+8169,"Male",1978-12-30,"Los Angeles, California, USA","Acting",2.6153,"commercial",NA,0,NA,0,NA,1978,0,1,"tyrese gibson",1978,0
+8789,"Male",1965-10-25,"Neuilly-sur-Seine, Hauts-de-Seine, France","Acting",0.8376,"commercial",NA,0,NA,0,NA,1965,0,0,"mathieu amalric",1965,0
+56446,"Male",1977-04-23,"West Newbury, Massachusetts, USA","Acting",5.0079,"commercial",NA,0,NA,0,NA,1977,0,1,"john cena",1977,0
+62064,"Male",1980-08-26,"Los Angeles, California, USA","Acting",3.1004,"commercial",NA,0,NA,0,NA,1980,0,1,"chris pine",1980,0
+1019,"Male",1965-11-22,"Østerbro, Copenhagen, Denmark","Acting",7.1353,"commercial",NA,0,NA,0,NA,1965,0,0,"mads mikkelsen",1965,0
+54811,"Male",1984-05-20,"London, England","Acting",1.0362,"commercial",NA,0,NA,0,NA,1984,0,0,"joel fry",1984,0
+23459,"Female",1981-12-28,"New York City, New York, USA","Acting",2.3037,"commercial",NA,0,NA,0,NA,1981,1,1,"sienna miller",1981,0
+37153,"Female",1988-12-01,"Los Angeles, California, USA","Acting",2.0569,"commercial",NA,0,NA,0,NA,1988,1,1,"zoë kravitz",1988,0
+679,"Female",1974-07-22,"Münster, North Rhine-Westphalia, Germany","Acting",1.4193,"commercial",NA,0,NA,0,NA,1974,1,0,"franka potente",1974,0
+56365,"Male",1980-04-10,"Newcastle upon Tyne, England, UK","Acting",11.554,"commercial",NA,0,NA,0,NA,1980,0,0,"charlie hunnam",1980,0
+39459,"Female",1982-04-05,"London, England, UK","Acting",4.2299,"commercial",NA,0,NA,0,NA,1982,1,0,"hayley atwell",1982,0
+10205,"Female",1949-10-08,"Manhattan, New York City, New York, USA","Acting",3.1769,"commercial",NA,0,NA,0,NA,1949,1,1,"sigourney weaver",1949,0
+19540,"Male",1941-07-28,"Montréal, Québec, Canada","Acting",1.1756,"commercial",NA,0,NA,0,NA,1941,0,0,"peter cullen",1941,0
+88816,"Male",1997-11-18,"Dallas, Texas, USA","Acting",0.346,"commercial",NA,0,NA,0,NA,1997,0,1,"noah ringer",1997,0
+1163622,"Male",1987-01-20,"Hinsdale - Illinois - USA","Acting",0.4706,"commercial",NA,0,NA,0,NA,1987,0,1,"pete ploszek",1987,0
+2146942,"Female",2001-09-06,"Oxfordshire, England, UK","Acting",1.9372,"commercial",NA,0,NA,0,NA,2001,1,0,"freya allan",2001,0
+52139,"Male",1973-10-26,"Kent, Connecticut, USA","Acting",2.8884,"commercial",NA,0,NA,0,NA,1973,0,1,"seth macfarlane",1973,0
+25541,"Female",1978-11-24,"Washington, District of Columbia, USA","Acting",4.072,"commercial",NA,0,NA,0,NA,1978,1,1,"katherine heigl",1978,0
+935504,"Male",NA,NA,"Acting",0.1698,"commercial",NA,0,NA,0,NA,NA,0,NA,"ayush tandon",NA,0
+6413,"Male",1962-05-14,"Rome, Italy","Acting",1.2885,"commercial",NA,0,NA,0,NA,1962,0,0,"danny huston",1962,0
+21180,"Male",1978-07-21,"Fort Lauderdale, Florida, USA","Acting",0.6826,"commercial",NA,0,NA,0,NA,1978,0,1,"justin bartha",1978,0
+10182,"Male",1959-05-12,"New York City, New York, USA","Acting",2.4498,"commercial",NA,0,NA,0,NA,1959,0,1,"ving rhames",1959,0
+1586047,"Male",1998-12-08,"Tampa, Florida, USA","Acting",1.0622,"commercial",NA,0,NA,0,NA,1998,0,1,"owen teague",1998,0
+3895,"Male",1933-03-14,"Rotherhithe, London, England, UK","Acting",3.9345,"commercial",NA,0,NA,0,NA,1933,0,0,"michael caine",1933,0
+1515478,"Male",1991-09-17,"Cairo, Egypt","Acting",1.2207,"commercial",NA,0,NA,0,NA,1991,0,0,"mena massoud",1991,0
+996701,"Male",1987-02-20,"Downingtown, Pennsylvania, USA","Acting",4.0532,"commercial",NA,0,NA,0,NA,1987,0,1,"miles teller",1987,0
+7399,"Male",1965-11-30,"New York City, New York, USA","Acting",2.8254,"commercial",NA,0,NA,0,NA,1965,0,1,"ben stiller",1965,0
+1344344,"Female",2003-07-01,"Atlanta, Georgia, USA","Acting",2.0665,"commercial",NA,0,NA,0,NA,2003,1,1,"storm reid",2003,0
+109513,"Female",1986-03-16,"New York City, New York, USA","Acting",25.6847,"commercial",NA,0,NA,0,NA,1986,1,1,"alexandra daddario",1986,0
+54815,"Male",1986-03-23,"New York City, New York, USA","Acting",0.9593,"commercial",NA,0,NA,0,NA,1986,0,1,"steven strait",1986,0
+1939373,"Female",2009-04-20,"Houston, Texas, USA","Acting",0.2735,"commercial",NA,0,NA,0,NA,2009,1,1,"calah lane",2009,0
+11006,"Male",1973-09-18,"Stillwater, Oklahoma, USA","Acting",6.1159,"commercial",NA,0,NA,0,NA,1973,0,1,"james marsden",1973,0
