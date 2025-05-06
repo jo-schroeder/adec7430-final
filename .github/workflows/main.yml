@@ -55,7 +55,7 @@ jobs:
             'rmarkdown', 'knitr', 'dplyr', 'lubridate', 'dtwclust', 
             'ggthemes', 'ggrepel', 'tidyr', 'readr', 'plotly',
             'ggplot2', 'tsfeatures', 'tidymodels', 'purrr',
-            'stringr', 'caret', 'randomForest', 'tibble'))
+            'stringr', 'caret', 'randomForest', 'tibble', 'kableExtra'))
         "
         
     - name: Check Pandoc Version
