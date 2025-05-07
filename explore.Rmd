@@ -10,9 +10,6 @@ knitr::opts_chunk$set(
   message = FALSE, warning = FALSE, echo = FALSE
 )
 
-# explore correlation between age and nomination
-# sofia actress this year
-
 # loading packages
 library(lubridate)
 library(dtwclust)
@@ -29,39 +26,63 @@ library(stringr)
 library(caret)
 library(randomForest)
 library(tibble)
+library(kableExtra)
 
 # load in data
 data_dir <- "./data/"
 actors <- read_csv(paste0(data_dir, "actors_features.csv"))
 trends <- read_csv(paste0(data_dir, "trends.csv"))
 
-# summary stats and missingness
+# summary stats
 summary(actors)
 # Some of the actor info of interest has NA values (15 birthdays, 5 Popularity scores), so we will have to decide what we want to do about those
 summary(trends)
 # <1 trend needs to be recoded as numeric, I think we should choose 0 
+# also the trends were downloaded for actors who were in popular movies in 2025, but they won't be included in the analysis
+```
 
+```{r}
 # Exploring birth years of actors
 actors %>% 
-  ggplot(aes(x = birth_year, fill = nominee)) +
-  geom_histogram() +
-  labs(title = "Birthday of Oscar Nominated Actors",
-       subtitle = "Nominated 2004-Present")
-
-# by nominee
-actors %>% 
-  ggplot(aes(x = birth_year, fill = nominee)) +
-  geom_histogram() +
-  labs(title = "Birthday of Oscar Nominated Actors",
-       subtitle = "Nominated 2004-Present")
+  filter(birth_year >=1920) %>%
+  ggplot(aes(x = birth_year, color = factor(nominee))) +
+  geom_density() +
+  labs(title = "How old are Oscar Nominated and Commercially Successful Actors?",
+       subtitle = "Actors nominated for an Oscar or in a commercially successful movie from 2004 - 2024",
+       x = "Birth Year",
+       y = "Proportion",
+       caption = "Data Sources: The Oscar Award, 1927-2025 (aquired from Kaggle),\nFilm and Actor Details (acquired from The Movie Database API)",
+       color = "") +
+  scale_color_solarized(labels = c("Non-Nominee", "Nominee")) +
+  theme_minimal() +
+  guides(color = guide_legend(override.aes = list(fill = c("#268bd2", "#dc322f")))) 
 
 # by gender
-actors %>% 
-  ggplot(aes(x = birth_year, fill = Gender)) +
-  geom_histogram() +
-  labs(title = "Birthday of Oscar Nominated Actors",
-       subtitle = "Nominated 2004-Present")
+actors %>% filter(Gender != "Not set") %>%
+  ggplot(aes(x = Gender, fill = factor(nominee))) +
+  geom_histogram(stat="count", position = "dodge") +
+  labs(title = "What Gender are Oscar Nominated and Commercially Successful Actors?",
+       subtitle = "Actors nominated for an Oscar or in a commercially successful movie from 2004 - 2024",
+       x = "Gender",
+       y = "Count",
+       caption = "Data Sources: The Oscar Award, 1927-2025 (aquired from Kaggle),\nFilm and Actor Details (acquired from The Movie Database API)",
+       fill = "") +
+  scale_fill_solarized(labels = c("Non-Nominee", "Nominee")) +
+  theme_minimal()
 # This is sort of interesting- there's 10 male and 10 female actors nominated every year. This suggests that men born after 1975 are less represented in nominations overall, esp. compared to women in the same age group. Dominance of older actors in male categories?
+
+actors %>%
+  ggplot(aes(x = american, fill = factor(nominee))) +
+  geom_histogram(stat="count", position = "dodge") +
+  labs(title = "What Nationality are Oscar Nominated and Commercially Successful Actors?",
+       subtitle = "Actors nominated for an Oscar or in a commercially successful movie from 2004 - 2024",
+       x = "Nationality",
+       y = "Count",
+       caption = "Data Sources: The Oscar Award, 1927-2025 (aquired from Kaggle),\nFilm and Actor Details (acquired from The Movie Database API)",
+       fill = "") +
+  scale_fill_solarized(labels = c("Non-Nominee", "Nominee")) +
+  scale_x_continuous(breaks = c(0, 1), labels = c("Non-American", "American")) +
+  theme_minimal()
 
 # exploring age at nomination
 actors %>% 
@@ -75,11 +96,21 @@ actors %>%
       min(na.rm = TRUE)
   })) %>%
   mutate(age_at_nomination = as.numeric(difftime(min_year, birth_year))) %>%
-  ggplot(aes(x = age_at_nomination)) +
-  geom_histogram() +
-  labs(title = "Age at Nomination for Oscar Nominated Actors",
-       subtitle = "Nominated 2004-Present")
+  filter(age_at_nomination < 100, Gender != "Non-binary/Other") %>%
+  ggplot(aes(x = age_at_nomination, color = Gender)) +
+  geom_density() +
+  labs(title = "At What Age are Oscar Nominated Actors Nominated?",
+       subtitle = "Actors nominated for an Oscar from 2004 - 2024",
+       x = "",
+       y = "Proportion",
+       caption = "Data Sources: The Oscar Award, 1927-2025 (aquired from Kaggle),\nFilm and Actor Details (acquired from The Movie Database API)",
+       fill = "") +
+  scale_color_solarized(labels = c("Female", "Male", NA)) +
+  theme_minimal() +
+  guides(color = guide_legend(override.aes = list(fill = c("#268bd2", "#dc322f")))) +
+  scale_x_continuous(breaks = c(20, 30, 40, 50, 60, 70, 80))
 # Obviously there's an error here - I'll have to go back and check the API call results for the 130 year old but I'm guessing there's another famous person with the same name
+
 ```
 
 
@@ -120,29 +151,46 @@ p %>%
 # joining 
 joined <- trends %>% 
   mutate(name = tolower(name)) %>%
-  left_join(actors, by = c("name")) 
- 
+  left_join(actors, by = c("name")) %>%
+  mutate(type = factor(type, levels = c("commercial", "oscar", "both"),
+  labels = c("Commercially Successful", "Oscar Nominated", "Commercially Successful & Oscar Nominated")))
+
 # by winner
 joined %>% 
   filter(!is.na(type)) %>%
   group_by(Month, type) %>% summarise(value = mean(value)) %>%
-  ggplot(aes(x = Month, y = value)) +
+  ggplot(aes(x = Month, y = value, color = type)) +
   geom_line() +
-  labs(title = "Google Trendlines for all Oscar Nominated Actors",
-       subtitle = "Nominated 2004-Present") +
-  facet_wrap(vars(type))
+  labs(title = "What are the patterns in Google Trend Search Interest for Actors?",
+       subtitle = "Actors nominated for an Oscar or in a commercially successful movie from 2004 - 2024",
+      caption = "Data Sources: The Oscar Award, 1927-2025 (aquired from Kaggle),\nFilm and Actor Details (acquired from The Movie Database API),\nGoogle Trends",
+      x = "", y = "Google Trend Search Interest") +
+  facet_wrap(vars(type), ncol = 1) +
+  theme_minimal() +
+  scale_color_solarized() +
+  theme(legend.position = "none")
 # This is pretty interesting - suggests that generally Oscar nominated actors are have searched more but it has leveled off (could reflect trends in Google Search overall). The cyclical pattern is also interesting and I'm guessing it coincides with the ceremony and nomination announcements!
 
-joined %>% mutate(month = month(Month)) %>%
+table <- joined %>% mutate(month = month(Month)) %>%
   filter(!is.na(type)) %>%
   group_by(type, month) %>%
   summarise(mean_value = mean(value)) %>%
   ungroup(month) %>%
-  slice_max(order_by = mean_value, n = 3)
+  slice_max(order_by = mean_value, n = 3) %>%
+  mutate(mean_value = round(mean_value, 1))
+
+table %>%
+  kable(caption = "Data Sources: The Oscar Award, 1927-2025 (acquired from Kaggle),\nFilm and Actor Details (acquired from The Movie Database API),\nGoogle Trends",
+        col.names = c("Type", "Month", "Google Trend Search Interest (mean)")) %>%
+  add_header_above(c("Three Most Popular Months for Google Search Interest by Actor Type" = 3)) %>%
+  kable_styling(full_width = FALSE)
+
+
 
 ```
 
 ```{r}
+set.seed(90210)
 wide <- trends %>%
   pivot_wider(names_from = Month, values_from = value) %>%
   tibble::column_to_rownames("name")
@@ -150,7 +198,7 @@ ts_matrix <- as.matrix(wide)
 
 clusters <- tsclust(ts_matrix,
                     type = "partitional",
-                    k = 5,  # tune this
+                    k = 5,  
                     distance = "sbd",
                     centroid = "shape",  # required with SBD
                     control = partitional_control(iter.max = 50),
@@ -166,48 +214,97 @@ cluster_df <- data.frame(
   distance = distances
 )
 
-actor_with_cluster <- left_join(trends, cluster_df, by = "name")
+actor_with_cluster <- left_join(trends, cluster_df, by = "name") %>%
+  mutate(cluster_label = case_when(
+    cluster == 1 ~ paste0(cluster, "\nBlockbuster Staple"),
+    cluster == 2 ~ paste0(cluster, "\nBreakout Star or Memorialized"),
+    cluster == 3 ~ paste0(cluster, "\nCritically Acclaimed"),
+    cluster == 4 ~ paste0(cluster, "\nPop Fame"),
+    cluster == 5 ~ paste0(cluster, "\nEmerging or Consistent Stardom")
+  ))
 
 actor_with_cluster %>%
-  group_by(Month, cluster) %>% summarise(value = mean(value)) %>%
-  ggplot(aes(x = Month, y = value, colour = factor(cluster))) +
+  group_by(Month, cluster_label) %>% summarise(value = mean(value)) %>%
+  ggplot(aes(x = Month, y = value, colour = factor(cluster_label))) +
   geom_line(show.legend = FALSE) +
-  scale_y_continuous(labels = scales::comma) +
-  facet_wrap(vars(cluster)) +  # Separate plots for each cluster
+  scale_x_date(breaks = as.Date(c("2000-01-01", "2010-01-01", "2020-01-01")),
+  date_labels = "%Y") +
+  facet_wrap(vars(cluster_label), ncol = 5) + 
   scale_color_solarized() +
   theme_minimal() +
-  labs(title = "Time Series Clustering", colour = "Cluster")
+  labs(title = "5 Cluster Solution for Actor Google Search Trends",
+       x = "", y = "Google Trend Search Interest")
 
 centroid_matrix <- do.call(rbind, clusters@centroids)
 
 # Create a data frame from the matrix
-centroid_df <- data.frame(Time = rep(1:ncol(centroid_matrix), nrow(centroid_matrix)),
-                          Cluster = rep(1:nrow(centroid_matrix), each = ncol(centroid_matrix)),
-                          Value = as.vector(centroid_matrix))
+Time <- rep(seq.Date(from = as.Date("2004-01-01"), 
+                     to = as.Date("2025-03-01"), 
+                     by = "month"), 
+            times = nrow(centroid_matrix))
 
+centroid_df <- data.frame(Time = Time,
+                          Cluster = rep(1:nrow(centroid_matrix), 
+                          each = ncol(centroid_matrix)),
+                          Value = as.vector(centroid_matrix)) %>%
+  mutate(cluster_label = case_when(
+    Cluster == 1 ~ paste0(Cluster, "\nBlockbuster Staple"),
+    Cluster == 2 ~ paste0(Cluster, "\nBreakout Star or Memorialized"),
+    Cluster == 3 ~ paste0(Cluster, "\nCritically Acclaimed"),
+    Cluster == 4 ~ paste0(Cluster, "\nPop Fame"),
+    Cluster == 5 ~ paste0(Cluster, "\nEmerging or Consistent Stardom")
+  ))
 
-ggplot(centroid_df, aes(x = Time, y = Value, color = factor(Cluster))) +
-  geom_line(size = 1) +
-  facet_wrap(~ Cluster, ncol = 1) +
-  labs(title = "Cluster Centroids", x = "Time", y = "Value", color = "Cluster") +
-  theme_minimal()
+centroid_df %>%
+  ggplot(aes(x = Time, y = Value, color = factor(cluster_label))) +
+    geom_line() +
+    facet_wrap(~ cluster_label, ncol = 5) +
+    labs(title = "Cluster Centroids", x = "Time", y = "Value", color = "Cluster") +
+    theme_minimal() +
+    scale_x_date(breaks = as.Date(c("2000-01-01", "2010-01-01", "2020-01-01")),
+    date_labels = "%Y") +
+    scale_color_solarized() +
+    theme_minimal() +
+    labs(title = "Cluster Centroids for Actor Google Search Trends",
+         x = "", y = "Google Trend Search Interest (Normalized)") +
+  theme(legend.position = "none")
 
-actor_with_cluster %>% distinct(name, cluster, distance) %>%
-  group_by(cluster) %>%
-  slice_min(order_by = distance, n = 5)
+actor_with_cluster <- actor_with_cluster %>% 
+  mutate(cluster_label = str_replace_all(cluster_label, "\n", " - "))
 
-actor_with_cluster %>% distinct(name, cluster) %>%
+table <- actor_with_cluster %>% 
+  distinct(name, cluster_label, distance) %>%
+  group_by(cluster_label) %>%
+  slice_min(order_by = distance, n = 5) %>%
+  mutate(row = row_number()) %>%         
+  select(cluster_label, row, name) %>%  
+  pivot_wider(names_from = cluster_label, values_from = name) %>%
+  select(-row)
+
+table %>%
+  kable(caption = "Data Sources: The Oscar Award, 1927-2025 (acquired from Kaggle),\nFilm and Actor Details (acquired from The Movie Database API),\nGoogle Trends") %>%
+  add_header_above(c("Five Most Representative Actors in Each Cluster" = 5)) %>%
+  kable_styling(full_width = FALSE)
+
+table <- actor_with_cluster %>% distinct(name, cluster_label) %>%
   mutate(name = tolower(name)) %>%
   left_join(actors) %>%
-  filter(!is.na(cluster)) %>%
-  group_by(cluster) %>% mutate(total = n()) %>%
-  group_by(cluster, nominee) %>%
-  summarise(prop_nominees = n()/total) %>%
-  filter(nominee == 1) %>% distinct()
+  filter(!is.na(cluster_label)) %>%
+  group_by(cluster_label) %>% mutate(total = n()) %>%
+  group_by(cluster_label, nominee) %>%
+  summarise(prop_nominees = round((n()/total)*100)) %>%
+  filter(nominee == 1) %>% ungroup(nominee) %>% select(-nominee) %>%
+  distinct()
+
+table %>%
+  kable(caption = "Data Sources: The Oscar Award, 1927-2025 (acquired from Kaggle),\nFilm and Actor Details (acquired from The Movie Database API),\nGoogle Trends",
+        col.names = c("Cluster", "Percent Nominees (%)")) %>%
+  add_header_above(c("What Percent of Actors in Each Cluster are Oscar Nominees?" = 2)) %>%
+  kable_styling(full_width = FALSE)
 
 ```
 
-```{r}
+```{r, include = FALSE}
 years_seq <- 2004:2024
 
 cluster_df <- cluster_df %>%
@@ -303,9 +400,6 @@ trend_ts_data_all <- trends %>%
     .groups = "drop"
   )
 
-zero_variance_log <- trend_ts_data_all %>%
-  filter(is.na(var) | var == 0)
-
 trend_ts_data <- trend_ts_data_all %>%
   filter(!is.na(var) & var > 0) %>%
   select(-var) %>%
@@ -372,69 +466,126 @@ balanced_data$american <- as.factor(balanced_data$american)
 balanced_data$won_previously <- as.factor(balanced_data$won_previously)
 balanced_data$nominated_previously <- as.factor(balanced_data$nominated_previously)
 
-balanced_data_1 <- balanced_data
-balanced_data_2 <- balanced_data %>% select(-age, -gender, -american, -nominated_previously, -won_previously)
-
-set.seed(90210)
+balanced_data1 <- balanced_data
+balanced_data2 <- balanced_data %>% select(-age, -gender, -american, -nominated_previously, -won_previously)
 
 # modeling all predictors 
-data_split <- initial_split(balanced_data, prop = 0.8, strata = nominee)
-train_data <- training(data_split)
-test_data <- testing(data_split)
+data_split1 <- initial_split(balanced_data1, prop = 0.8, strata = nominee)
+train_data1 <- training(data_split1)
+test_data1 <- testing(data_split1)
 
-rf_model <- randomForest(nominee ~ ., data = train_data)
-
-# model summary
-print(rf_model)
-
-predictions <- predict(rf_model, newdata = test_data)
-
-# confusion Matrix
-conf_matrix <- table(Predicted = predictions, Actual = test_data$nominee)
-
-print(conf_matrix)
-
-# cccuracy
-accuracy <- sum(predictions == test_data$nominee) / nrow(test_data)
-print(paste("Accuracy: ", accuracy))
-
-conf_matrix_caret <- confusionMatrix(predictions, test_data$nominee)
-
-# evaluation metrics
-print(conf_matrix_caret)
-
-importance(rf_model)
-varImpPlot(rf_model)
+rf_model1 <- randomForest(nominee ~ ., data = train_data1)
 
 # modeling just time series predictors
-data_split <- initial_split(balanced_data_2, prop = 0.8, strata = nominee)
-train_data <- training(data_split)
-test_data <- testing(data_split)
+data_split2 <- initial_split(balanced_data2, prop = 0.8, strata = nominee)
+train_data2 <- training(data_split2)
+test_data2 <- testing(data_split2)
 
-rf_model <- randomForest(nominee ~ ., data = train_data)
+rf_model2 <- randomForest(nominee ~ ., data = train_data2)
+```
 
-# model summary
-print(rf_model)
 
-predictions <- predict(rf_model, newdata = test_data)
+```{r}
+# model summaries 
 
-# confusion Matrix
-conf_matrix <- table(Predicted = predictions, Actual = test_data$nominee)
+summary_df <- data.frame(
+  Metric = c("Number of Trees", "Out-of-Bag Error Rate"),
+  model1 = c(
+    rf_model1$ntree,
+    round(rf_model1$err.rate[nrow(rf_model1$err.rate), "OOB"], 4)
+  ),
+  model2 = c(
+    rf_model2$ntree,
+    round(rf_model2$err.rate[nrow(rf_model2$err.rate), "OOB"], 4)
+  )
+)
 
-print(conf_matrix)
+summary_df %>%
+  kable(row.names = FALSE, col.names = c("", "Model 1 - All Predictors", "Model 2 - Time Series Predictors Only")) %>%
+  add_header_above(c("Random Forest Model Comparison" = 3)) %>%
+  kable_styling(full_width = FALSE)
 
-# accuracy
-accuracy <- sum(predictions == test_data$nominee) / nrow(test_data)
-print(paste("Accuracy: ", accuracy))
+```
 
-conf_matrix_caret <- confusionMatrix(predictions, test_data$nominee)
+```{r}
+# prediction and evaluation
 
+# Model 1
+predictions1 <- predict(rf_model1, newdata = test_data1)
+conf_matrix1 <- confusionMatrix(predictions1, test_data1$nominee)
+accuracy1 <- round(sum(predictions1 == test_data1$nominee) / nrow(test_data1), 4)
+
+# Model 2
+predictions2 <- predict(rf_model2, newdata = test_data2)
+conf_matrix2 <- confusionMatrix(predictions2, test_data2$nominee)
+accuracy2 <- round(sum(predictions2 == test_data2$nominee) / nrow(test_data2), 4)
+
+
+# Accuracy comparison
+accuracy_table <- data.frame(
+  Metric = "Accuracy",
+  model1 = accuracy1,
+  model2 = accuracy2
+)
+
+accuracy_table %>%
+  kable(row.names = FALSE, col.names = c("", "Model 1 - All Predictors", "Model 2 - Time Series Predictors Only")) %>%
+  add_header_above(c("Model Accuracy Comparison" = 3)) %>%
+  kable_styling(full_width = FALSE)
+```
+
+```{r}
 # evaluation metrics
-print(conf_matrix_caret)
 
-importance(rf_model)
-varImpPlot(rf_model)
+metrics_df <- data.frame(
+  Metric = c("Precision", "Recall", "F1 Score"),
+  model1 = round(conf_matrix1$byClass[c("Precision", "Recall", "F1")], 4),
+  model2 = round(conf_matrix2$byClass[c("Precision", "Recall", "F1")], 4)
+)
 
+metrics_df %>%
+  kable(row.names = FALSE, col.names = c("", "Model 1 - All Predictors", "Model 2 - Time Series Predictors Only")) %>%
+  add_header_above(c("Evaluation Metrics Comparison" = 3)) %>%
+  kable_styling(full_width = FALSE)
+```
+
+```{r}
+# confusion matrices
+
+# Model 1
+conf_matrix_caret1 <- confusionMatrix(predictions2, test_data2$nominee)
+cat("Model 1 - All Predictors")
+print(conf_matrix_caret1)
+
+conf_matrix_caret2 <- confusionMatrix(predictions2, test_data2$nominee)
+cat("Model 2 - Time Series Predictors Only")
+print(conf_matrix_caret2)
+```
+
+```{r}
+# feature importance plots
+
+# Model 1
+importance(rf_model1) %>%
+  as.data.frame() %>%
+  rownames_to_column("Variable") %>%
+  arrange(desc(MeanDecreaseGini)) %>%
+  ggplot(aes(x = reorder(Variable, MeanDecreaseGini), y = MeanDecreaseGini)) +
+  geom_col(fill = "#268bd2") +
+  coord_flip() +
+  labs(title = "Feature Importance of Model 1 - All Predictors", x = "", y = "Mean Decrease in Gini") +
+  theme_minimal()
+
+# Model 2
+importance(rf_model2) %>%
+  as.data.frame() %>%
+  rownames_to_column("Variable") %>%
+  arrange(desc(MeanDecreaseGini)) %>%
+  ggplot(aes(x = reorder(Variable, MeanDecreaseGini), y = MeanDecreaseGini)) +
+  geom_col(fill = "#dc322f") +
+  coord_flip() +
+  labs(title = "Feature Importance of Model 2 - Time Series Predictors Only", x = "", y = "Mean Decrease in Gini") +
+  theme_minimal()
 ```
 
 

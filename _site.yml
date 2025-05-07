@@ -11,7 +11,7 @@ navbar:
   left:
   - text: "Project Description"
     href: index.html
-  - text: "Explore the Models"
+  - text: "Explore the Nominees Model"
     href: explore.html
   - text: "Upload Your Own Data"
     href: upload.html

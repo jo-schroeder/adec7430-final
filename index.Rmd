@@ -1,9 +1,7 @@
 ---
 title: "Project Description"
 output: 
-  html_document:
-      toc: true
-      toc_float: true
+  html_document
 ---
 
 In March of 2025 the Academy updated their voting guidelines for the Annual Academy Awards. Now, voters must have watched each film nominated in a category in order to be eligible to vote for the winner. [^1] If you're wondering how that wasn't a rule already, you're not alone! [^2] 

@@ -10,8 +10,8 @@ To download your own data:
 - Go to [Google Trends](https://trends.google.com/trends/explore?date=all&geo=US) and make sure you are searching the "United States" for all years of data
 - Search any actor you want
 - Download from the graph where it says interest over time, download as a csv
-- The csv will go to your downloads, upload it to the [upload data here folder](https://github.com/jo-schroeder/adec7430-final/tree/main/data/upload_data_here) of the GitHub repository, make sure you commit the upload
-- Wait for the website to rebuild (should take around 5 minutes, there will be a green check on the latest commit message on GitHub)
+- The csv will go to your downloads, upload it to the [upload data here folder](https://github.com/jo-schroeder/adec7430-final/tree/main/data/upload_data_here) of the GitHub repository, make sure you commit the upload (ask Joanna for permission)
+- Wait for the website to rebuild (should take around 5 minutes, there will be a green check on the latest commit message on GitHub) 
 - Refresh this page and see the analysis with the new data point!
 
 ```{r setup, include=FALSE}
@@ -157,15 +157,22 @@ cluster_df <- data.frame(
   distance = distances
 )
 
-actor_with_cluster <- left_join(trends, cluster_df, by = "name")
+actor_with_cluster <- left_join(trends, cluster_df, by = "name") %>%
+  mutate(cluster_label = case_when(
+    cluster == 1 ~ paste0(cluster, "- Blockbuster Staple"),
+    cluster == 2 ~ paste0(cluster, "- Breakout Star or Memorialized"),
+    cluster == 3 ~ paste0(cluster, "- Critically Acclaimed"),
+    cluster == 4 ~ paste0(cluster, "- Pop Fame"),
+    cluster == 5 ~ paste0(cluster, "- Emerging or Consistent Stardom")
+  ))
 
-uploaded_cluster <- actor_with_cluster %>% filter(name == uploaded_colnames) %>% distinct(cluster) %>% pull(cluster)
+uploaded_cluster <- actor_with_cluster %>% filter(name == uploaded_colnames) %>% distinct(cluster) %>% pull(cluster_label)
 
 cat(uploaded_colnames, "would be in cluster", uploaded_cluster)
 ```
 
 
-```{r eval = exists("uploaded_data"), message = FALSE, warning = FALSE, echo = FALSE}
+```{r eval = exists("uploaded_data"), include = FALSE}
 years_seq <- 2004:2024
 
 cluster_df <- cluster_df %>%
@@ -249,6 +256,7 @@ nominees_filled <- nominees_filled %>%
   left_join(prev_win, by = c("name", "year")) %>%
   mutate(age = year - age)
 
+
 trend_ts_data_all <- trends %>%
   mutate(year = year(Month),
          name = tolower(name)) %>%
@@ -260,31 +268,27 @@ trend_ts_data_all <- trends %>%
     .groups = "drop"
   )
 
-zero_variance_log <- trend_ts_data_all %>%
-  filter(is.na(var) | var == 0)
-
 trend_ts_data <- trend_ts_data_all %>%
   filter(!is.na(var) & var > 0) %>%
   select(-var) %>%
   filter(year != 2025)
 
-# feature extraction and custom max spike height
+# feature extraction + custom max spike height
 trend_features_ts <- trend_ts_data %>%
   mutate(
-    features = map(ts_data, ~ tsfeatures(.x)), 
+    features = map(ts_data, ~ tsfeatures(.x)),  
     max_spike_height = map_dbl(ts_data, ~ max(.x, na.rm = TRUE))
   ) %>%
   unnest(features)
 
-# --- 4. Merge with Oscar outcomes ---
+
 model_data <- trend_features_ts %>%
   left_join(nominees_filled, by = c("name", "year")) %>%
   mutate(
-    nominee = factor(ifelse(is.na(nominee), 0, 1))
+    nominee = factor(ifelse(is.na(nominee), 0, 1))  
   ) %>%
   select(-frequency, -nperiods, -seasonal_period, -diff2_acf10, -seas_acf1)
 
-#Train/test split
 set.seed(90210)
 data_split <- initial_split(model_data, prop = 0.8, strata = nominee)
 train_data <- training(data_split)
@@ -294,21 +298,22 @@ train_data <- train_data %>% select(-name, -ts_data, -year)
 train_data_clean <- na.omit(train_data)
 
 ## undersampling
+
 # Split the data into the two classes
 non_nominee <- train_data_clean %>% filter(nominee == 0)
 nominee <- train_data_clean %>% filter(nominee == 1)
 
-# Randomly sample from the majority class (non-nominee) to match the minority class (nominee)
-# Randomly sample the majority class (non-nominee) to match the minority class (nominee)
+# randomly sample from the majority class (non-nominee) to match the minority class (nominee)
+# randomly sample the majority class (non-nominee) to match the minority class (nominee)
 
-# Get the same proportion of non-nominee as nominee
+# get the same proportion of non-nominee as nominee
 if (nrow(non_nominee) >= nrow(nominee)) {
   non_nominee_undersampled <- non_nominee[sample(nrow(non_nominee), nrow(nominee)), ]
   
   # combine
   balanced_data <- bind_rows(non_nominee_undersampled, nominee)
   
-  # shuffle 
+  # shuffle rows
   balanced_data <- balanced_data %>% sample_frac(1)
   
   # confirm
@@ -329,67 +334,73 @@ balanced_data$american <- as.factor(balanced_data$american)
 balanced_data$won_previously <- as.factor(balanced_data$won_previously)
 balanced_data$nominated_previously <- as.factor(balanced_data$nominated_previously)
 
-balanced_data_1 <- balanced_data
-balanced_data_2 <- balanced_data %>% select(-age, -gender, -american, -nominated_previously, -won_previously)
-
-set.seed(90210)
-
-# modeling all predictors 
-data_split <- initial_split(balanced_data, prop = 0.8, strata = nominee)
-train_data <- training(data_split)
-test_data <- testing(data_split)
-
-rf_model <- randomForest(nominee ~ ., data = train_data)
-
-# model summary
-print(rf_model)
-
-predictions <- predict(rf_model, newdata = test_data)
-
-# confusion Matrix
-conf_matrix <- table(Predicted = predictions, Actual = test_data$nominee)
-
-print(conf_matrix)
-
-# accuracy
-accuracy <- sum(predictions == test_data$nominee) / nrow(test_data)
-print(paste("Accuracy: ", accuracy))
-
-conf_matrix_caret <- confusionMatrix(predictions, test_data$nominee)
-
-# evaluation metrics
-print(conf_matrix_caret)
-
-importance(rf_model)
-varImpPlot(rf_model)
+balanced_data2 <- balanced_data %>% select(-age, -gender, -american, -nominated_previously, -won_previously)
 
 # modeling just time series predictors
-data_split <- initial_split(balanced_data_2, prop = 0.8, strata = nominee)
-train_data <- training(data_split)
-test_data <- testing(data_split)
+data_split2 <- initial_split(balanced_data2, prop = 0.8, strata = nominee)
+train_data2 <- training(data_split2)
+test_data2 <- testing(data_split2)
 
-rf_model <- randomForest(nominee ~ ., data = train_data)
-
-# model summary
-print(rf_model)
-
-predictions <- predict(rf_model, newdata = test_data)
-
-# confusion Matrix
-conf_matrix <- table(Predicted = predictions, Actual = test_data$nominee)
-
-print(conf_matrix)
-
-# accuracy
-accuracy <- sum(predictions == test_data$nominee) / nrow(test_data)
-print(paste("Accuracy: ", accuracy))
-
-conf_matrix_caret <- confusionMatrix(predictions, test_data$nominee)
-
-# evaluation metrics
-print(conf_matrix_caret)
-
-importance(rf_model)
-varImpPlot(rf_model)
+rf_model2 <- randomForest(nominee ~ ., data = train_data2)
 ```
+
+```{r}
+# summaries
+
+summary_df <- data.frame(
+  Metric = c("Number of Trees", "Out-of-Bag Error Rate"),
+  model2 = c(
+    rf_model2$ntree,
+    round(rf_model2$err.rate[nrow(rf_model2$err.rate), "OOB"], 4)
+  )
+)
+
+summary_df %>%
+  kable(row.names = FALSE, col.names = c("", "Model 2 - Time Series Predictors Only")) %>%
+  add_header_above(c("Random Forest Model " = 3)) %>%
+  kable_styling(full_width = FALSE)
+
+```
+
+```{r}
+# predictions & evaluation
+
+# Model 2
+predictions2 <- predict(rf_model2, newdata = test_data2)
+conf_matrix2 <- confusionMatrix(predictions2, test_data2$nominee)
+accuracy2 <- round(sum(predictions2 == test_data2$nominee) / nrow(test_data2), 4)
+
+# Accuracy comparison
+accuracy_table <- data.frame(
+  Metric = "Accuracy",
+  model2 = accuracy2
+)
+
+accuracy_table %>%
+  kable(row.names = FALSE, col.names = c("", "Model 2 - Time Series Predictors Only")) %>%
+  add_header_above(c("Model Accuracy" = 2)) %>%
+  kable_styling(full_width = FALSE)
+```
+
+```{r}
+### evaluation metrics 
+
+metrics_df <- data.frame(
+  Metric = c("Precision", "Recall", "F1 Score"),
+  model2 = round(conf_matrix2$byClass[c("Precision", "Recall", "F1")], 4)
+)
+
+metrics_df %>%
+  kable(row.names = FALSE, col.names = c("", "Model 2 - Time Series Predictors Only")) %>%
+  add_header_above(c("Evaluation Metrics" = 2)) %>%
+  kable_styling(full_width = FALSE)
+```
+
+```{r}
+conf_matrix_caret2 <- confusionMatrix(predictions2, test_data2$nominee)
+cat("Model 2 - Time Series Predictors Only")
+print(conf_matrix_caret2)
+```
+
+
 
