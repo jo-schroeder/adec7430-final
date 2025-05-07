@@ -281,126 +281,78 @@ trend_features_ts <- trend_ts_data %>%
   ) %>%
   unnest(features)
 
-
 model_data <- trend_features_ts %>%
   left_join(nominees_filled, by = c("name", "year")) %>%
   mutate(
     nominee = factor(ifelse(is.na(nominee), 0, 1))  
   ) %>%
   select(-frequency, -nperiods, -seasonal_period, -diff2_acf10, -seas_acf1)
+```
 
+```{r eval = exists("uploaded_data"), include = FALSE}
 set.seed(90210)
-data_split <- initial_split(model_data, prop = 0.8, strata = nominee)
-train_data <- training(data_split)
-test_data <- testing(data_split)
-
-train_data <- train_data %>% select(-name, -ts_data, -year)
-train_data_clean <- na.omit(train_data)
-
-## undersampling
-
-# Split the data into the two classes
-non_nominee <- train_data_clean %>% filter(nominee == 0)
-nominee <- train_data_clean %>% filter(nominee == 1)
-
-# randomly sample from the majority class (non-nominee) to match the minority class (nominee)
-# randomly sample the majority class (non-nominee) to match the minority class (nominee)
-
-# get the same proportion of non-nominee as nominee
-if (nrow(non_nominee) >= nrow(nominee)) {
-  non_nominee_undersampled <- non_nominee[sample(nrow(non_nominee), nrow(nominee)), ]
+model_data2 <- model_data %>%
+  mutate(across(c(cluster, gender, american, won_previously, nominated_previously), as.factor)) %>%
+  drop_na() %>%
+  mutate(row_id = row_number())
   
-  # combine
-  balanced_data <- bind_rows(non_nominee_undersampled, nominee)
-  
-  # shuffle rows
-  balanced_data <- balanced_data %>% sample_frac(1)
-  
-  # confirm
-  table(balanced_data$nominee)
-} else {
-  stop("Not enough non-nominee rows to sample from.")
+# Save for reconnecting later
+id_lookup <- model_data2 %>% select(row_id, name, year)
+
+# Drop unused columns and handle factors
+model_data2 <- model_data2 %>% select(-name, -ts_data, -year, -row_id, -age, -gender, -american, -nominated_previously, -won_previously)
+
+# Define a function to build a workflow with downsampling and cross-validation
+define_modeling_workflow <- function(data) {
+  # Split data
+  data_split <- initial_split(data, prop = 0.8, strata = nominee)
+  train_data <- training(data_split)
+  test_data <- testing(data_split)
+
+  # Cross-validation folds
+  folds <- vfold_cv(train_data, v = 5, strata = nominee)
+
+  # Recipe with downsampling
+  rf_recipe <- recipe(nominee ~ ., data = train_data) %>%
+    step_downsample(nominee)
+
+  # Random forest model
+  rf_model <- 
+    rand_forest(mode = "classification") %>%
+    set_engine("randomForest")
+
+  # Workflow
+  rf_workflow <- workflow() %>%
+    add_model(rf_model) %>%
+    add_recipe(rf_recipe)
+
+  list(
+    workflow = rf_workflow,
+    folds = folds,
+    test_data = test_data
+  )
 }
 
-
-# combine the undersampled non-nominee with the full nominee class
-balanced_data <- bind_rows(non_nominee_undersampled, nominee)
-
-# check the new balance of classes
-table(balanced_data$nominee)
-balanced_data$cluster <- as.factor(balanced_data$cluster)
-balanced_data$gender <- as.factor(balanced_data$gender)
-balanced_data$american <- as.factor(balanced_data$american)
-balanced_data$won_previously <- as.factor(balanced_data$won_previously)
-balanced_data$nominated_previously <- as.factor(balanced_data$nominated_previously)
-
-balanced_data2 <- balanced_data %>% select(-age, -gender, -american, -nominated_previously, -won_previously)
-
-# modeling just time series predictors
-data_split2 <- initial_split(balanced_data2, prop = 0.8, strata = nominee)
-train_data2 <- training(data_split2)
-test_data2 <- testing(data_split2)
-
-rf_model2 <- randomForest(nominee ~ ., data = train_data2)
-```
-
-```{r}
-# summaries
-
-summary_df <- data.frame(
-  Metric = c("Number of Trees", "Out-of-Bag Error Rate"),
-  model2 = c(
-    rf_model2$ntree,
-    round(rf_model2$err.rate[nrow(rf_model2$err.rate), "OOB"], 4)
-  )
+# Run for time series predictors only
+workflow_ts <- define_modeling_workflow(model_data2)
+rf_results_ts <- fit_resamples(
+  workflow_ts$workflow,
+  resamples = workflow_ts$folds,
+  metrics = metric_set(accuracy, roc_auc),
+  control = control_resamples(save_pred = TRUE)
 )
+final_preds_ts <- collect_predictions(rf_results_ts)
 
-summary_df %>%
-  kable(row.names = FALSE, col.names = c("", "Model 2 - Time Series Predictors Only")) %>%
-  add_header_above(c("Random Forest Model " = 3)) %>%
-  kable_styling(full_width = FALSE)
+collect_metrics(rf_results_ts)
 
-```
+uploaded_preds <- final_preds_ts %>%
+  left_join(id_lookup, by = c(".row" = "row_id")) %>%
+  mutate(model_type = "TS Predictors Only") %>%
+  filter(name == tolower(uploaded_colnames)) %>%
+  select(year, .pred_class)
 
-```{r}
-# predictions & evaluation
-
-# Model 2
-predictions2 <- predict(rf_model2, newdata = test_data2)
-conf_matrix2 <- confusionMatrix(predictions2, test_data2$nominee)
-accuracy2 <- round(sum(predictions2 == test_data2$nominee) / nrow(test_data2), 4)
-
-# Accuracy comparison
-accuracy_table <- data.frame(
-  Metric = "Accuracy",
-  model2 = accuracy2
-)
-
-accuracy_table %>%
-  kable(row.names = FALSE, col.names = c("", "Model 2 - Time Series Predictors Only")) %>%
-  add_header_above(c("Model Accuracy" = 2)) %>%
+uploaded_preds %>%
+  kable(col.names = c("Year", "Prediction")) %>%
+  add_header_above(c(paste0("Predictions for ", uploaded_colnames) = 2)) %>%
   kable_styling(full_width = FALSE)
 ```
-
-```{r}
-### evaluation metrics 
-
-metrics_df <- data.frame(
-  Metric = c("Precision", "Recall", "F1 Score"),
-  model2 = round(conf_matrix2$byClass[c("Precision", "Recall", "F1")], 4)
-)
-
-metrics_df %>%
-  kable(row.names = FALSE, col.names = c("", "Model 2 - Time Series Predictors Only")) %>%
-  add_header_above(c("Evaluation Metrics" = 2)) %>%
-  kable_styling(full_width = FALSE)
-```
-
-```{r}
-conf_matrix_caret2 <- confusionMatrix(predictions2, test_data2$nominee)
-cat("Model 2 - Time Series Predictors Only")
-print(conf_matrix_caret2)
-```
-
-
-
