@@ -1,5 +1,5 @@
 ---
-title: "Explore the Models"
+title: ""
 output: 
   html_document
 ---

@@ -35,7 +35,8 @@ trends[,c("Month", "Amber Heard", "Johnny Depp")] %>%
   facet_wrap(vars(name)) 
 ```
 
-bigML predicting winners, using data from earlier in the award season. [^5] 
+bigML predicting winners, using data from earlier in the award season. [^5]
+Q scores.
 
 More broadly, we gather a dataset of popular actors and films, as well as Academy Award nominees for future research into the career pathways of film stars. 
 

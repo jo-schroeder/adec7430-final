@@ -31,6 +31,9 @@ library(stringr)
 library(caret)
 library(randomForest)
 library(tibble)
+library(kableExtra)
+library(themis)
+library(corrplot)
 
 # load in data
 data_dir <- "./data/"
@@ -79,7 +82,7 @@ uploaded_colnames <- colnames(uploaded_data)[-1]
 
 
 ```{r eval = exists("uploaded_data"), results = "asis"}
-cat("You uploaded: ", uploaded_colnames, ".")
+cat("You uploaded: ", uploaded_colnames, "\n")
 
 if (uploaded_colnames %in% existing_actors){
   cat("\n", uploaded_colnames, "is already in our dataset")
@@ -90,6 +93,14 @@ if (uploaded_colnames %in% existing_actors){
 } else {
   cat("\nThe data looks good!")
 }
+
+new_rows <- tibble(name = tolower(uploaded_colnames))
+# Add all missing columns from actors, filled with NA
+missing_cols <- setdiff(names(actors), names(new_rows))
+new_rows[missing_cols] <- NA
+
+# Combine
+actors <- bind_rows(actors, new_rows)
 ```
 
 ```{r eval = exists("uploaded_data")}
@@ -159,14 +170,14 @@ cluster_df <- data.frame(
 
 actor_with_cluster <- left_join(trends, cluster_df, by = "name") %>%
   mutate(cluster_label = case_when(
-    cluster == 1 ~ paste0(cluster, "- Blockbuster Staple"),
-    cluster == 2 ~ paste0(cluster, "- Breakout Star or Memorialized"),
-    cluster == 3 ~ paste0(cluster, "- Critically Acclaimed"),
-    cluster == 4 ~ paste0(cluster, "- Pop Fame"),
-    cluster == 5 ~ paste0(cluster, "- Emerging or Consistent Stardom")
+    cluster == 1 ~ paste0(cluster, " - Blockbuster Staple"),
+    cluster == 2 ~ paste0(cluster, " - Breakout Star or Memorialized"),
+    cluster == 3 ~ paste0(cluster, " - Critically Acclaimed"),
+    cluster == 4 ~ paste0(cluster, " - Pop Fame"),
+    cluster == 5 ~ paste0(cluster, " - Emerging or Consistent Stardom")
   ))
 
-uploaded_cluster <- actor_with_cluster %>% filter(name == uploaded_colnames) %>% distinct(cluster) %>% pull(cluster_label)
+uploaded_cluster <- actor_with_cluster %>% filter(name == uploaded_colnames) %>% distinct(cluster_label) %>% pull(cluster_label)
 
 cat(uploaded_colnames, "would be in cluster", uploaded_cluster)
 ```
@@ -289,18 +300,16 @@ model_data <- trend_features_ts %>%
   select(-frequency, -nperiods, -seasonal_period, -diff2_acf10, -seas_acf1)
 ```
 
-```{r eval = exists("uploaded_data"), include = FALSE}
+```{r eval = exists("uploaded_data")}
 set.seed(90210)
 model_data2 <- model_data %>%
-  mutate(across(c(cluster, gender, american, won_previously, nominated_previously), as.factor)) %>%
+  select(-ts_data, -age, -gender, -american, -nominated_previously, -won_previously) %>%
   drop_na() %>%
   mutate(row_id = row_number())
   
 # Save for reconnecting later
 id_lookup <- model_data2 %>% select(row_id, name, year)
-
-# Drop unused columns and handle factors
-model_data2 <- model_data2 %>% select(-name, -ts_data, -year, -row_id, -age, -gender, -american, -nominated_previously, -won_previously)
+model_data2 <- model_data2 %>% select(-row_id, -name, -year)
 
 # Define a function to build a workflow with downsampling and cross-validation
 define_modeling_workflow <- function(data) {
@@ -343,16 +352,19 @@ rf_results_ts <- fit_resamples(
 )
 final_preds_ts <- collect_predictions(rf_results_ts)
 
-collect_metrics(rf_results_ts)
+collect_metrics(rf_results_ts) %>% select(-.estimator, -.config) %>%
+  kable(digits = 2, col.names = c("Metric", "Mean", "n Folds", "Standard Error")) %>%
+  add_header_above(c("Model Accuracy - TS Predictors Only" = 4)) %>%
+  kable_styling(full_width = FALSE)
 
 uploaded_preds <- final_preds_ts %>%
   left_join(id_lookup, by = c(".row" = "row_id")) %>%
-  mutate(model_type = "TS Predictors Only") %>%
   filter(name == tolower(uploaded_colnames)) %>%
-  select(year, .pred_class)
+  distinct(year, .pred_class) %>% arrange(year) 
 
+title <- paste0("Predictions for ", uploaded_colnames)
 uploaded_preds %>%
   kable(col.names = c("Year", "Prediction")) %>%
-  add_header_above(c(paste0("Predictions for ", uploaded_colnames) = 2)) %>%
+  add_header_above(setNames(2, title)) %>%
   kable_styling(full_width = FALSE)
 ```
