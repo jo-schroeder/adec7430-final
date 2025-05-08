@@ -2,10 +2,11 @@ name: "adec7430-final"
 output_dir: "docs"
 output: 
   html_document:
-    toc: true 
     theme: cosmo
     highlight: tango  
     css: style.css
+    includes:
+      in_header: header.html
 navbar:
   title: "And the Forecast Goes To..."
   left:
@@ -15,5 +16,8 @@ navbar:
     href: explore.html
   - text: "Upload Your Own Data"
     href: upload.html
-    
+  - text: ""
+    icon: fa-github
+    href: "https://github.com/jo-schroeder/adec7430-final"
+
     

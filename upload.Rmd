@@ -1,18 +1,16 @@
 ---
-title: ""
+title: "Upload Data Here"
 output: html_document
 ---
 
 **Test our models by uploading your own data!**
 
-To download your own data:
-
-- Go to [Google Trends](https://trends.google.com/trends/explore?date=all&geo=US) and make sure you are searching the "United States" for all years of data
-- Search any actor you want
-- Download from the graph where it says interest over time, download as a csv
-- The csv will go to your downloads, upload it to the [upload data here folder](https://github.com/jo-schroeder/adec7430-final/tree/main/data/upload_data_here) of the GitHub repository, make sure you commit the upload (ask Joanna for permission)
-- Wait for the website to rebuild (should take around 5 minutes, there will be a green check on the latest commit message on GitHub) 
-- Refresh this page and see the analysis with the new data point!
+1.  Search any actor you'd like on [Google Trends](https://trends.google.com/trends/explore?date=all&geo=US&q=Joanna%20Schroeder) (make sure you've selected "United States" and "2004 - present"
+2.  Download the information in the Interest Over Time chart (look for the download icon in the top right corner)
+3.  Navigate to the [upload_data_here folder](https://github.com/jo-schroeder/adec7430-final/tree/main/data/upload_data_here) in our project GitHub repository, select "Add File" in the top right corner, and select the downloaded data (if you're unable to upload data, you may need to ask Joanna to be added to the repository)
+4.  After you've selected the data, make sure click the green button to commit the changes
+5.  Wait for the website to rebuild (it should take around 10 minutes)
+6.  Refresh this page to see the predictions for your chosen actor!
 
 ```{r setup, include=FALSE}
 # loading packages
@@ -79,7 +77,6 @@ second_colname <- colnames(trends)[2]
 last_colname <- tail(colnames(trends), 1)
 uploaded_colnames <- colnames(uploaded_data)[-1]
 ```
-
 
 ```{r eval = exists("uploaded_data"), results = "asis"}
 cat("You uploaded: ", uploaded_colnames, "\n")
@@ -181,7 +178,6 @@ uploaded_cluster <- actor_with_cluster %>% filter(name == uploaded_colnames) %>%
 
 cat(uploaded_colnames, "would be in cluster", uploaded_cluster)
 ```
-
 
 ```{r eval = exists("uploaded_data"), include = FALSE}
 years_seq <- 2004:2024
@@ -300,7 +296,7 @@ model_data <- trend_features_ts %>%
   select(-frequency, -nperiods, -seasonal_period, -diff2_acf10, -seas_acf1)
 ```
 
-```{r eval = exists("uploaded_data")}
+```{r eval = exists("uploaded_data"), results='asis'}
 set.seed(90210)
 model_data2 <- model_data %>%
   select(-ts_data, -age, -gender, -american, -nominated_previously, -won_previously) %>%
@@ -350,8 +346,17 @@ rf_results_ts <- fit_resamples(
   metrics = metric_set(accuracy, roc_auc),
   control = control_resamples(save_pred = TRUE)
 )
-final_preds_ts <- collect_predictions(rf_results_ts)
 
+final_model_ts <- last_fit(
+  workflow_ts$workflow,
+  split = initial_split(model_data2, prop = 0.8, strata = nominee)
+)
+
+final_fit <- extract_workflow(final_model_ts)
+final_predictions_ts <- predict(final_fit, model_data2) %>%
+  bind_cols(model_data2)
+
+cat("Accuracy for Model Including", uploaded_colnames)
 collect_metrics(rf_results_ts) %>% select(-.estimator, -.config) %>%
   kable(digits = 2, col.names = c("Metric", "Mean", "n Folds", "Standard Error")) %>%
   add_header_above(c("Model Accuracy - TS Predictors Only" = 4)) %>%
@@ -362,9 +367,14 @@ uploaded_preds <- final_preds_ts %>%
   filter(name == tolower(uploaded_colnames)) %>%
   distinct(year, .pred_class) %>% arrange(year) 
 
+if(nrow(uploaded_preds) >= 1){
 title <- paste0("Predictions for ", uploaded_colnames)
 uploaded_preds %>%
-  kable(col.names = c("Year", "Prediction")) %>%
+  kable(col.names = c("Year", "Prediction"), 
+        caption = "Note: There may not be enough search data to compute a prediction for every year") %>%
   add_header_above(setNames(2, title)) %>%
   kable_styling(full_width = FALSE)
+} else {
+  cat(uploaded_colnames, "did not appear in the training data for the final fold, so we cannot display predictions.")
+}
 ```

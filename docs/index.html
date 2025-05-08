@@ -13,7 +13,7 @@
 
 <title>Project Description</title>
 
-<script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+<script src="site_libs/header-attrs-2.28/header-attrs.js"></script>
 <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link href="site_libs/bootstrap-3.3.5/css/cosmo.min.css" rel="stylesheet" />
@@ -29,10 +29,10 @@
        h6 {font-size: 12px;}
        code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
        pre:not([class]) { background-color: white }</style>
-<script src="site_libs/jqueryui-1.13.2/jquery-ui.min.js"></script>
-<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
-<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
+<link href="site_libs/font-awesome-6.4.2/css/all.min.css" rel="stylesheet" />
+<link href="site_libs/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet" />
+<link rel="icon" href="./img/icon.svg"/>
 
 <style type="text/css">
   code{white-space: pre-wrap;}
@@ -211,69 +211,6 @@ $(document).ready(function () {
 
 
 
-<style type="text/css">
-
-#TOC {
-  margin: 25px 0px 20px 0px;
-}
-@media (max-width: 768px) {
-#TOC {
-  position: relative;
-  width: 100%;
-}
-}
-
-@media print {
-.toc-content {
-  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
-  float: right;
-}
-}
-
-.toc-content {
-  padding-left: 30px;
-  padding-right: 40px;
-}
-
-div.main-container {
-  max-width: 1200px;
-}
-
-div.tocify {
-  width: 20%;
-  max-width: 260px;
-  max-height: 85%;
-}
-
-@media (min-width: 768px) and (max-width: 991px) {
-  div.tocify {
-    width: 25%;
-  }
-}
-
-@media (max-width: 767px) {
-  div.tocify {
-    width: 100%;
-    max-width: none;
-  }
-}
-
-.tocify ul, .tocify li {
-  line-height: 20px;
-}
-
-.tocify-subheader .tocify-item {
-  font-size: 0.90em;
-}
-
-.tocify .list-group-item {
-  border-radius: 0px;
-}
-
-
-</style>
-
-
 
 </head>
 
@@ -281,16 +218,6 @@ div.tocify {
 
 
 <div class="container-fluid main-container">
-
-
-<!-- setup 3col/9col grid for toc_float and main content  -->
-<div class="row">
-<div class="col-xs-12 col-sm-4 col-md-3">
-<div id="TOC" class="tocify">
-</div>
-</div>
-
-<div class="toc-content col-xs-12 col-sm-8 col-md-9">
 
 
 
@@ -311,10 +238,17 @@ div.tocify {
   <a href="index.html">Project Description</a>
 </li>
 <li>
-  <a href="explore.html">Explore the Models</a>
+  <a href="explore.html">Explore the Nominees Model</a>
 </li>
 <li>
   <a href="upload.html">Upload Your Own Data</a>
+</li>
+<li>
+  <a href="https://github.com/jo-schroeder/adec7430-final">
+    <span class="fa fa-github"></span>
+     
+    
+  </a>
 </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -342,84 +276,70 @@ href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
 <p>Ever year the legitimacy of the Oscars are questioned, yet they
 remain one of the most important awards in the film industry. <a
 href="#fn3" class="footnote-ref" id="fnref3"><sup>3</sup></a> In this
-project, we aim to answer questions about Hollywood’s most prestigious
-awards.</p>
+project, we aim to answer two questions about Hollywood’s most
+prestigious awards.</p>
 <ul>
 <li>Does the phenomenon of an “Oscar Campaign” really exist?</li>
 <li>How well does Oscar buzz alone predict who is nominated for Academy
 Awards?</li>
 </ul>
-<p>Timothee Chalamet Oscar Campaign. <a href="#fn4" class="footnote-ref"
-id="fnref4"><sup>4</sup></a> <img src="img/000043-edit.jpg"
-alt="Was Timothée Chalamet on a 2025 Oscar Campaign?" /></p>
-<p>bigML predicting winners, using data from earlier in the award
-season. <a href="#fn5" class="footnote-ref"
-id="fnref5"><sup>5</sup></a></p>
-<p>More broadly, we gather a dataset of popular actors and films, as
-well as Academy Award nominees for future research into the career
-pathways of film stars.</p>
+<p>Other projects attempt to predict Oscar winners using big datasets,
+including information on accolades garnered throughout a given award
+season. <a href="#fn4" class="footnote-ref" id="fnref4"><sup>4</sup></a>
+However, to our knowledge there hasn’t been an attempt to predict
+nominations using Oscar buzz in over 10 years. <a href="#fn5"
+class="footnote-ref" id="fnref5"><sup>5</sup></a></p>
+<div id="what-is-an-oscar-campaign-anyway" class="section level2">
+<h2>What is an Oscar Campaign anyway?</h2>
+<p><img src="img/000043-edit.jpg"
+alt="Was Timothée Chalamet on a 2025 Oscar Campaign?" /> If you were on
+the internet in January of 2025, you may have heard speculations that
+Timothée Chalamet was on an Oscar Campaign. Folks online speculated that
+Timothée was generating buzz for his performance as Bob Dylan <em>A
+Complete Unknown</em> with the goal of getting the nod and taking home
+that golden statue. <a href="#fn6" class="footnote-ref"
+id="fnref6"><sup>6</sup></a> For Acting categories, actors are nominated
+based on the accumulation of votes from members of the Academy’s Acting
+branch. [^6] So, it stands to reason that being in the zietgiest would
+be of interest to award season hopefuls.</p>
+</div>
+<div id="how-would-we-quantify-buzz" class="section level2">
+<h2>How would we quantify buzz?</h2>
+<p>Film aggregation websites like Internet Movie Database (IMBD) and The
+Movie Database (TMDB) often include user generated popularity scores for
+films and actors derived from votes. <a
+href="https://www.qscores.com/">Q Scores</a> have been used for decades
+in fields like marketing to understand the consumer appeal of entities
+including actors. The drawback of popularity metrics like these is that
+they may not capture longitudinal change over time at all or at a scale
+fine-grained enough to be robust predictors of nomination. We propose
+using Google Trends Search Interest in as given year as a proxy for
+Oscar buzz. In addition to the Google Trends, we gather a dataset of
+popular actors and films and several covariates, as well as historic
+Academy Award nominees.</p>
+</div>
 <div id="data-acquisition" class="section level2">
 <h2>Data Acquisition</h2>
 <p>We started by downloading a a dataset of Academy Award winners from
 Kaggle. Then we subset to Acting awards (Best Lead Actor, Best Lead
 Actress, Best Supporting Actor, Best Supporting Actress) and data for
-which Google Trends are available (since 2004). Really, this wouldn’t
-include 2004 award winners since we have no prior trend for them. The
-Award eligibility is the calendar year prior to the awards, which are
-usually announced at a ceremony in March. The nominees are announced in
-January.</p>
-<p>Next, we used the API from The Movie Database (TMD) to extract the
-top three billed cast members for the 20 most commercially successful
-movies for each year from 2004-present. Commercially successful was
-determined by revenue generated. Notably, we included non-U.S. movies,
-which maybe we should’ve filtered them out but regardless.</p>
+which Google Trends are available (2004 - present).</p>
+<p>Next, we used the TMDB API to extract the top five billed cast
+members for the 25 most commercially successful movies for each year
+from 2004-present. Commercial successful was defined by revenue
+generated.</p>
 <p>From these two sources, we netted a list of 668 actors. We then
 downloaded the monthly Google Trend Search Interest for each actor since
-2004. The process of doing this via API was throttled, so we downloaded
-this data manually.</p>
-<p>So we had acquired data for actors, some of whom were nominated and
-some of whom won, some were only commercially successful and some were
-both. We then cleaned the dataset and extracted some features about the
-actors, also from TMD, including information like gender, birth year,
-and nationality. We also augmented the data to include information on if
-they were previously nominated or previously won.</p>
-<p>We began with some exploratory data analysis to investigate our data
-and see and overt patterns or trends. We wanted to characterize a
-typology of actor careers, for example, we wanted to see if, based on
-their google trend, we could tell one-hit wonders from steadily
-commercially successful actors, etc. After much trial, we landed on a
-time series based clustering approach, but we would be interested in
-exploring this further.</p>
-<p>Next, we used the trend data to predict Oscar nominations. We landed
-on a random forest model, and tested two models. One with features that
-were only based on trends, and one with additional features such as age
-and previous nominations and wins. We wanted to test to see if
-information about hype alone, how popular or in the zietgiest an actor
-is, would be enough to predict their nomination. This would suggest that
-a rule change like the one the Oscars implemented is quite necessary,
-since name recognition alone might persuade enough Academy members to
-vote for someone, especially if they don’t have to be familiar with all
-the nominees’ work. We also wanted to include the descriptive cluster
-solution we created earlier as a predictor in our model.</p>
-<p>It became clear that it would be necessary to devise an appropriate
-sampling strategy for the random forest. By nature of this problem,
-predicting for nominees, and to a greater extent winners, is like
-searching for a needle in a haystack. Each year there are only 20
-nominees, 5 in each category, so for our dataset was quite limited. To
-create more observations and more specific predictions, we subset the
-data to be the trend per year per actor, and the outcome of nomination
-specific to that year. We undersampled non-winners to create a balanced
-testing/training strategy and immediately saw model improvement.</p>
-<p>In the future we would want to investigate putting certain
-constraints on the model like the fact that there can only be 5
-nominations per category and there has to be a gender balance.</p>
-<p>The data acquisition process was quite long, as there were many
-sources to combine and reconcile. We also gathered much more data than
-we ended up using, but anticipate further analysis will be fun and
-interesting now that the data has been gathered.</p>
-</div>
-<div id="research-questions" class="section level2">
-<h2>Research Questions</h2>
+2004. The process of doing this via API was throttled, so this
+information was downloaded manually. Google Trend Search Interest ranges
+from 0-100, and is relative to the peak popularity of the given the
+actor themselves. In other words, Google Trends cannot be used to make
+absolute comparisons for actors in our dataset, but we can compare the
+shape and features of the trends as time series.</p>
+<p>[^6] “98TH ACADEMY AWARDS® OF MERIT.” oscars.com. Accessed May 4,
+2025. [Online.] Available: <a
+href="https://www.oscars.org/sites/oscars/files/2025-04/98th_aa_complete_rules.pdf?VersionId=KHfTeEBPx9GJx9jvW_Ki.1YJgUzDheAU"
+class="uri">https://www.oscars.org/sites/oscars/files/2025-04/98th_aa_complete_rules.pdf?VersionId=KHfTeEBPx9GJx9jvW_Ki.1YJgUzDheAU</a></p>
 </div>
 <div class="footnotes footnotes-end-of-document">
 <hr />
@@ -447,28 +367,36 @@ Accessed: May 4, 2025. [Online.] Available: <a
 href="https://variety.com/2025/awards/news/2025-oscars-snubs-surprises-1236319091/"
 class="uri">https://variety.com/2025/awards/news/2025-oscars-snubs-surprises-1236319091/</a><a
 href="#fnref3" class="footnote-back">↩︎</a></p></li>
-<li id="fn4"><p>Hyden, Steven. “Timothée Chalamet Should Win an Oscar
-for His Oscar Campaign.” The New York Times. Accessed: May 4, 2025.
-[Online.] Available: <a
-href="https://www.nytimes.com/2025/02/26/magazine/timothee-chalamet-oscar-campaign.html"
-class="uri">https://www.nytimes.com/2025/02/26/magazine/timothee-chalamet-oscar-campaign.html</a><a
-href="#fnref4" class="footnote-back">↩︎</a></p></li>
-<li id="fn5"><p>atakancetinsoy. “Predicting the 2025 Oscar Winners with
+<li id="fn4"><p>atakancetinsoy. “Predicting the 2025 Oscar Winners with
 Machine Learning.” bigML. Accessed: May 4, 2025. [Online.] Available: <a
 href="https://blog.bigml.com/2025/02/28/predicting-the-2025-oscar-winners-with-machine-learning/"
 class="uri">https://blog.bigml.com/2025/02/28/predicting-the-2025-oscar-winners-with-machine-learning/</a>
 ; Movies (Oscars 2001-2025). bigML. Accessed: May 4, 2025. [Online.]
 Available: <a
 href="https://bigml.com/user/academy_awards/gallery/dataset/67bc509a54e70fb808f13df3"
-class="uri">https://bigml.com/user/academy_awards/gallery/dataset/67bc509a54e70fb808f13df3</a><a
+class="uri">https://bigml.com/user/academy_awards/gallery/dataset/67bc509a54e70fb808f13df3</a>
+[5] McGee, Matt. “Google Asks: Can Search Trends Predict The Oscars?”
+Search Engine Land. Accessed: May 4, 2025. [Online.] Available: <a
+href="https://searchengineland.com/google-asks-can-search-trends-predict-the-oscars-64912"
+class="uri">https://searchengineland.com/google-asks-can-search-trends-predict-the-oscars-64912</a><a
+href="#fnref4" class="footnote-back">↩︎</a></p></li>
+<li id="fn5"><p>Hyden, Steven. “Timothée Chalamet Should Win an Oscar
+for His Oscar Campaign.” The New York Times. Accessed: May 4, 2025.
+[Online.] Available: <a
+href="https://www.nytimes.com/2025/02/26/magazine/timothee-chalamet-oscar-campaign.html"
+class="uri">https://www.nytimes.com/2025/02/26/magazine/timothee-chalamet-oscar-campaign.html</a><a
 href="#fnref5" class="footnote-back">↩︎</a></p></li>
+<li id="fn6"><p>Hyden, Steven. “Timothée Chalamet Should Win an Oscar
+for His Oscar Campaign.” The New York Times. Accessed: May 4, 2025.
+[Online.] Available: <a
+href="https://www.nytimes.com/2025/02/26/magazine/timothee-chalamet-oscar-campaign.html"
+class="uri">https://www.nytimes.com/2025/02/26/magazine/timothee-chalamet-oscar-campaign.html</a><a
+href="#fnref6" class="footnote-back">↩︎</a></p></li>
 </ol>
 </div>
 
 
 
-</div>
-</div>
 
 </div>
 
@@ -501,35 +429,6 @@ $(document).ready(function () {
 
 <!-- code folding -->
 
-<script>
-$(document).ready(function ()  {
-
-    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
-    $('.unlisted.unnumbered').addClass('toc-ignore')
-
-    // move toc-ignore selectors from section div to header
-    $('div.section.toc-ignore')
-        .removeClass('toc-ignore')
-        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
-
-    // establish options
-    var options = {
-      selectors: "h1,h2,h3",
-      theme: "bootstrap3",
-      context: '.toc-content',
-      hashGenerator: function (text) {
-        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
-      },
-      ignoreSelector: ".toc-ignore",
-      scrollTo: 0
-    };
-    options.showAndHide = true;
-    options.smoothScroll = true;
-
-    // tocify
-    var toc = $("#TOC").tocify(options).data("toc-tocify");
-});
-</script>
 
 <!-- dynamically load mathjax for compatibility with self-contained -->
 <script>

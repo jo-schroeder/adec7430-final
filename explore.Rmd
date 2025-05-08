@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Explore the Nominees Model"
 output: 
   html_document
 ---
@@ -43,13 +43,20 @@ summary(trends)
 # also the trends were downloaded for actors who were in popular movies in 2025, but they won't be included in the analysis
 ```
 
+## Actor Features
+
+Before jumping into modeling, it is best to perform exploratory data analysis. Exploratory data analysis helps us to better understand our dataset. And when we understand our dataset we make better decisions about how best to model the phenomenon. Since we are trying to predict Oscar nominations with this model, we explored how the variables we’ve collected relate to Oscar nomination. 
+
+We started by collecting summary statistics and missingness for our dataset. We visualize some of the summary trends below. As for missingness, we found that quite a few variables had some missing values. In most cases, missingness was caused information from The Movie Database (TMDB) was not found for each actor. For example, Peter O’Toole, who was nominated for an Oscar in 2006, had no information matched in TMDB. This is because the [first match for ‘Peter O’Toole’ in TMDB](https://www.themoviedb.org/search/person?language=en-US&query=Peter%20O%27Toole) is a Peter O’Toole who works on movies in Lighting. In the future we would like to refine this dataset performing more manual checks to account for missingness and augment the existing data, but for now, due to the random nature of the missingness, we filter out observations with missingness when necessary. 
+
+
 ```{r}
 # Exploring birth years of actors
 actors %>% 
   filter(birth_year >=1920) %>%
   ggplot(aes(x = birth_year, color = factor(nominee))) +
   geom_density() +
-  labs(title = "How old are Oscar Nominated and Commercially Successful Actors?",
+  labs(title = "When were Oscar Nominated and Commercially Successful Actors Born?",
        subtitle = "Actors nominated for an Oscar or in a commercially successful movie from 2004 - 2024",
        x = "Birth Year",
        y = "Proportion",
@@ -58,7 +65,11 @@ actors %>%
   scale_color_solarized(labels = c("Non-Nominee", "Nominee")) +
   theme_minimal() +
   guides(color = guide_legend(override.aes = list(fill = c("#268bd2", "#dc322f")))) 
+```
 
+To start, we looked at the birth year of actors in our dataset by nomination. We see different patterns in the distribution of birth years for nominees and non-nominees. Non-nominees are more likely to be born in later years, suggesting that, on average, commercially successful movies cast younger actors. This pattern may also suggest that actors don’t reach critical acclaim until they are older and more established in their careers.
+
+```{r}
 # by gender
 actors %>% filter(Gender != "Not set") %>%
   ggplot(aes(x = Gender, fill = factor(nominee))) +
@@ -72,7 +83,11 @@ actors %>% filter(Gender != "Not set") %>%
   scale_fill_solarized(labels = c("Non-Nominee", "Nominee")) +
   theme_minimal()
 # This is sort of interesting- there's 10 male and 10 female actors nominated every year. This suggests that men born after 1975 are less represented in nominations overall, esp. compared to women in the same age group. Dominance of older actors in male categories?
+```
 
+Next, we looked into differences in the gender of actors by nomination. The number of male and female nominees is identical, which makes sense given that The Academy’s acting awards split along a gender binary. Ten female and ten male actors are nominated each year. It is surprising, on the other hand, that there are far more male actors in commercially successful movies than female. This suggests that commercially successful movies are more likely to have male cast members. 
+
+```{r}
 actors %>%
   ggplot(aes(x = american, fill = factor(nominee))) +
   geom_histogram(stat="count", position = "dodge") +
@@ -85,7 +100,11 @@ actors %>%
   scale_fill_solarized(labels = c("Non-Nominee", "Nominee")) +
   scale_x_continuous(breaks = c(0, 1), labels = c("Non-American", "American")) +
   theme_minimal()
+```
 
+We also look at the nationality of actors by nomination. We find that American actors are more likely to be nominated for an Academy Award than non-Americans. While this trend is likely indicative of patterns in Hollywood, it also reflects how we defined commercial success. When we pulled commercially successful movies from TMDB, we did not limit the results to a specific region. So, our dataset includes many actors who starred in internationally successful movies that may not have been popular with American audiences or critics. In the future we may think about limiting the scope of how we define commercial success to improve the model performance. Although, including more international stars in our analysis also demonstrates the blind spots Hollywood critics have to non-Western films and actors. 
+
+```{r}
 # exploring age at nomination
 actors %>% 
   filter(nominee == 1) %>%
@@ -115,6 +134,9 @@ actors %>%
 
 ```
 
+Finally, we looked at the age at nomination for Oscar nominated actors by gender. This summary demonstrates the potential interaction effects of some our variables, in this case, age and gender. We see that female nominees are more likely to be younger, peaking in their mid-30s. Women also experience a sharp dropoff in nominations in their mid-40s. Men, on the other hand, reach their peak years in their early 40s, on average, and experience a more graduated dropoff in their careers.
+
+## Google Trends
 
 ```{r}
 # interactive trends plot
@@ -148,31 +170,39 @@ p %>%
     yaxis = list(title = "Google Trend Search Interest", range = c(0, 100)),
     legend = list(title = list(text = "Select an Actor"))
   )
+```
 
+In addition to the actor features, we relied on Google trends for data in our modeling strategy. The interactive plot allows you to explore the Google trend for actors in the dataset. 
+
+```{r}
 
 # joining 
 joined <- trends %>% 
   mutate(name = tolower(name)) %>%
   left_join(actors, by = c("name")) %>%
-  mutate(type = factor(type, levels = c("commercial", "oscar", "both"),
-  labels = c("Commercially Successful", "Oscar Nominated", "Commercially Successful & Oscar Nominated")))
+  mutate(type = factor(nominee, levels = c(0, 1),
+  labels = c("Commercially Successful", "Oscar Nominated")))
 
 # by winner
 joined %>% 
   filter(!is.na(type)) %>%
   group_by(Month, type) %>% summarise(value = mean(value)) %>%
-  ggplot(aes(x = Month, y = value, color = type)) +
+  ggplot(aes(x = Month, y = value, color = factor(type))) +
   geom_line() +
   labs(title = "What are the patterns in Google Trend Search Interest for Actors?",
        subtitle = "Actors nominated for an Oscar or in a commercially successful movie from 2004 - 2024",
       caption = "Data Sources: The Oscar Award, 1927-2025 (aquired from Kaggle),\nFilm and Actor Details (acquired from The Movie Database API),\nGoogle Trends",
-      x = "", y = "Google Trend Search Interest") +
+      x = "", y = "Google Trend Search Interest (mean)") +
   facet_wrap(vars(type), ncol = 1) +
   theme_minimal() +
   scale_color_solarized() +
   theme(legend.position = "none")
 # This is pretty interesting - suggests that generally Oscar nominated actors are have searched more but it has leveled off (could reflect trends in Google Search overall). The cyclical pattern is also interesting and I'm guessing it coincides with the ceremony and nomination announcements!
+```
 
+To understand the overall patterns in Google Trends for our groups of interest, we aggregated all trends to find the mean values for Search Interest. We find that the Google Trends of commercially successful and Oscar nominated actors can be characterized differently. Oscar nominated actors, in aggregate, experience more extreme trends in their search interest throughout the year. In fact, the trend for Oscar nominated actors tracks pretty much exactly in line with when Oscar nominations are announced and when the awards show occurs. Both trends display the phenomenon of Google Search becoming more popular until the mid 2010s when search starts to level off overall.
+
+```{r}
 table <- joined %>% mutate(month = month(Month)) %>%
   filter(!is.na(type)) %>%
   group_by(type, month) %>%
@@ -186,10 +216,13 @@ table %>%
         col.names = c("Type", "Month", "Google Trend Search Interest (mean)")) %>%
   add_header_above(c("Three Most Popular Months for Google Search Interest by Actor Type" = 3)) %>%
   kable_styling(full_width = FALSE)
-
-
-
 ```
+
+Indeed, when we look at the most popular months to search each type of actor, commercially successful actors experience the most traffic in January, July, and December, when big blockbuster movies typically release. Oscar nominated actors, on the other hand, experience the most traffic in January, February, and March, during awards season. The descriptive differences we find in the trends between these two groups leads us to believe that, based on information from the time series alone, we may be able to distinguish between these two groups. 
+
+### Clustering
+
+Because I have a methodological interest in clustering, I was interested to explore a clustering solution for the Google Trends of our actors. Typically, time series clustering can take two approaches: shape-based clustering and feature-based clustering. For this phase of analysis, we decided to use shape-based clustering, and we explore extracting features from time series later in the project. After trying several clustering methods and options for distance, we chose to take a partitional clustering approach with shape-based distance, using the `tsclust` package in R. The Average Silhouette Width, a metric for cluster quality, for our clusters was never within Kaufman and Rousseeuw’s proposed interpretation for ASW as having any kind of discernible structure. [^1] Keeping this in mind, we would like to engineer a better shape-based clustering solution in the future, but for now we propose the following five cluster solution. 
 
 ```{r out.width="100%"}
 set.seed(90210)
@@ -235,9 +268,12 @@ actor_with_cluster %>%
   scale_color_solarized() +
   theme_minimal() +
   labs(title = "5 Cluster Solution for Actor Google Search Trends",
-       x = "", y = "Google Trend Search Interest")
+       x = "", y = "Google Trend Search Interest (mean)")
 ```
 
+The first cluster, Blockbuster Staples, are characterized by actors who experience a consistent growing or high level of popularity. Within the cluster centroids, this group experiences no major peaks, signifying that they have a relatively steady level of Search Interest. Chris Hemsworth, Nicholas Cage, Sam Elliot, and Mads Mikkelsen, who are all representative members of this cluster, have starred in Marvel franchise movies as well as numerous other blockbuster projects throughout this time period. 
+
+The second cluster, Breakout Star or Memorialized, are characterized by actors with the sharpest peaks in their Search Interest. Two of the representative members of this cluster, Maria Bakalova (*Borat Subsequent Moviefilm* - 2020) and Jean Dujardin (*The Artist* - 2011), had breakthrough roles that earned them Academy Award Nominations. Irrfan Khan, as well, earned critical acclaim in Indian film awards. Chadwick Boseman and Carrie Fisher both had high profile deaths during this time period. This demonstrates the limitations of this kind of clustering method, as our data cannot on its own does not discern between interest due to breakout success, a tragic death, or a scandal. Although, it should be noted that Chadwick Boseman was nominated for an Academy Award (*Ma Rainey’s Black Bottom* - 2020) in the year of his death. This is the cluster with the highest membership, which could underscore the unruliness of its interpretation.
 
 ```{r out.width="100%"}
 centroid_matrix <- do.call(rbind, clusters@centroids)
@@ -276,6 +312,9 @@ centroid_df %>%
   theme(legend.position = "none")
 ```
 
+The third cluster, Critically Acclaimed, also includes representative actors who have been nominated for Academy Awards, including Felicity Jones (*Theory of Everything* - 2014) and Remi Malek (*Bohemian Rhapsody* - 2018). Members Tom Hiddleston and Glen Powell have been nominated for or won Golden Globe awards, and Pedro Pascal is an acclaimed star of the silver screen. These actors may be characterized by relatively higher recent Search Interest, as well.
+
+The fourth cluster, Pop Fame, is characterized by actors who achieved fame in popular franchises of the mid-2000s, like Taylor Lautner in the *Twilight* movies, Orlando Bloom in *Pirates of the Caribbean*, Megan Fox in *Transformers*, and Moon Bloodgood in *Terminator Salvation*. Frieda Pinto has received critical praise for her roles, including in *Slumdog Millionaire*. Many of these actors have likely fallen off relative to their popularity at their respective peaks. This group has the lowest membership. 
 
 ```{r out.width="100%"}
 actor_with_cluster <- actor_with_cluster %>% 
@@ -297,6 +336,8 @@ table %>%
   kable_styling(full_width = FALSE)
 ```
 
+Lastly, the fifth cluster, Emerging or Consistent Stardom, are folks who have more middling search interest over time. Many of them have been working steadily, including the representatives of this cluster, and have seen both franchise and critical success, including the representative of this cluster. These actors are likely more middling in their Search Interest, experiencing more consistent buzz or a slight uptick over time.
+
 ```{r out.width="100%"}
 table <- actor_with_cluster %>% distinct(name, cluster_label) %>%
   mutate(name = tolower(name)) %>%
@@ -314,6 +355,42 @@ table %>%
   add_header_above(c("What Percent of Actors in Each Cluster are Oscar Nominees?" = 2)) %>%
   kable_styling(full_width = FALSE)
 ```
+
+By creating these clusters, we hope to not only describe patterns in actor search interest, but test if these patterns have explanatory power. Two of our clusters, Breakout Stars and Memorialized and Critically Acclaimed, have a higher proportion of Oscar nominees than the other clusters. This suggests that our clusters may have descriptive significance, despite not being a strong solution technically. To further explore this idea, we use the cluster as a feature in our predictive model. 
+
+## Predictive Modeling
+
+In addition the features explored earlier, we derived features from the time series for each calendar year for each actor. The outcome is nomination in the next year's award ceremony, but for simplicity we describe this as occurring within the same year. We tested out using longer time series, for example, two years (which would include buzz generated while a movie was in production, for example), but we had issues with sparsity. Some actors were not prominent for several years before blowing up in popularity (i.e., several consecutive months with no interest), which can make feature extraction impossible. So, we filtered out observations with no variation in search interest. 
+
+Deriving time series features involves summarizing the properties of a time series, and we used the `tsfeatures` R package to accomplish this. `tsfeatures` extracts variables like linearity, curvature, trend, entropy, autocorrelation, and spikiness. [^2] In addition to the extracted features, we also engineered a summary feature of our own: `max_spike_height`. This captures the maximum search interest for a calendar year, which would show if they reached the relative peak of their search interest during this time period. 
+
+```{r}
+library(knitr)
+
+features <- c(
+  "trend", "spike", "linearity", "curvature", "e_acf1", "e_acf10",
+  "entropy", "x_acf1", "x_acf10", "diff1_acf1", "diff1_acf10", "diff2_acf1",
+  "max_spike_height", "nominated_previously", "age", "gender", "american",
+  "cluster", "won_previously"
+)
+
+model1 <- features
+model2 <- setdiff(features, c("nominated_previously", "age", "gender", "american", "won_previously"))
+
+df <- data.frame(
+  Feature = features,
+  `Model 1 - All Features` = ifelse(features %in% model1, "✔", ""),
+  `Model 2 - TS Features Only` = ifelse(features %in% model2, "✔", "")
+)
+
+df %>%
+  kable(col.names = c("Feature", "Model 1 - All Predictors", "Model 2 - TS Predictors Only")) %>%
+  add_header_above(c("Model Feature Comparison" = 3)) %>%
+  kable_styling(full_width = FALSE)
+```
+
+To test our hypothesis about the role of Oscar buzz in predicting nominations, we wanted to build two models. The first model would include all of the features we had engineered, and the second would include only features derived from the Google Trend. Comparing how these two models perform would help us understand the explanatory power of Oscar hype. 
+
 
 ```{r, include = FALSE}
 years_seq <- 2004:2024
@@ -433,6 +510,8 @@ model_data <- trend_features_ts %>%
   filter(entropy != 1)
 ```
 
+Ours is a classification problem: in a given year, will an actor be nominated for an Oscar? After testing a few different modeling strategies, including logistic regression, we decided to use Random Forest. Random Forest has many strengths as a machine learning model, but the one that was arguably most important for our purposes is to handle high-dimensional, noisy data. The first hurdle to overcome with Random Forest was to handle our large class imbalance. Our initial models were not very accurate due to the relatively low occurrence of nominees. In a given year only 20 actors are nominees, and several have been nominated multiple times, which doesn’t yield many observations for training the model. So we decided to undersample non-nominees to achieve a balanced training dataset. Once we started seeing more accurate predictions, we added a 5 fold cross validation to cover potential blindspots introduced by undersampling and provide more stable evaluation metrics. Cross validation allows us to be more certain about our model’s performance.
+
 ```{r}
 set.seed(90210)
 model_data1 <- model_data %>%
@@ -517,10 +596,11 @@ collect_metrics(rf_results_ts) %>% select(-.estimator, -.config) %>%
   kable_styling(full_width = FALSE)
 ```
 
+According to basic metrics of model accuracy, we found that the two models performed extremely similarly. Both models have an accuracy of around 70% and an ROC AUC around 0.8, which is much better than a coin flip but not remarkably excellent. Low standard error on our accuracy metrics suggest that these estimates are reliable. Model 1 - All Features slightly outperformed, but the results still suggest that Oscar buzz is a powerful explainer of Oscar nomination. 
 
 ```{r}
-final_preds_all <- collect_predictions(rf_results_all)  # includes `.row` and `.pred_class`
-final_preds_ts <- collect_predictions(rf_results_ts)
+final_preds_all <- collect_predictions(final_model_all)  # includes `.row` and `.pred_class`
+final_preds_ts <- collect_predictions(final_model_ts)
 
 # Confusion matrices
 conf_mat_all <- conf_mat(final_preds_all, truth = nominee, estimate = .pred_class)
@@ -544,13 +624,17 @@ cm_combined %>%
   kable_styling(full_width = FALSE)
 ```
 
+Looking deeper into Type I (false positive) and Type II (false negative) error for the final Random Forest model, we find that Model 2 - TS Features Only makes less Type II error and more Type I error compared to Model 1. 
+
+
 ```{r}
 # Model metrics
 metrics <- metric_set(f_meas, sens, bal_accuracy)
 
-metrics_all <- metrics(final_preds_all, truth = nominee, estimate = .pred_class) %>%
+metrics_all <- metrics(final_preds_all, truth = nominee, estimate = .pred_class, event_level = "second") %>%
   mutate(model = "All Predictors")
-metrics_ts <- metrics(final_preds_ts, truth = nominee, estimate = .pred_class) %>%
+metrics_ts <- metrics(final_preds_ts, truth = nominee, estimate = .pred_class,
+                      event_level = "second") %>%
   mutate(model = "TS Predictors Only")
 
 # Combine and pivot
@@ -565,6 +649,9 @@ metrics_combined %>%
   kable_styling(full_width = FALSE)
 
 ```
+
+Although Model 2 makes less Type II error, it is far less balanced than Model 1. Model 1 has higher sensitivity and a better F1 metric than Model 2. Again, both models are not excellent, but fair okay in terms of metrics. Looking deeper into the actors misclassified may help us understand how to engineer better features for prediction. 
+
 
 ```{r}
 # Reconnect original identifiers
@@ -609,6 +696,8 @@ fn_misclassified %>%
   kable_styling(full_width = FALSE)
 ```
 
+False negatives can be thought of as Dark Horse nominees. These are the actors with the largest incorrect threshold for non-nominee. Interestingly, they are overwhelmingly male. This suggests that adding some additional information to the modeling strategy, such as the fact that there can be only 10 male and 10 female nominees per year, might improve our ability to detect Dark Horses. 
+
 
 ```{r}
 # Top false negatives by model type
@@ -631,6 +720,8 @@ fp_misclassified %>%
   kable_styling(full_width = FALSE)
 ```
 
+False positives can be thought of as Oscar snubs.  These are the actors with the largest incorrect threshold for nominee. In this area, adding constraints on the model so that actors must be in a significant film in the year, not in a popular TV show or having a scandale, for example, could improve our ability to detect quality Oscar snubs.
+
 ```{r}
 # feature importance plots
 
@@ -644,7 +735,11 @@ importance(fitted_rf_all) %>%
   coord_flip() +
   labs(title = "Feature Importance of Model 1 - All Predictors", x = "", y = "Mean Decrease in Gini") +
   theme_minimal()
+```
 
+Diving into feature importance, we see additional evidence that Google Trends derived predictors are the most influential in our models. The only non-time series variable with notable influence is age, which tracks with our findings from exploratory data analysis. Interestingly, previous Oscar wins and nominations are not very influential, which suggests that additional feature engineering to understand actor quality might not be fruitful.
+
+```{r}
 # Model 2
 importance(fitted_rf_ts) %>%
   as.data.frame() %>%
@@ -657,12 +752,25 @@ importance(fitted_rf_ts) %>%
   theme_minimal()
 ```
 
+Within Model 2 predictors, our engineered cluster is not very influential either, which suggests again that the solution could use fine-tuning to achieve more predictive power.
+
 ```{r out.width="100%"}
 numeric_vars <- model_data1 %>%
   select(where(is.numeric))
 cor_matrix <- cor(numeric_vars, use = "complete.obs")
 corrplot(cor_matrix, method = "color", type = "upper", 
-         tl.cex = 0.8, tl.col = "black", 
-         addCoef.col = "black", number.cex = 0.7)
+         tl.cex = .7, tl.col = "black", 
+         addCoef.col = "black", number.cex = 0.5,
+         title = "Correlation for Numeric Variables",
+         diag=FALSE,  mar=c(0,0,1,0))
 ```
 
+Because correlated features can be washed out in feature importance, we looked at correlation of numeric features to determine if we’re overlooking any important patterns. Linearity and curvature jump out as being highly influential predictors without many strong correlations, suggesting that their influence is accurately portrayed. Many of the time series autocorrelation features are correlated, so it may be of interest to weed out some of these predictors.
+
+As discussed, there are many considerations we could make to improve our modeling strategy. Another consideration would be to subset the Google Trends data to years where actors were actually working on significant projects. In other words, it would be interesting to see if the model can predict Oscar nominees from stars of big blockbuster projects, and not just all years we have trend data for actors regardless of whether or not they were actually working on relevant projects. 
+
+In any case, the model as it stands lends evidence to the conclusion that Oscar buzz is a real phenomenon we can see in the data, and it does have some predictive power as to determining whether or an actor will be nominated. 
+
+
+[^1]: L. Kaufman and P.J. Rousseeuw "Finding groups in data. An introduction to cluster analysis." Wiley, New York. 1990.
+[^2]: R. Hyndman, Y. Kang, P., Montero-Manso, M. O'Hara-Wild, T. Talagala, E. Wang, and Y. Yang. "tsfeatures: Time Series Feature Extraction (Version 1.1.1)" Accessed: May 4, 2025. [Online]. Available https://pkg.robjhyndman.com/tsfeatures/
