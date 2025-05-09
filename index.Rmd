@@ -4,6 +4,8 @@ output:
   html_document
 ---
 
+**Created by: Joanna Schroeder and Elise Longenecker**
+
 In March of 2025 the Academy updated their voting guidelines for the Annual Academy Awards. Now, voters must have watched each film nominated in a category in order to be eligible to vote for the winner. [^1] If you're wondering how that wasn't a rule already, you're not alone! [^2] 
 
 Ever year the legitimacy of the Oscars are questioned, yet they remain one of the most important awards in the film industry. [^3] In this project, we aim to answer two questions about Hollywood's most prestigious awards.

@@ -1,7 +1,5 @@
 ---
-title: "Logistic Model"
-author: "Elise Longenecker & Joanna Schroeder"
-date: "2025-05-09"
+title: "Explore the Winners Model"
 output: html_document
 ---
 
@@ -12,7 +10,7 @@ knitr::opts_chunk$set(echo = TRUE)
 ### Load the data and relevant packages
 
 ```{r}
-data <- read.csv("C:/Users/elise/OneDrive/Documents/ML-AI_Algorithms_I/Final/actors_features.csv")
+data <- read.csv("./data/actors_features.csv")
 library(dplyr)
 library(lubridate)
 library(stringr)
@@ -23,7 +21,7 @@ library(purrr)
 
 ```{r}
 data <- data %>%
-  filter(nominee == 1) %>%
+  dplyr::filter(nominee == 1) %>%
   mutate(min_year = map_dbl(nominated_years, function(s) {
     s %>%
       str_remove_all("\\[|\\]") %>%
