@@ -1,0 +1,70 @@
+---
+title: "Logistic Model"
+author: "Elise Longenecker & Joanna Schroeder"
+date: "2025-05-09"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+### Load the data and relevant packages
+
+```{r}
+data <- read.csv("C:/Users/elise/OneDrive/Documents/ML-AI_Algorithms_I/Final/actors_features.csv")
+library(dplyr)
+library(lubridate)
+library(stringr)
+library(purrr)
+```
+
+### Filtering data to only include actors who received an Oscar nomination
+
+```{r}
+data <- data %>%
+  filter(nominee == 1) %>%
+  mutate(min_year = map_dbl(nominated_years, function(s) {
+    s %>%
+      str_remove_all("\\[|\\]") %>%
+      str_split(",\\s*") %>%
+      unlist() %>%
+      as.numeric() %>%
+      min(na.rm = TRUE)
+  })) %>%
+  mutate(age_at_nomination = as.numeric(difftime(min_year, birth_year)))
+```
+
+### Creating a binary variable for if the person was nominated as a leading actor
+
+```{r}
+keyword1 <- "LEADING"
+keyword2 <- "BOTH"
+data$leading <- ifelse(
+  grepl(keyword1, data$oscar_type, ignore.case = TRUE) |
+    grepl(keyword2, data$oscar_type, ignore.case = TRUE),
+  1, 0
+)
+```
+
+### Splitting the data into 80% train, 20% test
+
+```{r}
+train_indices <- sample(1:nrow(data), size = 0.8 * nrow(data))
+train <- data[train_indices, ]
+test <- data[-train_indices, ]
+```
+
+### Logistic model for the likelihood of a person winning the Oscar, given their age, gender, leading or supporting nomination, whether or not they are American, and their popularity score.
+
+```{r}
+logistic_winner <- glm(winner ~ age_at_nomination + gender + leading + american + Popularity, data = train, family = binomial)
+summary(logistic_winner)
+```
+
+### Predicting the test data using the model
+
+```{r}
+test$predicted_prob_winner <- predict(logistic_winner, newdata = test, type = "response")
+```
+
